@@ -9,7 +9,7 @@ header{
         height: 15vh;
         h1{
             @include texto(6rem,100,map-get($map:$paleta, $key: 'white'));
-            font-family: $fuga;
+            font-family: $escalada;
             transition: transform .1s;
             &:hover{
                 color: map-get($map:$paleta, $key: 'third');
@@ -38,7 +38,7 @@ header{
             margin-bottom: .5rem;
             p{
                 @include texto(2.2rem,500,map-get($map:$paleta, $key: 'white'));
-                font-family: $cuerpo;
+                font-family: $escalada;
                 transition: transform .1s;
                 &:hover{
                     color: map-get($map:$paleta, $key: 'third');

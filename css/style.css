@@ -7985,7 +7985,7 @@ header {
         font-size: 2.2rem;
         font-weight: 500;
         color: #ffffff;
-        font-family: "hk-grotesk, sans-serif";
+        font-family: "Optician-Sans", sans-serif;
         transition: transform .1s; }
         header nav div ul li a p:hover {
           color: #8a8989;
@@ -8251,12 +8251,12 @@ header {
 footer {
   margin-top: auto;
   bottom: 0;
-  background-color: #ffffff;
+  background-color: #151414;
   width: 100%; }
   footer p {
     font-size: 1.7rem;
     font-weight: 400;
-    color: #151414;
+    color: #ffffff;
     font-family: "Optician-Sans", sans-serif;
     transition: transform .1s;
     margin-top: 3rem; }
@@ -8284,7 +8284,7 @@ footer {
   footer h4, footer .h4 {
     font-size: 1.3rem;
     font-weight: 200;
-    color: #151414;
+    color: #ffffff;
     font-family: "Optician-Sans", sans-serif; }
     @media screen and (max-width: 361px) {
       footer h4, footer .h4 {
@@ -8316,32 +8316,34 @@ footer {
     transform: translateX(0.5px); }
 
 .copyright {
-  height: 2rem;
-  width: 2rem; }
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-right: .3rem;
+  fill: white; }
   @media screen and (max-width: 361px) {
     .copyright {
       height: 1rem;
       width: 1rem; } }
   @media screen and (max-width: 687px) and (min-width: 362px) {
     .copyright {
+      height: 1.2rem;
+      width: 1.2rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .copyright {
       height: 1.3rem;
       width: 1.3rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .copyright {
+      height: 1.4rem;
+      width: 1.4rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1199px) {
+    .copyright {
+      height: 1.4rem;
+      width: 1.4rem; } }
+  @media screen and (min-width: 1200px) and (max-width: 1350px) {
     .copyright {
       height: 1.5rem;
       width: 1.5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
-    .copyright {
-      height: 2rem;
-      width: 2rem; } }
-  @media screen and (min-width: 1111px) and (max-width: 1199px) {
-    .copyright {
-      height: 2rem;
-      width: 2rem; } }
-  @media screen and (min-width: 1200px) and (max-width: 1350px) {
-    .copyright {
-      height: 2rem;
-      width: 2rem; } }
 
 /**GRID FOOTER**/
 .grid-footer {
@@ -8668,7 +8670,6 @@ main section form fieldset {
   font-size: 1.8rem;
   font-weight: 400;
   color: #151414;
-  font-family: "Optician-Sans", sans-serif;
   margin-bottom: 1rem;
   transition: transform .1s; }
   @media screen and (max-width: 361px) {

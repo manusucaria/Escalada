@@ -1,6 +1,5 @@
 .titulos-feria{
     @include texto(1.8rem,400,map-get($map:$paleta, $key: 'black'));
-    font-family: $fuga;
     margin-bottom: 1rem;
     transition: transform .1s;
     @include cel{
