@@ -1,0 +1,38 @@
+// texto
+@mixin texto($size,$weight,$color) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+// breakpoints
+@mixin cel{
+    @media screen and (max-width: 361px){
+        @content;
+    }
+}
+@mixin smart{
+    @media screen and (max-width: 450px) and (min-width: 362px){
+        @content;
+    }
+}
+@mixin tablet{
+    @media screen and (max-width: 687px) and (min-width: 451px){
+        @content;
+    }
+}
+@mixin tablet-xl{
+    @media screen and (min-width: 688px) and (max-width: 900px){
+        @content;
+    }
+}
+@mixin desktop{
+    @media screen and (min-width: 901px) and (max-width: 1110px){
+        @content;
+    }
+}
+@mixin wide{
+    @media screen and (min-width: 1111px) and (max-width: 1350px){
+        @content;
+    }
+}

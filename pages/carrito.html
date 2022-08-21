@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Formulario de contacto para pedidos">
+        <meta name="author" content="Noheli Gardon">
+        <meta name="keywords" content="ropa, diseño, ropa de autor, mujer, ropa de mujer, buzos, remeras, pantalones, polleras, camperas, vestidos">
+        <meta name="copyright" content="Fuga.lab">
+        <link rel="icon" href="../assets/img/icon.ico">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/animate.css">
+        <title>Fuga Contacto</title>
+    </head>
+    <body class="fondocat">
+        <!--HEADER-->
+        <header>
+            <nav class="navbar w-100 grid-nav">
+                <button class="navbar-toggler grid-hamburguesa mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" name="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse mx-auto" id="opciones">
+                    <ul class="navbar-nav d-flex flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link mt-2" href="../index.html"><p class="lista-nav">Inicio</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="feria.html"><p class="lista-nav">Feria</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html"><p class="lista-nav">Nosotros</p></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrito.html"><p class="lista-nav">Contacto</p></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-title mx-auto my-auto">
+                    <a class="my-auto" href="../index.html">
+                        <h1>FUGA</h1>
+                    </a>
+                </div>
+                <div class="grid-botones d-flex mx-auto">
+                    <a class="my-auto" href="../index.html">
+                        <img class="botones-casita my-auto" src="../assets/img/home.png" alt="Icono de Home">
+                    </a>
+                    <a class="my-auto" href="carrito.html">
+                        <img class="botones my-auto" src="../assets/img/carrito.png" alt="Icono de Carrito">
+                    </a>
+                </div>
+            </nav>
+        </header>
+            <!--MAIN-->
+        <main>
+            <!-- inicia form -->
+            <div class="d-flex-flex-column">
+                <div class="animation-carrito form-fondo mx-auto">
+                    <section>
+                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScbE2AiXBp6RYeS9O9Uz4Gg-uFDD3VqBwMWoM-qx3nim7fTlA/formResponse" method="POST">
+                            <fieldset class="mx-auto d-flex flex-column">
+                                <label class="me-auto mb-3 mt-5">Nombre y Apellido</label>
+                                <input class="w-100 px-2 py-2" type="text" name="entry.747754214" placeholder="Ingresa tu Nombre" required>
+                                <label class="me-auto mt-5 mb-3">Dirección de Email</label>
+                                <input class="w-100 px-2 py-2" type="email" name="entry.1801466686" placeholder="email@gmail.com" required>
+                                <label class="me-auto mt-5 mb-3">Teléfono</label>
+                                <input class="w-100 px-2 py-2" type="tel" name="entry.674001816" placeholder="1156323465" required>
+                                <label class="me-auto mt-5 mb-3">Ubicación</label>
+                                <select class="w-100" name="entry.171675898_sentinel" id="provincia" aria-label="Ubicacion" required>
+                                    <option selected class="p-2">Buenos Aires</option>
+                                    <option value="1">Córdoba</option>
+                                    <option value="2">Santa Fe</option>
+                                    <option value="3">Otra Provincia</option>
+                                </select>
+                                <label class="me-auto mt-5 mb-3" for="product">Pedido</label>
+                                <input class="w-100 px-2 py-2" type="text" name="entry.1768531675" id="product" placeholder="Ingresa el/los modelo/s que te interesan" required>
+                                <label class="me-auto mt-5 mb-3" for="product">Talle y Preferencias</label>
+                                <textarea class="w-100 px-2 py-2" name="entry.940831071" id="product" placeholder="Decinos tu Talle y Preferencias" cols="20" rows="4" required></textarea>
+                                <section class="d-flex flex-row mt-5 mb-4">
+                                    <input class="w-50 me-1 botones-enviar" type="submit" target="_blank" value="Enviar">
+                                    <input class="w-50 ms-1 botones-enviar" type="reset" value="Cancelar">
+                                </section>
+                            </fieldset>
+                        </form>
+                    </section>
+                </div>
+                <!-- ends form -->
+                <div class="animation-carrito ubicacion form-fondo mx-auto">
+                    <section class="mx-auto d-flex flex-column">
+                        <h4 class="mx-auto titulo-mapa">De Donde Somos</h4>
+                        <iframe class="mx-auto w-100 py-4 mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.9912612847293!2d-58.73225197395151!3d-34.398750275076324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bca1d4bb87e4a9%3A0x3d9b836b729a9307!2sEntre%20R%C3%ADos%20167%2C%20B1623AGC%20Ingeniero%20Maschwitz%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1660579246425!5m2!1ses-419!2sar" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <div class="w-100 d-flex flex-column mx-auto">
+                <div class="d-flex mx-auto mb-4">
+                    <a class="me-5" href="nosotros.html" target="_blank"><p>Nosotros</p></a>
+                    <a class="me-5" href="carrito.html"><p>Contacto</p></a>
+                    <a class="me-5" href="feria.html" target="_blank"><p>Feria</p></a>
+                    <a href="https://www.instagram.com/fuga.lab/" target="_blank"><p>Instagram</p></a>
+                </div>
+                <div class="d-flex mx-auto mt-auto mb-3">
+                    <img class="copyright" src="../assets/img/copyright.ico" alt="Copyright">
+                    <h4 class="mt-auto">FUGA LABORATORIO DE COSTURA</h4></small>
+                </div>
+            </div>
+        </footer>
+    <script src="../js/bootstrap.bundle.min.js">
+    </script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    </body>
+</html>

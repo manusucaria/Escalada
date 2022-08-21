@@ -1,0 +1,32 @@
+/** COLOR **/
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #151414;
+$black:    #000;
+
+/**TOGGLER**/
+$font-size-base: 1.5rem;
+$font-size-lg:                $font-size-base * 1.4;
+$navbar-toggler-padding-y:          .1rem;
+$navbar-toggler-padding-x:          .1rem;
+$navbar-toggler-font-size:          $font-size-lg;
+$navbar-toggler-border-radius:      0;
+$navbar-toggler-focus-width:        0px;
+$navbar-toggler-transition:         box-shadow .15s ease-in-out;
+
+/**CARRITO**/
+$component-active-color:      #F2F1E9;
+$component-active-bg:         #383146;
+$form-check-input-checked-color:          $component-active-color;
+$form-check-input-checked-bg-color:       #383146;
+$form-check-input-checked-border-color:   #383146;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";

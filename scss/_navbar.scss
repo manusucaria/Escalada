@@ -1,0 +1,163 @@
+//NAV
+header{
+    background-color: map-get($map: $paleta, $key:'black');
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    nav{
+        height: 15vh;
+        h1{
+            @include texto(6rem,100,map-get($map:$paleta, $key: 'white'));
+            font-family: $fuga;
+            transition: transform .1s;
+            &:hover{
+                color: map-get($map:$paleta, $key: 'third');
+                transform: translateX(.5px);
+            }
+            @media screen and (max-width: 360px) {
+                font-size: 3.7rem;
+            }
+            @include cel{
+                font-size: 3rem;
+            }
+            @include smart{
+                font-size: 3.7rem;
+            }
+            @include tablet{
+                font-size: 4.3rem;
+            }
+            @include tablet-xl{
+                font-size: 6rem;
+            }
+            @media screen and (min-width: 901px) and (max-width: 1350px){
+                font-size: 7rem;
+            }
+        }
+        div ul li a{
+            margin-bottom: .5rem;
+            p{
+                @include texto(2.2rem,500,map-get($map:$paleta, $key: 'white'));
+                font-family: $cuerpo;
+                transition: transform .1s;
+                &:hover{
+                    color: map-get($map:$paleta, $key: 'third');
+                    transform: translateX(.5px);
+                }
+                @include cel{
+                    font-size: 1.2rem;
+                }
+                @media screen and (max-width: 687px) and (min-width: 362px){
+                    font-size: 1.3rem;
+                }
+                @include tablet-xl{
+                    font-size: 1.5rem;
+                }
+                @include desktop{
+                    font-size: 1.5rem;
+                }
+                @media screen and (min-width: 1111px) and (max-width: 1199px){
+                    font-size: 1.6rem;
+                }
+                @media screen and (min-width: 1200px) and (max-width: 1350px){
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+/**CLASES**/
+.botones{
+    height: 35px;
+    width: 35px;
+    transition: transform .1s;
+    &:hover{
+        transform: translateX(.5px);
+    }
+    @include cel{
+        margin-bottom: .3rem;
+        height: 24px;
+        width: 24px;
+    }
+    @include smart{
+        margin-bottom: .3rem;
+        height: 25px;
+        width: 25px;
+    }
+    @include tablet{
+        margin-bottom: .3rem;
+        height: 26px;
+        width: 26px;
+    }
+    @include tablet-xl{
+        margin-bottom: .3rem;
+        height: 28px;
+        width: 28px;
+    }
+    @include desktop{
+        margin-bottom: .3rem;
+        height: 30px;
+        width: 30px;
+    }
+    @include wide{
+        margin-bottom: .3rem;
+        height: 32px;
+        width: 32px;
+    }
+}
+.svg{
+    height: 30px;
+    width: 30px;
+    fill: white;
+    margin-right: 3rem;
+    transition: transform .1s;
+    &:hover{
+        transform: translateX(.5px);
+    }
+    @include cel{
+        height: 24px;
+        width: 24px;
+    }
+    @include smart{
+        height: 25px;
+        width: 25px;
+    }
+    @include tablet{
+        height: 26px;
+        width: 26px;
+    }
+    @include tablet-xl{
+        height: 28px;
+        width: 28px;
+    }
+    @include desktop{
+        height: 30px;
+        width: 30px;
+    }
+    @include wide{
+        height: 32px;
+        width: 32px;
+    }
+}
+.listas{
+    margin-right: 6rem;
+    margin-top: 1rem;
+}
+.grid-nav{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1 auto;
+}
+.grid-lista{
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+.grid-title{
+    margin: 2rem 2rem 2rem 3rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.grid-botones{
+    grid-column: 5/6;
+    grid-row: 1/2;
+}

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'hk-grotesk';
+    src: url('../assets/fonts/hk-grotesk/HKGrotesk-Black.otf');
+}
+@font-face {
+    font-family: 'Optician-Sans';
+    src: url('../assets/fonts/OpticianSans/OpenType-PS/Optician-Sans.otf');
+}
+html{
+    font-size: 62.5%;
+}
+$fuga: "Optician-Sans", sans-serif;
+$cuerpo: "hk-grotesk, sans-serif";
