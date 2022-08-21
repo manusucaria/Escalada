@@ -6,17 +6,15 @@ header{
     top: 0;
     z-index: 2;
     nav{
-        height: 15vh;
+        background-color: map-get($map: $paleta, $key:'black');
+        height: 11vh;
         h1{
-            @include texto(6rem,100,map-get($map:$paleta, $key: 'white'));
+            @include texto(4.5rem,100,map-get($map:$paleta, $key: 'white'));
             font-family: $escalada;
             transition: transform .1s;
             &:hover{
                 color: map-get($map:$paleta, $key: 'third');
                 transform: translateX(.5px);
-            }
-            @media screen and (max-width: 360px) {
-                font-size: 3.7rem;
             }
             @include cel{
                 font-size: 3rem;
@@ -25,19 +23,21 @@ header{
                 font-size: 3.7rem;
             }
             @include tablet{
-                font-size: 4.3rem;
+                font-size: 3.7rem;
             }
             @include tablet-xl{
-                font-size: 6rem;
+                font-size: 3.9rem;
             }
-            @media screen and (min-width: 901px) and (max-width: 1350px){
-                font-size: 7rem;
+            @include desktop{
+                font-size: 4rem;
+            }
+            @include wide{
+                font-size: 4.2rem;
             }
         }
         div ul li a{
-            margin-bottom: .5rem;
             p{
-                @include texto(2.2rem,500,map-get($map:$paleta, $key: 'white'));
+                @include texto(2rem,500,map-get($map:$paleta, $key: 'white'));
                 font-family: $escalada;
                 transition: transform .1s;
                 &:hover{
@@ -54,57 +54,17 @@ header{
                     font-size: 1.5rem;
                 }
                 @include desktop{
-                    font-size: 1.5rem;
-                }
-                @media screen and (min-width: 1111px) and (max-width: 1199px){
                     font-size: 1.6rem;
                 }
-                @media screen and (min-width: 1200px) and (max-width: 1350px){
-                    font-size: 1.7rem;
+                @include wide{
+                    font-size: 1.6rem;
                 }
             }
         }
     }
 }
 /**CLASES**/
-.botones{
-    height: 35px;
-    width: 35px;
-    transition: transform .1s;
-    &:hover{
-        transform: translateX(.5px);
-    }
-    @include cel{
-        margin-bottom: .3rem;
-        height: 24px;
-        width: 24px;
-    }
-    @include smart{
-        margin-bottom: .3rem;
-        height: 25px;
-        width: 25px;
-    }
-    @include tablet{
-        margin-bottom: .3rem;
-        height: 26px;
-        width: 26px;
-    }
-    @include tablet-xl{
-        margin-bottom: .3rem;
-        height: 28px;
-        width: 28px;
-    }
-    @include desktop{
-        margin-bottom: .3rem;
-        height: 30px;
-        width: 30px;
-    }
-    @include wide{
-        margin-bottom: .3rem;
-        height: 32px;
-        width: 32px;
-    }
-}
+/**BOTONES**/
 .svg{
     height: 30px;
     width: 30px;
@@ -115,34 +75,68 @@ header{
         transform: translateX(.5px);
     }
     @include cel{
-        height: 24px;
-        width: 24px;
+        height: 19px;
+        width: 19px;
     }
     @include smart{
-        height: 25px;
-        width: 25px;
+        height: 20px;
+        width: 20px;
     }
     @include tablet{
-        height: 26px;
-        width: 26px;
+        height: 22px;
+        width: 22px;
     }
     @include tablet-xl{
-        height: 28px;
-        width: 28px;
+        height: 24px;
+        width: 24px;
+        margin-right: 2rem;
     }
     @include desktop{
-        height: 30px;
-        width: 30px;
+        height: 26px;
+        width: 26px;
+        margin-right: 2.3rem;
     }
     @include wide{
-        height: 32px;
-        width: 32px;
+        height: 30px;
+        width: 30px;
+        margin-right: 2.5rem;
+    }
+}
+/**HAMBURGUESA Y LISTA**/
+.contenedor-listas{
+    margin: auto auto;
+    @media screen and (max-width: 768px){
+        margin: auto 2rem;
+    }
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2rem;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        margin-top: 10rem;
     }
 }
 .listas{
-    margin-right: 6rem;
-    margin-top: 1rem;
+    margin-right: 5rem;
+    @media screen and (max-width: 768px){
+        margin-right: 0;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px){
+        margin-right: 2rem;
+    }
+    @include desktop{
+        margin-right: 4rem;
+    }
+    @include wide{
+        margin-right: 5rem;
+    }
 }
+.lista-nav{
+    text-align: center;
+}
+/**GRID**/
 .grid-nav{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -151,13 +145,23 @@ header{
 .grid-lista{
     grid-column: 2/5;
     grid-row: 1/2;
+    @media screen and (max-width: 768px){
+        grid-column: 1/3;
+    }
 }
 .grid-title{
-    margin: 2rem 2rem 2rem 3rem;
+    margin: 2rem 2rem 2rem 3.5rem;
     grid-column: 1/2;
     grid-row: 1/2;
+    @media screen and (max-width: 768px){
+        grid-column: 3/6;
+        margin: 0;
+    }
 }
 .grid-botones{
     grid-column: 5/6;
     grid-row: 1/2;
+    @media screen and (max-width: 768px){
+        display: none;
+    }
 }
