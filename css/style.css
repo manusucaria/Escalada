@@ -8120,12 +8120,12 @@ header {
   text-align: center;
   font-size: 6rem;
   font-weight: 800;
-  color: #151414;
+  color: #FE5D1C;
   font-family: "hk-grotesk, sans-serif";
   transition: transform .1s; }
   .titulos-art:hover {
     cursor: pointer;
-    color: #8a8989;
+    color: #9e4522;
     transform: translateX(0.5px); }
   @media screen and (max-width: 361px) {
     .titulos-art {
@@ -8169,6 +8169,9 @@ header {
   transition: opacity 1s; }
   .img-art-1:hover {
     opacity: .7; }
+  @media screen and (max-width: 900px) {
+    .img-art-1 {
+      padding: 0; } }
 
 .textos-art-1 {
   grid-column: 1/2;
@@ -8179,32 +8182,31 @@ header {
   text-align: center;
   font-size: 2.7rem;
   font-weight: 500;
-  color: #151414;
+  color: #FE5D1C;
   font-family: "hk-grotesk, sans-serif";
   transition: transform .1s; }
   .sub-art-1:hover {
     cursor: pointer;
-    color: #8a8989;
+    color: #9e4522;
     transform: translateX(0.5px); }
   @media screen and (max-width: 361px) {
     .sub-art-1 {
-      font-size: 1.9rem; } }
+      font-size: 1.6rem; } }
   @media screen and (max-width: 687px) and (min-width: 362px) {
     .sub-art-1 {
-      font-size: 2rem; } }
+      font-size: 1.7rem; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .sub-art-1 {
-      font-size: 2.2rem; } }
+      font-size: 2rem; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .sub-art-1 {
-      font-size: 2.4rem; } }
+      font-size: 2.2rem; } }
   @media screen and (min-width: 1111px) and (max-width: 1350px) {
     .sub-art-1 {
-      font-size: 2.5rem; } }
+      font-size: 2.3rem; } }
 
 .titulo-art-1 {
-  cursor: default;
-  color: #151414; }
+  cursor: default; }
 
 /**TRADICIONAL**/
 .grid-art-1-2 {
@@ -8223,6 +8225,9 @@ header {
   transition: opacity 1s; }
   .img-2-art-1:hover {
     opacity: .7; }
+  @media screen and (max-width: 900px) {
+    .img-2-art-1 {
+      padding: 0; } }
 
 .textos-art-1-2 {
   grid-column: 1/2;
@@ -8233,32 +8238,32 @@ header {
   text-align: center;
   font-size: 2.7rem;
   font-weight: 500;
-  color: #151414;
+  color: #FE5D1C;
   font-family: "hk-grotesk, sans-serif";
   transition: transform .1s; }
   .sub-art-1-2:hover {
     cursor: pointer;
-    color: #8a8989;
+    color: #9e4522;
     transform: translateX(0.5px); }
   @media screen and (max-width: 361px) {
     .sub-art-1-2 {
-      font-size: 1.9rem; } }
+      font-size: 1.6rem; } }
   @media screen and (max-width: 687px) and (min-width: 362px) {
     .sub-art-1-2 {
-      font-size: 2rem; } }
+      font-size: 1.7rem; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .sub-art-1-2 {
-      font-size: 2.2rem; } }
+      font-size: 2rem; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .sub-art-1-2 {
-      font-size: 2.4rem; } }
+      font-size: 2.2rem; } }
   @media screen and (min-width: 1111px) and (max-width: 1350px) {
     .sub-art-1-2 {
-      font-size: 2.5rem; } }
+      font-size: 2.3rem; } }
 
 .titulo-art-1-2 {
   cursor: default;
-  color: #151414; }
+  color: #FE5D1C; }
 
 /**SECCION 2**/
 .articulo-2 {
@@ -9033,7 +9038,7 @@ main section form fieldset {
   color: #151414;
   transition: transform .1s; }
   .lista-404:hover {
-    color: #454848;
+    color: #9e4522;
     transform: translateX(0.3px); }
   @media screen and (max-width: 361px) {
     .lista-404 {
