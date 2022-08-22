@@ -7945,7 +7945,7 @@ a {
   transition: transform 1.6s ease; }
 
 header {
-  background-color: #151414;
+  background-color: #ffffff;
   width: 100%;
   min-height: 11vh;
   position: sticky;
@@ -7957,7 +7957,7 @@ header {
     header nav h1, header nav .h1 {
       font-size: 4.5rem;
       font-weight: 100;
-      color: #ffffff;
+      color: #151414;
       font-family: "Optician-Sans", sans-serif;
       transition: transform .1s; }
       header nav h1:hover, header nav .h1:hover {
@@ -7984,7 +7984,7 @@ header {
     header nav div ul li a p {
       font-size: 2rem;
       font-weight: 500;
-      color: #ffffff;
+      color: #151414;
       font-family: "Optician-Sans", sans-serif;
       transition: transform .1s; }
       header nav div ul li a p:hover {
@@ -8017,7 +8017,7 @@ header {
 .svg {
   height: 30px;
   width: 30px;
-  fill: white;
+  fill: #151414;
   margin-right: 3rem;
   transition: transform .1s; }
   .svg:hover {
@@ -8087,10 +8087,41 @@ header {
 .margin-index {
   margin-top: 0; }
 
-.imagenes-carrousel {
-  object-fit: cover;
+/**SECCION 0**/
+.articulo-0 {
+  width: 100%;
   height: 89vh;
-  width: 100vw; }
+  display: flex;
+  background-image: url("../assets/img/main/birra3.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.titulo-0 {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 800;
+  color: #ffffff;
+  font-family: "hk-grotesk, sans-serif"; }
+  @media screen and (max-width: 361px) {
+    .titulo-0 {
+      font-size: 2rem; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .titulo-0 {
+      font-size: 2.5rem; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .titulo-0 {
+      font-size: 3rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .titulo-0 {
+      font-size: 3rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .titulo-0 {
+      font-size: 4rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .titulo-0 {
+      font-size: 5rem; } }
 
 /**SECCION 1**/
 .titulos-art {

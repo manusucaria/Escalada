@@ -16,32 +16,37 @@
     </head>
     <body>
         <header>
-            <nav class="navbar w-100 grid-nav">
-                <div class="grid-lista me-auto my-auto" id="opciones">
-                    <ul class="d-flex flex-row me-auto my-auto">
-                        <li class="listas">
-                            <a class="" href="index.html"><p class="lista-nav">Inicio</p></a>
-                        </li>
-                        <li class="listas">
-                            <a class="" href="pages/feria.html"><p class="lista-nav">Tienda</p></a>
-                        </li>
-                        <li class="listas">
-                            <a class="" href="pages/nosotros.html"><p class="lista-nav">Variedades</p></a>
-                        </li>
-                        <li class="listas">
-                            <a class="" href="pages/carrito.html"><p class="lista-nav">Nosotros</p></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="grid-title me-auto my-auto">
+            <nav class="navbar-dark navbar-expand-md d-flex">
+                <div class="contenedor-titulo me-auto my-auto">
                     <a class="my-auto" href="index.html">
-                        <h1>Escalada</h1>
+                        <h1 class="my-auto">Escalada</h1>
                     </a>
                 </div>
-                <div class="grid-botones d-flex mx-auto my-auto align-self-center">
-                    <a class="iconos" href="index.html">
+                <div class="contenedor-listas mx-auto my-auto">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones" name="button">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="opciones">
+                        <ul class="lista navbar-nav">
+                            <li class="navbar-item listas">
+                                <a class="nav-link" href="index.html"><p class="lista-nav">Inicio</p></a>
+                            </li>
+                            <li class="navbar-item listas">
+                                <a class="nav-link" href="pages/feria.html"><p class="lista-nav">Tienda</p></a>
+                            </li>
+                            <li class="navbar-item listas">
+                                <a class="nav-link" href="pages/nosotros.html"><p class="lista-nav">Variedades</p></a>
+                            </li>
+                            <li class="navbar-item listas">
+                                <a class="nav-link" href="pages/carrito.html"><p class="lista-nav">Nosotros</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-none d-md-flex ms-auto my-auto">
+                    <a href="index.html">
                         <svg class="svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	                        viewBox="0 0 511.998 511.998" style="enable-background:new 0 0 511.998 511.998;" xml:space="preserve">
+                            viewBox="0 0 511.998 511.998" style="enable-background:new 0 0 511.998 511.998;" xml:space="preserve">
                             <g>
                                 <g>
                                     <path d="M396.767,175.648h-27.969l1.823,45.659h26.146c15.04,0,27.275,11.886,27.275,26.925V410.33
@@ -73,7 +78,7 @@
                                 </g>
                         </svg>
                     </a>
-                    <a class="iconos" href="pages/carrito.html">
+                    <a href="pages/carrito.html">
                         <svg class="svg" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 331.099 331.1" style="enable-background:new 0 0 331.099 331.1;"
                         xml:space="preserve">
@@ -92,7 +97,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a class="iconos" href="pages/carrito.html">
+                    <a href="pages/carrito.html">
                         <svg class="svg" id="Layer_1" enable-background="new 0 0 512.392 512.392" viewBox="0 0 512.392 512.392" xmlns="http://www.w3.org/2000/svg"><g><path d="m211.196 422c-116.346 0-211-94.654-211-211s94.654-211 211-211 211 94.654 211 211-94.654 211-211 211zm0-382c-94.29 0-171 76.71-171 171s76.71 171 171 171 171-76.71 171-171-76.71-171-171-171zm295.143 466.534c7.81-7.811 7.81-20.475 0-28.285l-89.5-89.5c-7.811-7.811-20.475-7.811-28.285 0s-7.81 20.475 0 28.285l89.5 89.5c3.905 3.905 9.024 5.857 14.143 5.857s10.236-1.952 14.142-5.857z"/></g></svg>
                     </a>
                 </div>
@@ -121,21 +126,28 @@
                 </ul>
             </div>
         </main>
-                <!--FOOTER-->
-                <footer>
-                    <div class="w-100 d-flex flex-column mx-auto">
-                        <div class="d-flex mx-auto mb-4">
-                            <a class="me-5" href="pages/nosotros.html"><p>Nosotros</p></a>
-                            <a class="me-5" href="pages/carrito.html"><p>Tienda</p></a>
-                            <a class="me-5" href="pages/feria.html"><p>Variedades</p></a>
-                            <a href="https://www.instagram.com/cervezaescalada/"><p>Instagram</p></a>
-                        </div>
-                        <div class="d-flex mx-auto mt-auto mb-3">
-                            <img class="copyright" src="assets/img/copyright.ico" alt="Copyright">
-                            <h4 class="mt-auto">CERVEZA ESCALADA</h4></small>
-                        </div>
-                    </div>
-                </footer>
+        <!--FOOTER-->
+        <footer>
+            <div class="w-100 d-flex flex-column mx-auto">
+                <div class="d-flex mx-auto mb-4">
+                    <a class="me-5" href="pages/nosotros.html"><p>Nosotros</p></a>
+                    <a class="me-5" href="pages/carrito.html"><p>Tienda</p></a>
+                    <a class="me-5" href="pages/feria.html"><p>Variedades</p></a>
+                    <a href="https://www.instagram.com/cervezaescalada/" target="_blank"><p>Instagram</p></a>
+                </div>
+                <div class="d-flex mx-auto mt-auto mb-3">
+                    <svg class="copyright" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 256 256" xml:space="preserve">
+                        <defs>
+                        </defs>
+                        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)" >
+                            <path d="M 45 90 C 20.187 90 0 69.813 0 45 C 0 20.187 20.187 0 45 0 c 24.813 0 45 20.187 45 45 C 90 69.813 69.813 90 45 90 z M 45 10 c -19.299 0 -35 15.701 -35 35 s 15.701 35 35 35 s 35 -15.701 35 -35 S 64.299 10 45 10 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: white; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                            <path d="M 46.173 70 c -13.785 0 -25 -11.215 -25 -25 s 11.215 -25 25 -25 c 3.938 0 7.87 0.946 11.37 2.737 c 2.458 1.258 3.432 4.27 2.174 6.729 c -1.258 2.459 -4.269 3.433 -6.729 2.174 c -2.127 -1.088 -4.42 -1.64 -6.815 -1.64 c -8.271 0 -15 6.729 -15 15 c 0 8.271 6.729 15 15 15 c 2.396 0 4.688 -0.552 6.816 -1.64 c 2.455 -1.258 5.471 -0.286 6.728 2.175 c 1.258 2.458 0.284 5.471 -2.175 6.728 C 54.042 69.054 50.11 70 46.173 70 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: white; fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+                        </g>
+                    </svg>
+                    <h4 class="mt-auto">CERVEZA ESCALADA</h4></small>
+                </div>
+            </div>
+        </footer>
     <script src="js/bootstrap.bundle.min.js">
     </script>
     <script src="js/wow.min.js"></script>
