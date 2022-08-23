@@ -7947,13 +7947,12 @@ a {
 header {
   background-color: #ffffff;
   width: 100%;
-  min-height: 11vh;
   position: sticky;
   top: 0;
   z-index: 2; }
   header nav {
     padding: 2rem;
-    height: auto; }
+    min-height: 11vh; }
     header nav h1, header nav .h1 {
       font-size: 4.5rem;
       font-weight: 100;
@@ -8128,7 +8127,7 @@ header {
   text-align: center;
   font-size: 6rem;
   font-weight: 800;
-  color: #FE5D1C;
+  color: #151414;
   font-family: "hk-grotesk, sans-serif";
   transition: transform .1s; }
   .titulos-art:hover {
@@ -8156,41 +8155,67 @@ header {
 
 /**AUTOR**/
 .articulo-1 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   width: 100%;
   display: flex; }
+  @media screen and (max-width: 361px) {
+    .articulo-1 {
+      flex-direction: column;
+      margin: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .articulo-1 {
+      flex-direction: column;
+      margin: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .articulo-1 {
+      flex-direction: column;
+      margin: 0; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .articulo-1 {
+      margin: 0; } }
 
 .grid-art-1-1 {
+  margin: 0 .5rem 0 1rem;
   width: 50%;
+  height: 89vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr); }
-
-.img-art-1 {
-  grid-column: 1/2;
-  grid-row: 1/4;
-  height: 89vh;
-  width: 100%;
-  padding-right: .5rem;
-  object-fit: cover;
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url("../assets/img/main/autor.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   transition: opacity 1s; }
-  .img-art-1:hover {
+  .grid-art-1-1:hover {
     opacity: .7; }
-  @media screen and (max-width: 900px) {
-    .img-art-1 {
-      padding: 0; } }
+  @media screen and (max-width: 361px) {
+    .grid-art-1-1 {
+      width: 100%;
+      margin: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .grid-art-1-1 {
+      width: 100%;
+      margin: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .grid-art-1-1 {
+      width: 100%;
+      margin: 0; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .grid-art-1-1 {
+      margin: 0; } }
 
 .textos-art-1 {
   grid-column: 1/2;
   grid-row: 1/4;
-  z-index: 1; }
+  opacity: 1; }
 
 .sub-art-1 {
   text-align: center;
   font-size: 2.7rem;
   font-weight: 500;
-  color: #FE5D1C;
+  color: #151414;
   font-family: "hk-grotesk, sans-serif";
   transition: transform .1s; }
   .sub-art-1:hover {
@@ -8214,39 +8239,55 @@ header {
       font-size: 2.3rem; } }
 
 .titulo-art-1 {
-  cursor: default; }
+  cursor: default;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s; }
+  .titulo-art-1:hover {
+    opacity: 1; }
 
 /**TRADICIONAL**/
 .grid-art-1-2 {
+  margin: 0 1rem 0 .5rem;
   width: 50%;
+  height: 89vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr); }
-
-.img-2-art-1 {
-  grid-column: 1/2;
-  grid-row: 1/4;
-  width: 100%;
-  height: 89vh;
-  padding-left: .5rem;
-  object-fit: cover;
+  grid-template-rows: repeat(3, 1fr);
+  background-image: url("../assets/img/main/tradicional.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   transition: opacity 1s; }
-  .img-2-art-1:hover {
+  .grid-art-1-2:hover {
     opacity: .7; }
-  @media screen and (max-width: 900px) {
-    .img-2-art-1 {
-      padding: 0; } }
+  @media screen and (max-width: 361px) {
+    .grid-art-1-2 {
+      width: 100%;
+      margin: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .grid-art-1-2 {
+      width: 100%;
+      margin: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .grid-art-1-2 {
+      width: 100%;
+      margin: 0; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .grid-art-1-2 {
+      margin: 0; } }
 
 .textos-art-1-2 {
   grid-column: 1/2;
   grid-row: 1/4;
-  z-index: 1; }
+  opacity: 1; }
 
 .sub-art-1-2 {
   text-align: center;
   font-size: 2.7rem;
   font-weight: 500;
-  color: #FE5D1C;
+  color: #151414;
   font-family: "hk-grotesk, sans-serif";
   transition: transform .1s; }
   .sub-art-1-2:hover {
@@ -8271,7 +8312,11 @@ header {
 
 .titulo-art-1-2 {
   cursor: default;
-  color: #FE5D1C; }
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 1s; }
+  .titulo-art-1-2:hover {
+    opacity: 1; }
 
 /**SECCION 2**/
 .articulo-2 {
