@@ -39,21 +39,21 @@
 // }else{
 //     alert("Los Datos son Incorrectos")
 // }
-let notaUno = parseInt(prompt("ingrese la nota del Primer Parcial: "));
-let notaDos = parseInt(prompt("ingrese la nota del Segundo Parcial: "));
+// let notaUno = parseInt(prompt("ingrese la nota del Primer Parcial: "));
+// let notaDos = parseInt(prompt("ingrese la nota del Segundo Parcial: "));
 
-let promedio = ((notaUno + notaDos) / 2);
-alert("El Promedio del Alumno es: " + promedio);
+// let promedio = ((notaUno + notaDos) / 2);
+// alert("El Promedio del Alumno es: " + promedio);
 
-if(promedio == 10){
-    alert("Excelente");
-}else if (promedio >= 7 && promedio < 10){
-    alert("Aprobado");
-}else if (promedio >= 1 && promedio < 7){
-    alert("Reprobado");
-}else{
-    alert("Datos Incorrectos");
-}
+// if(promedio == 10){
+//     alert("Excelente");
+// }else if (promedio >= 7 && promedio < 10){
+//     alert("Aprobado");
+// }else if (promedio >= 1 && promedio < 7){
+//     alert("Reprobado");
+// }else{
+//     alert("Datos Incorrectos");
+// }
 
 
 
