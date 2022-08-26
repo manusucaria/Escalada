@@ -8012,6 +8012,32 @@ header {
     .contenedor-titulo {
       margin-left: 5rem; } }
 
+.logo {
+  object-fit: contain;
+  width: 180px;
+  height: 11vh;
+  margin: auto 0;
+  margin-right: auto;
+  margin-left: 2rem; }
+  @media screen and (max-width: 361px) {
+    .logo {
+      width: 130px; } }
+  @media screen and (max-width: 687px) and (min-width: 362px) {
+    .logo {
+      width: 150px; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .logo {
+      margin-left: 2rem;
+      width: 140px; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .logo {
+      margin-left: 2rem;
+      width: 160px; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .logo {
+      margin-left: 2rem;
+      width: 180px; } }
+
 /**BOTONES**/
 .svg {
   height: 30px;
@@ -8829,7 +8855,7 @@ main section form fieldset {
   min-height: 89vh;
   margin-top: 1rem;
   margin-bottom: 10rem;
-  background-image: url(../assets/img/feria/tienda.jpg);
+  background-image: url(../assets/img/feria/fondotienda.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8860,7 +8886,7 @@ main section form fieldset {
   font-size: 6rem;
   font-weight: 800;
   color: #ffffff;
-  font-family: "hk-grotesk, sans-serif"; }
+  font-family: "Optician-Sans", sans-serif; }
   @media screen and (max-width: 361px) {
     .titulo-tienda {
       font-size: 2rem; } }
@@ -8882,8 +8908,8 @@ main section form fieldset {
 
 .titulo-cervezas {
   text-align: center;
-  font-size: 5rem;
-  font-weight: 800;
+  font-size: 4rem;
+  font-weight: 400;
   color: #151414;
   margin-bottom: 2rem;
   font-family: "hk-grotesk, sans-serif"; }
@@ -8901,10 +8927,10 @@ main section form fieldset {
       font-size: 3.5rem; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .titulo-cervezas {
-      font-size: 4.5rem; } }
+      font-size: 3.8rem; } }
   @media screen and (min-width: 1111px) and (max-width: 1350px) {
     .titulo-cervezas {
-      font-size: 4rem; } }
+      font-size: 3.9rem; } }
 
 .titulos-feria {
   font-size: 2rem;
@@ -8940,8 +8966,8 @@ main section form fieldset {
 
 .svg-tienda-1 {
   margin: 1rem;
-  height: 35px;
-  width: 35px; }
+  height: 30px;
+  width: 30px; }
   @media screen and (max-width: 361px) {
     .svg-tienda-1 {
       height: 30px;
@@ -8961,8 +8987,8 @@ main section form fieldset {
 
 .svg-tienda-2 {
   margin: 1rem;
-  height: 35px;
-  width: 35px; }
+  height: 30px;
+  width: 30px; }
   @media screen and (max-width: 361px) {
     .svg-tienda-2 {
       height: 30px;
@@ -8979,6 +9005,31 @@ main section form fieldset {
     .svg-tienda-2 {
       height: 35px;
       width: 35px; } }
+
+.precios {
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #151414;
+  font-family: "hk-grotesk, sans-serif"; }
+  @media screen and (max-width: 361px) {
+    .precios {
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .precios {
+      font-size: 1.5rem; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .precios {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .precios {
+      font-size: 1.7rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .precios {
+      font-size: 1.8rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .precios {
+      font-size: 1.8rem; } }
 
 .grid-feria {
   width: 75%;

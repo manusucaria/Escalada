@@ -3,7 +3,7 @@
     min-height: 89vh;
     margin-top: 1rem;
     margin-bottom: 10rem;
-    background-image: url(../assets/img/feria/tienda.jpg);
+    background-image: url(../assets/img/feria/fondotienda.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 .titulo-tienda{
     text-align: center;
     @include texto(6rem,800,map-get($map:$paleta, $key: 'white'));
-    font-family: $cuerpo;
+    font-family: $escalada;
     @include cel{
         font-size: 2rem;
     }
@@ -54,7 +54,7 @@
 }
 .titulo-cervezas{
     text-align: center;
-    @include texto(5rem,800,map-get($map:$paleta, $key: 'black'));
+    @include texto(4rem,400,map-get($map:$paleta, $key: 'black'));
     margin-bottom: 2rem;
     font-family: $cuerpo;
     @include cel{
@@ -70,10 +70,10 @@
         font-size: 3.5rem;
     }
     @include desktop{
-        font-size: 4.5rem;
+        font-size: 3.8rem;
     }
     @include wide{
-        font-size: 4rem;
+        font-size: 3.9rem;
     }
 }
 .titulos-feria{
@@ -108,8 +108,8 @@
 }
 .svg-tienda-1{
     margin: 1rem;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     @include cel{
         height: 30px;
         width: 30px;
@@ -129,8 +129,8 @@
 }
 .svg-tienda-2{
     margin: 1rem;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     @include cel{
         height: 30px;
         width: 30px;
@@ -146,6 +146,29 @@
     @include tablet-xl{
         height: 35px;
         width: 35px;
+    }
+}
+.precios{
+    text-align: center;
+    @include texto(1.7rem,400,map-get($map:$paleta, $key: 'black'));
+    font-family: $cuerpo;
+    @include cel{
+        font-size: 1.4rem;
+    }
+    @include smart{
+        font-size: 1.5rem;
+    }
+    @include tablet{
+        font-size: 1.5rem;
+    }
+    @include tablet-xl{
+        font-size: 1.7rem;
+    }
+    @include desktop{
+        font-size: 1.8rem;
+    }
+    @include wide{
+        font-size: 1.8rem;
     }
 }
 //**GRID**//
