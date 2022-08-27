@@ -8,27 +8,34 @@ footer{
         font-family: $escalada;
         transition: transform .1s;
         margin-top: 3rem;
+        margin-right: 3rem;
         &:hover{
             color: map-get($map:$paleta, $key: 'third');
             transform: translateX(.3px);
         }
         @include cel{
-            font-size: 1.1rem;
+            font-size: .9rem;
+            margin-right: 0;
         }
-        @media screen and (max-width: 687px) and (min-width: 362px){
-            font-size: 1.2rem;
+        @include smart{
+            font-size: 1.1rem;
+            margin-right: 0;
+        }
+        @include tablet{
+            font-size: 1.3rem;
+            margin-right: 1.2rem;
         }
         @include tablet-xl{
             font-size: 1.3rem;
+            margin-right: 1.7rem;
         }
         @include desktop{
             font-size: 1.5rem;
+            margin-right: 2rem;
         }
-        @media screen and (min-width: 1111px) and (max-width: 1199px){
-            font-size: 1.6rem;
-        }
-        @media screen and (min-width: 1200px) and (max-width: 1350px){
+        @include desktop{
             font-size: 1.7rem;
+            margin-right: 2rem;
         }
     }
     h4{

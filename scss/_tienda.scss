@@ -1,0 +1,974 @@
+.hero-tienda{
+    width: 75%;
+    min-height: 89vh;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    background-image: url(../assets/img/feria/fondotienda.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include cel{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    @include smart{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    @include tablet{
+        width: 85%;
+        margin-bottom: 8rem;
+    }
+    @include tablet-xl{
+        width: 85%;
+        margin-bottom: 8rem;
+    }
+    @include desktop{
+        width: 80%;
+        margin-bottom: 10rem;
+    }
+}
+.titulo-tienda{
+    text-align: center;
+    @include texto(6rem,800,map-get($map:$paleta, $key: 'white'));
+    font-family: $escalada;
+    @include cel{
+        font-size: 2rem;
+    }
+    @include smart{
+        font-size: 2.5rem;
+    }
+    @include tablet{
+        font-size: 3rem;
+    }
+    @include tablet-xl{
+        font-size: 3.5rem;
+    }
+    @include desktop{
+        font-size: 4rem;
+    }
+    @include wide{
+        font-size: 5rem;
+    }
+}
+.titulo-cervezas{
+    text-align: center;
+    @include texto(2.5rem,400,map-get($map:$paleta, $key: 'black'));
+    margin-bottom: 2rem;
+    font-family: $cuerpo;
+    @include cel{
+        font-size: 1.9rem;
+    }
+    @include smart{
+        font-size: 2.1rem;
+    }
+    @include tablet{
+        font-size: 2.2rem;
+    }
+    @include tablet-xl{
+        font-size: 2.3rem;
+    }
+    @include desktop{
+        font-size: 2.3rem;
+    }
+    @include wide{
+        font-size: 2.5rem;
+    }
+}
+.titulos-feria{
+    @include texto(2rem,400,map-get($map:$paleta, $key: 'black'));
+    margin-bottom: 1rem;
+    @include cel{
+        font-size: 1.6rem;
+    }
+    @media screen and (max-width: 687px) and (min-width: 362px){
+        font-size: 1.7rem;
+    }
+    @include tablet-xl{
+        font-size: 1.7rem;
+    }
+    @include desktop{
+        font-size: 1.8rem;
+    }
+    @include wide{
+        font-size: 1.8rem;
+    }
+}
+.div-texto-feria{
+    margin-top: 1rem;
+}
+.img-feria{
+    width: 100%;
+    height: 15vh;
+    object-fit: contain;
+}
+.a-svg{
+    margin-top: 1rem;
+}
+.svg-tienda-1{
+    margin: 1rem;
+    height: 30px;
+    width: 30px;
+    @include cel{
+        height: 30px;
+        width: 30px;
+    }
+    @include smart{
+        height: 30px;
+        width: 30px;
+    }
+    @include tablet{
+        height: 35px;
+        width: 35px;
+    }
+    @include tablet-xl{
+        height: 35px;
+        width: 35px;
+    }
+}
+.svg-tienda-2{
+    margin: 1rem;
+    height: 30px;
+    width: 30px;
+    @include cel{
+        height: 30px;
+        width: 30px;
+    }
+    @include smart{
+        height: 30px;
+        width: 30px;
+    }
+    @include tablet{
+        height: 35px;
+        width: 35px;
+    }
+    @include tablet-xl{
+        height: 35px;
+        width: 35px;
+    }
+}
+.precios{
+    text-align: center;
+    @include texto(1.7rem,400,map-get($map:$paleta, $key: 'black'));
+    font-family: $cuerpo;
+    @include cel{
+        font-size: 1.4rem;
+    }
+    @include smart{
+        font-size: 1.5rem;
+    }
+    @include tablet{
+        font-size: 1.5rem;
+    }
+    @include tablet-xl{
+        font-size: 1.7rem;
+    }
+    @include desktop{
+        font-size: 1.8rem;
+    }
+    @include wide{
+        font-size: 1.8rem;
+    }
+}
+//**GRID**//
+//**LATAS*//
+.grid-feria{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(100, auto);
+    @include cel{
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    @include smart{
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    @include tablet{
+        grid-template-columns: repeat(2, auto);
+        width: 85%;
+    }
+    @include tablet-xl{
+        grid-template-columns: repeat(2, auto);
+        width: 85%;
+    }
+    @include desktop{
+        grid-template-columns: repeat(3, auto);
+        width: 80%;
+    }
+    @include wide{
+        grid-template-columns: repeat(4, auto);
+    }
+}
+.feria-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include tablet-xl{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include desktop{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include wide{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+.feria-2{
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include tablet-xl{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include desktop{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    @include wide{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+.feria-3{
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include tablet-xl{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include desktop{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include wide{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
+.feria-4{
+    width: 100%;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include tablet-xl{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include desktop{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include wide{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+}
+.feria-5{
+    width: 100%;
+    grid-column: 5/6;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include tablet-xl{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include desktop{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    @include wide{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+}
+.feria-6{
+    width: 100%;
+    grid-column: 6/7;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: 1rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include tablet-xl{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include desktop{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include wide{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+//**GROWLERS*//
+.grid-feria-gr{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(100, auto);
+    @include cel{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    @include smart{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+    }
+    @include tablet-xl{
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+    }
+    @include desktop{
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }
+    @include wide{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.feria-1-gr{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include tablet-xl{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include desktop{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include wide{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+.feria-2-gr{
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include tablet-xl{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include desktop{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    @include wide{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+.feria-3-gr{
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include tablet-xl{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include desktop{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include wide{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
+.feria-4-gr{
+    width: 100%;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include tablet-xl{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include desktop{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include wide{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+}
+//*PACKS*//
+.grid-feria-p{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(100, auto);
+    @include cel{
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    @include smart{
+        grid-template-columns: auto;
+        width: 100%;
+    }
+    @include tablet{
+        grid-template-columns: repeat(2, auto);
+        width: 85%;
+    }
+    @include tablet-xl{
+        grid-template-columns: repeat(2, auto);
+        width: 85%;
+    }
+    @include desktop{
+        grid-template-columns: repeat(3, auto);
+        width: 80%;
+    }
+    @include wide{
+        grid-template-columns: repeat(4, auto);
+    }
+}
+.feria-1-p{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include tablet-xl{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include desktop{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include wide{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+.feria-2-p{
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include tablet-xl{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include desktop{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    @include wide{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}
+.feria-3-p{
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include tablet-xl{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include desktop{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include wide{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
+.feria-4-p{
+    width: 100%;
+    grid-column: 4/5;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 4/5;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include tablet-xl{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include desktop{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include wide{
+        grid-column: 4/5;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+}
+.feria-5-p{
+    width: 100%;
+    grid-column: 5/6;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 5/6;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include tablet-xl{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include desktop{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    @include wide{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+}
+.feria-6-p{
+    width: 100%;
+    grid-column: 6/7;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: 1rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 6/7;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include tablet-xl{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include desktop{
+        grid-column: 3/4;
+        grid-row: 2/3;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include wide{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+//*VARIOS*//
+.grid-feria-v{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(100, auto);
+    @include cel{
+        grid-template-columns:1fr;
+        width: 100%;
+    }
+    @include smart{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    @include tablet{
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+    }
+    @include tablet-xl{
+        grid-template-columns: repeat(2, 1fr);
+        width: 85%;
+    }
+    @include desktop{
+        grid-template-columns: repeat(3, 1fr);
+        width: 80%;
+    }
+    @include wide{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+.feria-1-v{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include tablet-xl{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include desktop{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    @include wide{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+}
+.feria-2-v{
+    width: 100%;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include tablet-xl{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include desktop{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    @include wide{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+}

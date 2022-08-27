@@ -1,15 +1,28 @@
 //NAV
 header{
-    background-color: map-get($map: $paleta, $key:'white');
+    background-color: map-get($map: $paleta, $key:'black');
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 2;
     nav{
+        display: flex;
         padding: 2rem;
         min-height: 11vh;
+        @include cel{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        @include smart{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        @include tablet{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
         h1{
-            @include texto(4.5rem,100,map-get($map:$paleta, $key: 'black'));
+            @include texto(4.5rem,100,map-get($map:$paleta, $key: 'white'));
             font-family: $escalada;
             transition: transform .1s;
             &:hover{
@@ -37,7 +50,7 @@ header{
         }
         div ul li a{
             p{
-                @include texto(2rem,500,map-get($map:$paleta, $key: 'black'));
+                @include texto(2rem,500,map-get($map:$paleta, $key: 'white'));
                 font-family: $escalada;
                 transition: transform .1s;
                 &:hover{
@@ -67,12 +80,12 @@ header{
 .contenedor-titulo{
     margin-left: 2rem;
     @media screen and (max-width: 767px){
-        margin-left: 5rem;
+        margin: auto auto;
     }
 }
 .logo{
     object-fit: contain;
-    width: 180px;
+    width: 200px;
     height: 11vh;
     margin: auto 0;
     margin-right: auto;
@@ -84,12 +97,12 @@ header{
         width: 150px;
     }
     @include tablet-xl{
-        margin-left: 2rem;
-        width: 140px;
+        margin-left: 0;
+        width: 130px;
     }
     @include desktop{
-        margin-left: 2rem;
-        width: 160px;
+        margin-left: .5rem;
+        width: 135px;
     }
     @include wide{
         margin-left: 2rem;
@@ -100,7 +113,7 @@ header{
 .svg{
     height: 30px;
     width: 30px;
-    fill: map-get($map:$paleta, $key: 'black');
+    fill: map-get($map:$paleta, $key: 'white');
     margin-right: 3rem;
     transition: transform .1s;
     &:hover{
@@ -137,8 +150,7 @@ header{
 /**HAMBURGUESA Y LISTA**/
 .contenedor-listas{
     @media screen and (max-width: 767px){
-        margin-right: auto;
-        margin-left: auto;
+        margin: auto auto;
     }
 }
 .lista{

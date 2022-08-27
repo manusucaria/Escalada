@@ -7945,18 +7945,31 @@ a {
   transition: transform 1.6s ease; }
 
 header {
-  background-color: #ffffff;
+  background-color: #000000;
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 2; }
   header nav {
+    display: flex;
     padding: 2rem;
     min-height: 11vh; }
+    @media screen and (max-width: 361px) {
+      header nav {
+        flex-direction: row;
+        justify-content: space-evenly; } }
+    @media screen and (max-width: 450px) and (min-width: 362px) {
+      header nav {
+        flex-direction: row;
+        justify-content: space-evenly; } }
+    @media screen and (max-width: 687px) and (min-width: 451px) {
+      header nav {
+        flex-direction: row;
+        justify-content: space-evenly; } }
     header nav h1, header nav .h1 {
       font-size: 4.5rem;
       font-weight: 100;
-      color: #151414;
+      color: #ffffff;
       font-family: "Optician-Sans", sans-serif;
       transition: transform .1s; }
       header nav h1:hover, header nav .h1:hover {
@@ -7983,7 +7996,7 @@ header {
     header nav div ul li a p {
       font-size: 2rem;
       font-weight: 500;
-      color: #151414;
+      color: #ffffff;
       font-family: "Optician-Sans", sans-serif;
       transition: transform .1s; }
       header nav div ul li a p:hover {
@@ -8010,11 +8023,11 @@ header {
   margin-left: 2rem; }
   @media screen and (max-width: 767px) {
     .contenedor-titulo {
-      margin-left: 5rem; } }
+      margin: auto auto; } }
 
 .logo {
   object-fit: contain;
-  width: 180px;
+  width: 200px;
   height: 11vh;
   margin: auto 0;
   margin-right: auto;
@@ -8027,12 +8040,12 @@ header {
       width: 150px; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .logo {
-      margin-left: 2rem;
-      width: 140px; } }
+      margin-left: 0;
+      width: 130px; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .logo {
-      margin-left: 2rem;
-      width: 160px; } }
+      margin-left: .5rem;
+      width: 135px; } }
   @media screen and (min-width: 1111px) and (max-width: 1350px) {
     .logo {
       margin-left: 2rem;
@@ -8042,7 +8055,7 @@ header {
 .svg {
   height: 30px;
   width: 30px;
-  fill: #151414;
+  fill: #ffffff;
   margin-right: 3rem;
   transition: transform .1s; }
   .svg:hover {
@@ -8078,8 +8091,7 @@ header {
 /**HAMBURGUESA Y LISTA**/
 @media screen and (max-width: 767px) {
   .contenedor-listas {
-    margin-right: auto;
-    margin-left: auto; } }
+    margin: auto auto; } }
 
 .lista {
   display: flex;
@@ -8158,7 +8170,7 @@ header {
   text-align: center;
   font-size: 6rem;
   font-weight: 800;
-  color: #151414;
+  color: #000000;
   font-family: "hk-grotesk, sans-serif";
   transition: transform .1s; }
   .titulos-art:hover {
@@ -8188,7 +8200,7 @@ header {
   text-align: center;
   font-size: 2.7rem;
   font-weight: 500;
-  color: #151414;
+  color: #000000;
   font-family: "hk-grotesk, sans-serif";
   transition: transform .1s; }
   .sub-art:hover {
@@ -8213,8 +8225,6 @@ header {
 
 /**AUTOR**/
 .articulo-1 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   width: 100%;
   display: flex; }
   @media screen and (max-width: 361px) {
@@ -8234,7 +8244,6 @@ header {
       margin: 0; } }
 
 .div-main {
-  margin: 0 .5rem 0 1rem;
   width: 50%;
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -8260,12 +8269,12 @@ header {
   grid-row: 1/4;
   width: 100%; }
   .img-op-main:hover {
-    opacity: 0.4;
+    opacity: 0.7;
     filter: blur(5px);
     transition: opacity 1s, filter 1s ease; }
   @media screen and (max-width: 687px) {
     .img-op-main {
-      opacity: 0.7;
+      opacity: 0.8;
       filter: blur(5px); } }
 
 .text-op-main {
@@ -8273,7 +8282,7 @@ header {
   grid-row: 1/4;
   font-size: 2.5rem;
   font-weight: 500;
-  color: #151414;
+  color: #000000;
   transition: opacity 1s ease; }
   .text-op-main:hover {
     opacity: 1; }
@@ -8284,7 +8293,6 @@ header {
 
 /**TRADICIONAL**/
 .div-main-1 {
-  margin: 0 1rem 0 .5rem;
   width: 50%;
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -8310,12 +8318,12 @@ header {
   grid-row: 1/4;
   width: 100%; }
   .img-op-main-1:hover {
-    opacity: 0.4;
+    opacity: 0.7;
     filter: blur(5px);
     transition: opacity 1s, filter 1s ease; }
   @media screen and (max-width: 687px) {
     .img-op-main-1 {
-      opacity: 0.7;
+      opacity: 0.8;
       filter: blur(5px); } }
 
 .text-op-main-1 {
@@ -8323,7 +8331,7 @@ header {
   grid-row: 1/4;
   font-size: 2.5rem;
   font-weight: 500;
-  color: #151414;
+  color: #000000;
   transition: opacity 1s ease; }
   .text-op-main-1:hover {
     opacity: 1; }
@@ -8435,7 +8443,7 @@ header {
 footer {
   margin-top: auto;
   bottom: 0;
-  background-color: #151414;
+  background-color: #000000;
   width: 100%; }
   footer p {
     font-size: 1.7rem;
@@ -8443,28 +8451,35 @@ footer {
     color: #ffffff;
     font-family: "Optician-Sans", sans-serif;
     transition: transform .1s;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    margin-right: 3rem; }
     footer p:hover {
       color: #8a8989;
       transform: translateX(0.3px); }
     @media screen and (max-width: 361px) {
       footer p {
-        font-size: 1.1rem; } }
-    @media screen and (max-width: 687px) and (min-width: 362px) {
+        font-size: .9rem;
+        margin-right: 0; } }
+    @media screen and (max-width: 450px) and (min-width: 362px) {
       footer p {
-        font-size: 1.2rem; } }
+        font-size: 1.1rem;
+        margin-right: 0; } }
+    @media screen and (max-width: 687px) and (min-width: 451px) {
+      footer p {
+        font-size: 1.3rem;
+        margin-right: 1.2rem; } }
     @media screen and (min-width: 688px) and (max-width: 900px) {
       footer p {
-        font-size: 1.3rem; } }
+        font-size: 1.3rem;
+        margin-right: 1.7rem; } }
     @media screen and (min-width: 901px) and (max-width: 1110px) {
       footer p {
-        font-size: 1.5rem; } }
-    @media screen and (min-width: 1111px) and (max-width: 1199px) {
+        font-size: 1.5rem;
+        margin-right: 2rem; } }
+    @media screen and (min-width: 901px) and (max-width: 1110px) {
       footer p {
-        font-size: 1.6rem; } }
-    @media screen and (min-width: 1200px) and (max-width: 1350px) {
-      footer p {
-        font-size: 1.7rem; } }
+        font-size: 1.7rem;
+        margin-right: 2rem; } }
   footer h4, footer .h4 {
     font-size: 1.3rem;
     font-weight: 200;
@@ -8569,7 +8584,7 @@ main section form fieldset {
   main section form fieldset input {
     font-size: 2.5rem;
     font-weight: 400;
-    color: #151414;
+    color: #000000;
     background-color: #ffffff;
     opacity: .9;
     border: 0.5px solid #171716;
@@ -8592,7 +8607,7 @@ main section form fieldset {
   main section form fieldset label {
     font-size: 2.7rem;
     font-weight: 400;
-    color: #151414;
+    color: #000000;
     opacity: .9; }
     @media screen and (max-width: 361px) {
       main section form fieldset label {
@@ -8612,7 +8627,7 @@ main section form fieldset {
   main section form fieldset select {
     font-size: 2.5rem;
     font-weight: 400;
-    color: #151414;
+    color: #000000;
     height: 5rem;
     cursor: pointer;
     opacity: .9;
@@ -8641,7 +8656,7 @@ main section form fieldset {
     main section form fieldset select option {
       font-size: 2.4rem;
       font-weight: 300;
-      color: #151414; }
+      color: #000000; }
       @media screen and (max-width: 361px) {
         main section form fieldset select option {
           font-size: 1.4rem; } }
@@ -8660,7 +8675,7 @@ main section form fieldset {
   main section form fieldset section input {
     font-size: 2.5rem;
     font-weight: 400;
-    color: #151414;
+    color: #000000;
     opacity: .9;
     border: 0.5px solid #171716;
     border-bottom: #6c4242 solid 0.5px; }
@@ -8689,7 +8704,7 @@ main section form fieldset {
   main section form fieldset textarea {
     font-size: 2.5rem;
     font-weight: 400;
-    color: #151414;
+    color: #000000;
     background-color: #ffffff;
     opacity: .9;
     border: 0.5 solid #171716;
@@ -8712,14 +8727,14 @@ main section form fieldset {
   main section form fieldset div input {
     font-size: 2.3rem;
     font-weight: 300;
-    color: #151414;
+    color: #000000;
     background-color: #ffffff;
     border-radius: 15%;
     border-bottom: #6c4242 solid 0.5px; }
   main section form fieldset div label {
     font-size: 2.3rem;
     font-weight: 300;
-    color: #151414;
+    color: #000000;
     background-color: #ffffff;
     border-radius: 10%; }
     @media screen and (max-width: 361px) {
@@ -8742,7 +8757,7 @@ main section form fieldset {
 .titulo-mapa {
   font-size: 2.6rem;
   font-weight: 400;
-  color: #151414; }
+  color: #000000; }
   @media screen and (max-width: 361px) {
     .titulo-mapa {
       font-size: 1.8rem; } }
@@ -8908,9 +8923,9 @@ main section form fieldset {
 
 .titulo-cervezas {
   text-align: center;
-  font-size: 4rem;
+  font-size: 2.5rem;
   font-weight: 400;
-  color: #151414;
+  color: #000000;
   margin-bottom: 2rem;
   font-family: "hk-grotesk, sans-serif"; }
   @media screen and (max-width: 361px) {
@@ -8918,24 +8933,24 @@ main section form fieldset {
       font-size: 1.9rem; } }
   @media screen and (max-width: 450px) and (min-width: 362px) {
     .titulo-cervezas {
-      font-size: 2rem; } }
+      font-size: 2.1rem; } }
   @media screen and (max-width: 687px) and (min-width: 451px) {
     .titulo-cervezas {
-      font-size: 3rem; } }
+      font-size: 2.2rem; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .titulo-cervezas {
-      font-size: 3.5rem; } }
+      font-size: 2.3rem; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .titulo-cervezas {
-      font-size: 3.8rem; } }
+      font-size: 2.3rem; } }
   @media screen and (min-width: 1111px) and (max-width: 1350px) {
     .titulo-cervezas {
-      font-size: 3.9rem; } }
+      font-size: 2.5rem; } }
 
 .titulos-feria {
   font-size: 2rem;
   font-weight: 400;
-  color: #151414;
+  color: #000000;
   margin-bottom: 1rem; }
   @media screen and (max-width: 361px) {
     .titulos-feria {
@@ -8958,8 +8973,8 @@ main section form fieldset {
 
 .img-feria {
   width: 100%;
-  object-fit: cover;
-  height: auto; }
+  height: 15vh;
+  object-fit: contain; }
 
 .a-svg {
   margin-top: 1rem; }
@@ -9010,7 +9025,7 @@ main section form fieldset {
   text-align: center;
   font-size: 1.7rem;
   font-weight: 400;
-  color: #151414;
+  color: #000000;
   font-family: "hk-grotesk, sans-serif"; }
   @media screen and (max-width: 361px) {
     .precios {
@@ -9032,7 +9047,7 @@ main section form fieldset {
       font-size: 1.8rem; } }
 
 .grid-feria {
-  width: 75%;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(6, auto);
   grid-template-rows: repeat(100, auto); }
@@ -9046,11 +9061,11 @@ main section form fieldset {
       width: 100%; } }
   @media screen and (max-width: 687px) and (min-width: 451px) {
     .grid-feria {
-      grid-template-columns: repeat(2 auto);
+      grid-template-columns: repeat(2, auto);
       width: 85%; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .grid-feria {
-      grid-template-columns: repeat(2 auto);
+      grid-template-columns: repeat(2, auto);
       width: 85%; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .grid-feria {
@@ -9063,6 +9078,7 @@ main section form fieldset {
 .feria-1 {
   grid-column: 1/2;
   grid-row: 1/2;
+  width: 100%;
   padding-left: 1rem;
   padding-right: .5rem; }
   @media screen and (max-width: 361px) {
@@ -9093,6 +9109,7 @@ main section form fieldset {
       grid-row: 1/2; } }
 
 .feria-2 {
+  width: 100%;
   grid-column: 2/3;
   grid-row: 1/2;
   padding-left: .5rem;
@@ -9129,6 +9146,7 @@ main section form fieldset {
       grid-row: 1/2; } }
 
 .feria-3 {
+  width: 100%;
   grid-column: 3/4;
   grid-row: 1/2;
   padding-left: .5rem;
@@ -9167,6 +9185,7 @@ main section form fieldset {
       grid-row: 1/2; } }
 
 .feria-4 {
+  width: 100%;
   grid-column: 4/5;
   grid-row: 1/2;
   padding-left: .5rem;
@@ -9207,6 +9226,7 @@ main section form fieldset {
       padding-right: 1rem; } }
 
 .feria-5 {
+  width: 100%;
   grid-column: 5/6;
   grid-row: 1/2;
   padding-left: .5rem;
@@ -9245,6 +9265,7 @@ main section form fieldset {
       padding-right: .5rem; } }
 
 .feria-6 {
+  width: 100%;
   grid-column: 6/7;
   grid-row: 1/2;
   padding-left: .5rem;
@@ -9284,10 +9305,547 @@ main section form fieldset {
       padding-left: .5rem;
       padding-right: .5rem; } }
 
+.grid-feria-gr {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(100, auto); }
+  @media screen and (max-width: 361px) {
+    .grid-feria-gr {
+      grid-template-columns: 1fr;
+      width: 100%; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .grid-feria-gr {
+      grid-template-columns: 1fr;
+      width: 100%; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .grid-feria-gr {
+      grid-template-columns: repeat(2, 1fr);
+      width: 85%; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .grid-feria-gr {
+      grid-template-columns: repeat(2, 1fr);
+      width: 85%; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .grid-feria-gr {
+      grid-template-columns: repeat(3, 1fr);
+      width: 80%; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .grid-feria-gr {
+      grid-template-columns: repeat(4, 1fr); } }
+
+.feria-1-gr {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-1-gr {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-1-gr {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-1-gr {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-1-gr {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-1-gr {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-1-gr {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+
+.feria-2-gr {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-2-gr {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-2-gr {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-2-gr {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-2-gr {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-2-gr {
+      grid-column: 2/3;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-2-gr {
+      grid-column: 2/3;
+      grid-row: 1/2; } }
+
+.feria-3-gr {
+  width: 100%;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-3-gr {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-3-gr {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-3-gr {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-3-gr {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-3-gr {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-3-gr {
+      grid-column: 3/4;
+      grid-row: 1/2; } }
+
+.feria-4-gr {
+  width: 100%;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-4-gr {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-4-gr {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-4-gr {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-4-gr {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-4-gr {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-4-gr {
+      grid-column: 4/5;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+
+.grid-feria-p {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(100, auto); }
+  @media screen and (max-width: 361px) {
+    .grid-feria-p {
+      grid-template-columns: auto;
+      width: 100%; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .grid-feria-p {
+      grid-template-columns: auto;
+      width: 100%; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .grid-feria-p {
+      grid-template-columns: repeat(2, auto);
+      width: 85%; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .grid-feria-p {
+      grid-template-columns: repeat(2, auto);
+      width: 85%; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .grid-feria-p {
+      grid-template-columns: repeat(3, auto);
+      width: 80%; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .grid-feria-p {
+      grid-template-columns: repeat(4, auto); } }
+
+.feria-1-p {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-1-p {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-1-p {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-1-p {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-1-p {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-1-p {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-1-p {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+
+.feria-2-p {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-2-p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-2-p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-2-p {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-2-p {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-2-p {
+      grid-column: 2/3;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-2-p {
+      grid-column: 2/3;
+      grid-row: 1/2; } }
+
+.feria-3-p {
+  width: 100%;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-3-p {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-3-p {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-3-p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-3-p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-3-p {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-3-p {
+      grid-column: 3/4;
+      grid-row: 1/2; } }
+
+.feria-4-p {
+  width: 100%;
+  grid-column: 4/5;
+  grid-row: 1/2;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-4-p {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-4-p {
+      grid-column: 1/2;
+      grid-row: 4/5;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-4-p {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-4-p {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-4-p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-4-p {
+      grid-column: 4/5;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+
+.feria-5-p {
+  width: 100%;
+  grid-column: 5/6;
+  grid-row: 1/2;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-5-p {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-5-p {
+      grid-column: 1/2;
+      grid-row: 5/6;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-5-p {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-5-p {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-5-p {
+      grid-column: 2/3;
+      grid-row: 2/3; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-5-p {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+
+.feria-6-p {
+  width: 100%;
+  grid-column: 6/7;
+  grid-row: 1/2;
+  padding-left: .5rem;
+  padding-right: 1rem; }
+  @media screen and (max-width: 361px) {
+    .feria-6-p {
+      grid-column: 1/2;
+      grid-row: 6/7;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-6-p {
+      grid-column: 1/2;
+      grid-row: 6/7;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-6-p {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-6-p {
+      grid-column: 2/3;
+      grid-row: 3/4;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-6-p {
+      grid-column: 3/4;
+      grid-row: 2/3;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-6-p {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      padding-left: .5rem;
+      padding-right: .5rem; } }
+
+.grid-feria-v {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(100, auto); }
+  @media screen and (max-width: 361px) {
+    .grid-feria-v {
+      grid-template-columns: 1fr;
+      width: 100%; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .grid-feria-v {
+      grid-template-columns: 1fr;
+      width: 100%; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .grid-feria-v {
+      grid-template-columns: repeat(2, 1fr);
+      width: 85%; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .grid-feria-v {
+      grid-template-columns: repeat(2, 1fr);
+      width: 85%; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .grid-feria-v {
+      grid-template-columns: repeat(3, 1fr);
+      width: 80%; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .grid-feria-v {
+      grid-template-columns: repeat(4, 1fr); } }
+
+.feria-1-v {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-1-v {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-1-v {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-1-v {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-1-v {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-1-v {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-1-v {
+      grid-column: 1/2;
+      grid-row: 1/2; } }
+
+.feria-2-v {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-2-v {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-2-v {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-2-v {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-2-v {
+      grid-column: 2/3;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-2-v {
+      grid-column: 2/3;
+      grid-row: 1/2; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-2-v {
+      grid-column: 2/3;
+      grid-row: 1/2; } }
+
 .texto-404 {
   font-size: 2.6rem;
   font-weight: 500;
-  color: #151414;
+  color: #000000;
   transition: transform .1s; }
   @media screen and (max-width: 361px) {
     .texto-404 {
@@ -9308,7 +9866,7 @@ main section form fieldset {
 .lista-404 {
   font-size: 2.6rem;
   font-weight: 500;
-  color: #151414;
+  color: #000000;
   transition: transform .1s; }
   .lista-404:hover {
     color: #9e4522;
