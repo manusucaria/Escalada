@@ -8868,7 +8868,6 @@ main section form fieldset {
 .hero-tienda {
   width: 75%;
   min-height: 89vh;
-  margin-top: 1rem;
   margin-bottom: 10rem;
   background-image: url(../assets/img/feria/fondotienda.jpg);
   background-position: center center;
@@ -8969,9 +8968,10 @@ main section form fieldset {
       font-size: 1.8rem; } }
 
 .div-texto-feria {
-  margin-top: 1rem; }
+  margin-top: 1.3rem; }
 
 .img-feria {
+  margin-top: 1rem;
   width: 100%;
   height: 15vh;
   object-fit: contain; }
