@@ -69,6 +69,6 @@ const growlerEnvase = new Producto("Growler", "Solo Envase", 200);
 const gorra = new Producto("Gorra", "Escalada", 580);
 const copa = new Producto("Copa", "Escalada", 1290);
 
-console.log("El 6 Pack de latas de " + lataBlonde.variedad + " tiene un costo final de $" + lataBlonde.sixpack())
-console.log("La " + lataHoney.tipo + " de " + lataHoney.variedad + " tiene un costo mayorista de $ " + lataHoney.mayorista())
+console.log("El 6 Pack de latas de " + lataBlonde.variedad + " tiene un costo final de $" + lataBlonde.sixpack());
+console.log("La " + lataHoney.tipo + " de " + lataHoney.variedad + " tiene un costo mayorista de $ " + lataHoney.mayorista());
 
