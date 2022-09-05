@@ -1,45 +1,74 @@
-console.log("Ejemplo Tabla del 3: ");
-for(let i = 1 ; i <= 30 ; i++){
-    if(i % 3 == 0){
-        console.log(i + " Es multiplo de 3");
-    }
-}
-console.log("Ejemplo Cuestionario de Internet:");
-let bienvenida = prompt("Bienvenido al Cuestionario de Usuario de Fibertel, desea responder unas preguntas a modo de encuesta?");
-while(bienvenida != "si"){
-    alert("Gracias igual, que tenga un bien dia")
+let carrito = 0;
+let numeroDeItems = 0;
+let aumentar = () => numeroDeItems = numeroDeItems + 1;
+let sacar = () => numeroDeItems = numeroDeItems - 1;
+let agregarCarrito = () => carrito = carrito + numeroDeItems;
+let sumar = prompt("Quiere sumar un item mas?");
+while(sumar != "si"){
     break;
 }
-while(bienvenida == "si"){
-    let pregunta1 = prompt("Cuan conforme esta ud con el servicio de Internet del 1 al 5?");
-    switch(pregunta1){
-        case "1":
-            pregunta2 = prompt("Indique en que aspecto le gustaria que mejoremos:");
-            alert("Pruebe Claro Hogar que es mejor (nosotros no se lo dijimos)!");
-            console.log("Puntuación del Cliente: " + pregunta1 + " Area a mejorar: " + pregunta2);
-            break;
-        case "2":
-            pregunta2 = prompt("Indique en que aspecto le gustaria que mejoremos:");
-            alert("Gracias por su respuesta, intentaremos mejorar el servicio");
-            console.log("Puntuación del Cliente: " + pregunta1 + " Area a mejorar: " + pregunta2);
-            break;
-        case "3":
-            pregunta2 = prompt("Indique en que aspecto le gustaria que mejoremos:");
-            alert("Gracias por su respuesta mediocre, podria ser peor!");
-            console.log("Puntuación del Cliente: " + pregunta1 + " Area a mejorar: " + pregunta2);
-            break;
-        case "4":
-            pregunta2 = prompt("Indique en que aspecto le gustaria que mejoremos:");
-            alert("Nos alegra saber que esta bastante conforme con el servicio, gracias!");
-            console.log("Puntuación del Cliente: " + pregunta1 + " Area a mejorar: " + pregunta2);
-            break;
-        case "5":
-            alert("Nos alegra saber que esta tan conforme con el servicio, gracias por elegirnos!");
-            console.log("Puntuación del Cliente: " + pregunta1);
-            break;
-        default:
-            alert("Aprenda bien los numeros, ud no merece nuestro servicio, gracias!");
-            break;
-    }
+while(sumar == "si"){
+    console.log("Su Numero total de Itemas es de: " + aumentar());
     break;
 }
+let restar = prompt("Quiere restar un item?");
+while(restar != "si"){
+    break;
+}
+while(restar == "si"){
+    console.log("Su Numero total de Itemas es de: " + sacar());
+    break;
+}
+let agregar = prompt("Desea agregar los items al carrito?");
+while(agregar != "si"){
+    console.log(carrito);
+    break;
+}
+while(agregar == "si"){
+    console.log("Total de items agregados al carrito: " + agregarCarrito());
+    break;
+}
+
+class Producto{
+    constructor(tipo, variedad, precio){
+        this.tipo = tipo;
+        this.variedad = variedad;
+        this.precio = precio;
+        this.vendido = false;
+    }
+    sixpack(){
+        return ((this.precio * 0.95) * 6).toFixed(0);
+    }
+    twelvepack(){
+        return ((this.precio * 0.93) * 6).toFixed(0);
+    }
+    twentyfourpack(){
+        return ((this.precio * 0.91) * 6).toFixed(0);
+    }
+    mayorista(){
+        return (this.precio * 0.85).toFixed(0);
+    }
+    vender(){
+        this.vendido = true;
+    }
+}
+
+/*LATAS*/
+const lataHoney = new Producto("Lata", "Honey", 380);
+const lataBlonde = new Producto("Lata", "Blonde", 380);
+const lataPaleAle = new Producto("Lata", "Pale Ale", 380);
+const lataDoblePale = new Producto("Lata", "Doble Pale", 380);
+const lataHibiscus = new Producto("Lata", "Hibiscus", 380);
+const lataFaramir = new Producto("Lata", "Faramir", 380);
+/*GROWLERS*/
+const growlerTradicional = new Producto("Growler", "Tradicional", 580);
+const growlerEstacion = new Producto("Growler", "de Estación", 590);
+const growlerAutor = new Producto("Growler", "de Autor", 630);
+const growlerEnvase = new Producto("Growler", "Solo Envase", 200);
+/*OTROS*/
+const Gorra = new Producto("Gorra", "Escalada", 580);
+const Copa = new Producto("Copa", "Escalada", 1290);
+
+console.log("El 6 Pack de latas de " + lataBlonde.variedad + " tiene un costo final de $" + lataBlonde.sixpack())
+console.log("La " + lataHoney.tipo + " de " + lataHoney.variedad + " tiene un costo mayorista de $ " + lataHoney.mayorista())
+
