@@ -8,7 +8,7 @@ while(sumar != "si"){
     break;
 }
 while(sumar == "si"){
-    console.log("Su Numero total de Itemas es de: " + aumentar());
+    console.log("Su Numero total de Items es de: " + aumentar());
     break;
 }
 let restar = prompt("Quiere restar un item?");
@@ -16,7 +16,7 @@ while(restar != "si"){
     break;
 }
 while(restar == "si"){
-    console.log("Su Numero total de Itemas es de: " + sacar());
+    console.log("Su Numero total de Items es de: " + sacar());
     break;
 }
 let agregar = prompt("Desea agregar los items al carrito?");
