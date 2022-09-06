@@ -18,11 +18,11 @@ footer{
             margin-right: 0;
         }
         @include smart{
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin-right: 0;
         }
         @include tablet{
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-right: 1.2rem;
         }
         @include tablet-xl{
@@ -30,11 +30,11 @@ footer{
             margin-right: 1.7rem;
         }
         @include desktop{
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-right: 2rem;
         }
         @include desktop{
-            font-size: 1.7rem;
+            font-size: 1.6rem;
             margin-right: 2rem;
         }
     }
@@ -103,26 +103,41 @@ footer{
         width: 1.5rem;;
     }
 }
+.img-wa{
+    margin-top: auto;
+    margin-right: 2px;
+    margin-bottom: 6px;
+    height: 7rem;
+    width: 7rem;
+    @include cel{
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+    @include smart{
+        height: 4rem;
+        width: 4rem;
+    }
+    @include tablet{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+    @include tablet-xl{
+        height: 5rem;
+        width: 5rem;
+    }
+}
 /**GRID FOOTER**/
 .grid-footer{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
 }
 .grid-footer-1{
-    grid-column: 1/2;
+    grid-column: 3/4;
     grid-row: 1/2;
 }
 .grid-footer-2{
     grid-column: 2/3;
-    grid-row: 1/2;
-}
-.grid-footer-3{
-    grid-column: 3/5;
-    grid-row: 1/2;
-}
-.grid-footer-4{
-    grid-column: 5/7;
     grid-row: 1/2;
 }

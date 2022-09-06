@@ -171,6 +171,17 @@
         font-size: 1.8rem;
     }
 }
+.boton-carrito{
+    background-color: red;
+    border: none;
+    border-radius: 1px;
+}
+.texto-boton{
+    text-align: center;
+    margin: auto auto;
+    @include texto(1.5rem,400,map-get($map:$paleta, $key: 'white'));
+    padding: 3px;
+}
 //**GRID**//
 //**LATAS*//
 .grid-feria{
