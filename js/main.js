@@ -28,7 +28,8 @@ class Producto{
     }
 }
 class Pedido{
-    constructor(variedad, cantidad, precio){
+    constructor(tipo, variedad, cantidad, precio){
+        this.tipo = tipo;
         this.variedad = variedad;
         this.cantidad = cantidad;
         this.precio = precio;
@@ -47,8 +48,9 @@ const growlerEstacion = new Producto("Growler", "de Estación", 100, 590);
 const growlerAutor = new Producto("Growler", "de Autor", 100, 630);
 const growlerEnvase = new Producto("Growler", "Solo Envase", 100, 200);
 /*OTROS*/
-const gorra = new Producto("Gorra", "Escalada", 10, 580);
-const copa = new Producto("Copa", "Escalada", 10, 1290);
+const gorraAzul = new Producto("Gorra", "Azul", 10, 580);
+const gorraGris = new Producto("Gorra", "Gris", 10, 580);
+const copa = new Producto("Copa", "250ml", 10, 1290);
 /*PUSH AL STOCK*/
 Stock.push(lataHoney);
 Stock.push(lataBlonde);
@@ -60,7 +62,8 @@ Stock.push(growlerTradicional);
 Stock.push(growlerEstacion);
 Stock.push(growlerAutor);
 Stock.push(growlerEnvase);
-Stock.push(gorra);
+Stock.push(gorraAzul);
+Stock.push(gorraGris);
 Stock.push(copa);
 
 /*MENU*/
@@ -70,30 +73,22 @@ function menu(){
     return opcion;
 }
 function latas(){
-    let variedad = prompt("Indique la variedad de lata a elegir entre Honey, Blonde, Pale Ale, Doble Pale, Hibiscus y Faramir:");
-    let cantidad = parseInt(prompt("Indique cuantas latas quiere:"));
-    let pedidolata = new Pedido(variedad, cantidad, lataHoney.precio * cantidad);
-    Carrito.push(pedidolata);
-    alert("Ud ha seleccionado " + pedidolata.cantidad + " Lata/s de " + pedidolata.variedad + " por Un Valor Total de $" + pedidolata.precio);
+    let variedad = parseInt(prompt("Indique la variedad de lata a elegir entre: \n 1) Honey \n 2) Blonde \n 3) Pale Ale \n 4) Doble Pale \n 5) Hibiscus \n 6) Faramir:"));
+    return variedad;
 }
 function growlers(){
-    let variedad = prompt("Indique la variedad de Cerveza en Growler a elegir entre Honey, Blonde, Pale Ale, Doble Pale, Hibiscus y Faramir:");
-    let cantidad = parseInt(prompt("Indique cuantas Unidades quiere:"));
-    let pedidogrowler = new Pedido(variedad, cantidad, growlerTradicional.precio * cantidad);
-    Carrito.push(pedidogrowler);
-    alert("Ud ha seleccionado " + pedidogrowler.cantidad + " Growler/s de " + pedidogrowler.variedad + " por Un Valor Total de $" + pedidogrowler.precio);
+    let variedad = parseInt(prompt("Indique la variedad de Cerveza en Growler a elegir entre: \n 1) Tradicional \n 2) Estacion \n 3) Autor \n 4) Envase"));
+    return variedad;
 }
 function gorras(){
-    let cantidad = parseInt(prompt("Indique cuantas Unidades quiere:"));
-    let pedidogorra = new Pedido("Gorra", cantidad, gorra.precio * cantidad);
-    Carrito.push(pedidogorra);
-    alert("Ud ha seleccionado " + pedidogorra.cantidad + " " + pedidogorra.variedad + "/s por Un Valor Total de $" + pedidogorra.precio);
+    let variedad = parseInt(prompt("Elija color entre: \n 1) Azul \n 2) Gris"));
+    return variedad;
 }
 function copas(){
     let cantidad = parseInt(prompt("Indique cuantas Unidades quiere:"));
-    let pedidocopa = new Pedido("Copa", cantidad, copa.precio * cantidad);
+    let pedidocopa = new Pedido(copa.tipo, copa.variedad, cantidad, copa.precio * cantidad);
     Carrito.push(pedidocopa);
-    alert("Ud ha seleccionado " + pedidocopa.cantidad + " " + pedidocopa.variedad + "/s por Un Valor Total de $" + pedidocopa.precio);
+    alert("Ud ha seleccionado " + pedidocopa.cantidad + " " + pedidocopa.tipo + "/s de " + pedidocopa.variedad + " por Un Valor Total de $" + pedidocopa.precio);
 }
 function salir(){
     alert("Gracias por Elegirnos!")
@@ -101,13 +96,94 @@ function salir(){
 let opciones = menu();
 switch (opciones) {
     case 1:
-        latas();
+        let variedad1 = latas();
+        switch (variedad1){
+            case 1:
+                let cantidad1 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let pedidolata1 = new Pedido(lataHoney.tipo, "Honey", cantidad1, lataHoney.precio * cantidad1);
+                Carrito.push(pedidolata1);
+                alert("Ud ha seleccionado " + pedidolata1.cantidad + " " + pedidolata1.tipo + "/s de " + pedidolata1.variedad + " por Un Valor Total de $" + pedidolata1.precio);
+                break;
+            case 2:
+                let cantidad2 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let pedidolata2 = new Pedido(lataBlonde.tipo, "Blonde", cantidad2, lataBlonde.precio * cantidad2);
+                Carrito.push(pedidolata2);
+                alert("Ud ha seleccionado " + pedidolata2.cantidad + " " + pedidolata2.tipo + "/s de " + pedidolata2.variedad + " por Un Valor Total de $" + pedidolata2.precio);
+                break;
+            case 3:
+                let cantidad3 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let pedidolata3 = new Pedido(lataPaleAle.tipo, "Pale Ale", cantidad3, lataPaleAle.precio * cantidad3);
+                Carrito.push(pedidolata3);
+                alert("Ud ha seleccionado " + pedidolata3.cantidad + " " + pedidolata3.tipo + "/s de " + pedidolata3.variedad + " por Un Valor Total de $" + pedidolata3.precio);
+                break;
+            case 4:
+                let cantidad4 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let pedidolata4 = new Pedido(lataDoblePale.tipo, "Doble Pale", cantidad4, lataDoblePale.precio * cantidad4);
+                Carrito.push(pedidolata4);
+                alert("Ud ha seleccionado " + pedidolata4.cantidad + " " + pedidolata4.tipo + "/s de " + pedidolata4.variedad + " por Un Valor Total de $" + pedidolata4.precio);
+                break;
+            case 5:
+                let cantidad5 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let pedidolata5 = new Pedido(lataHibiscus.tipo, "Hibiscus", cantidad5, lataHibiscus.precio * cantidad5);
+                Carrito.push(pedidolata5);
+                alert("Ud ha seleccionado " + pedidolata5.cantidad + " " + pedidolata5.tipo + "/s de " + pedidolata5.variedad + " por Un Valor Total de $" + pedidolata5.precio);
+                break;
+            case 6:
+                let cantidad6 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let pedidolata6 = new Pedido(lataFaramir.tipo, "Faramir", cantidad6, lataFaramir.precio * cantidad6);
+                Carrito.push(pedidolata6);
+                alert("Ud ha seleccionado " + pedidolata6.cantidad + " " + pedidolata6.tipo + "/s de " + pedidolata6.variedad + " por Un Valor Total de $" + pedidolata6.precio);
+                break;
+        }
         break;
     case 2:
-        growlers();
+        let variedad2 = growlers();
+        switch (variedad2){
+            case 1:
+                let variedad1 = prompt("Indique que variedad quiere entre Honey, Blonde:")
+                let cantidadGrowler1 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let pedidogrowler1 = new Pedido(growlerTradicional.tipo, variedad1, cantidadGrowler1, growlerTradicional.precio * cantidadGrowler1);
+                Carrito.push(pedidogrowler1);
+                alert("Ud ha seleccionado " + pedidogrowler1.cantidad + " " + pedidogrowler1.tipo + "/s de tipo " + pedidogrowler1.variedad + " por Un Valor Total de $" + pedidogrowler1.precio);
+                break;
+            case 2:
+                let variedad2 = prompt("Indique que variedad quiere entre Pale y Doble Pale:")
+                let cantidadGrowler2 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let pedidogrowler2 = new Pedido(growlerEstacion.tipo, variedad2, cantidadGrowler2, growlerEstacion.precio * cantidadGrowler2);
+                Carrito.push(pedidogrowler2);
+                alert("Ud ha seleccionado " + pedidogrowler2.cantidad + " " + pedidogrowler2.tipo + "/s de tipo " + pedidogrowler2.variedad + " por Un Valor Total de $" + pedidogrowler2.precio);
+                break;
+            case 3:
+                let variedad3 = prompt("Indique que variedad quiere entre Hibiscus y Faramir:")
+                let cantidadGrowler3 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let pedidogrowler3 = new Pedido(growlerAutor.tipo, variedad3, cantidadGrowler3, growlerAutor.precio * cantidadGrowler3);
+                Carrito.push(pedidogrowler3);
+                alert("Ud ha seleccionado " + pedidogrowler3.cantidad + " " + pedidogrowler3.tipo + "/s de tipo " + pedidogrowler3.variedad + " por Un Valor Total de $" + pedidogrowler3.precio);
+                break;
+            case 4:
+                let cantidadGrowler4 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let pedidogrowler4 = new Pedido(growlerEnvase.tipo, growlerEnvase.variedad, cantidadGrowler4, growlerEnvase.precio * cantidadGrowler4);
+                Carrito.push(pedidogrowler4);
+                alert("Ud ha seleccionado " + pedidogrowler4.cantidad + " Envase/s de " + pedidogrowler4.tipo + "/s por Un Valor Total de $" + pedidogrowler4.precio);
+                break;
+        }
         break;
     case 3:
-        gorras();
+        let variedad3 = gorras();
+        switch (variedad3){
+            case 1:
+                let cantidad1 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let pedidogorra1 = new Pedido(gorraAzul.tipo, "Azul", cantidad1, gorraAzul.precio * cantidad1);
+                Carrito.push(pedidogorra1);
+                alert("Ud ha seleccionado " + pedidogorra1.cantidad + " " + pedidogorra1.tipo + "/s " + pedidogorra1.variedad + "/es por Un Valor Total de $" + pedidogorra1.precio);
+                break;
+            case 2:
+                let cantidad2 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let pedidogorra2 = new Pedido(gorraGris.tipo, "Gris", cantidad2, gorraGris.precio * cantidad2);
+                Carrito.push(pedidogorra2);
+                alert("Ud ha seleccionado " + pedidogorra2.cantidad + " " + pedidogorra2.tipo + "/s " + pedidogorra2.variedad + "/es por Un Valor Total de $" + pedidogorra2.precio);
+                break;
+        }
         break;
     case 4:
         copas();
@@ -145,7 +221,7 @@ switch (final){
         salir();
         break;
 }
-console.log(Carrito);
+Carrito.forEach(pedido => console.log(pedido))
 
 
 // console.log("El 6 Pack de latas de " + lataBlonde.variedad + " tiene un costo final de $" + lataBlonde.sixpack());
