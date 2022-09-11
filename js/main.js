@@ -84,12 +84,6 @@ function gorras(){
     let variedad = parseInt(prompt("Elija color entre: \n 1) Azul \n 2) Gris"));
     return variedad;
 }
-function copas(){
-    let cantidad = parseInt(prompt("Indique cuantas Unidades quiere:"));
-    let pedidocopa = new Pedido(copa.tipo, copa.variedad, cantidad, copa.precio * cantidad);
-    Carrito.push(pedidocopa);
-    alert("Ud ha seleccionado " + pedidocopa.cantidad + " " + pedidocopa.tipo + "/s de " + pedidocopa.variedad + " por Un Valor Total de $" + pedidocopa.precio);
-}
 function salir(){
     alert("Gracias por Elegirnos!")
 }
@@ -99,39 +93,63 @@ switch (opciones) {
         let variedad1 = latas();
         switch (variedad1){
             case 1:
-                let cantidad1 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let cantidad1;
+                do{cantidad1 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataHoney.cantidad));
+                }while (cantidad1 >= lataHoney.cantidad + 1);
                 let pedidolata1 = new Pedido(lataHoney.tipo, "Honey", cantidad1, lataHoney.precio * cantidad1);
                 Carrito.push(pedidolata1);
+                const buscarHoney = Carrito.find(producto => producto.variedad === "Honey");
+                lataHoney.cantidad = lataHoney.cantidad - buscarHoney.cantidad;
                 alert("Ud ha seleccionado " + pedidolata1.cantidad + " " + pedidolata1.tipo + "/s de " + pedidolata1.variedad + " por Un Valor Total de $" + pedidolata1.precio);
                 break;
             case 2:
-                let cantidad2 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let cantidad2;
+                do{cantidad2 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataBlonde.cantidad));
+                }while (cantidad2 >= lataBlonde.cantidad + 1);
                 let pedidolata2 = new Pedido(lataBlonde.tipo, "Blonde", cantidad2, lataBlonde.precio * cantidad2);
                 Carrito.push(pedidolata2);
+                const buscarBlonde = Carrito.find(producto => producto.variedad === "Blonde");
+                lataBlonde.cantidad = lataBlonde.cantidad - buscarBlonde.cantidad;
                 alert("Ud ha seleccionado " + pedidolata2.cantidad + " " + pedidolata2.tipo + "/s de " + pedidolata2.variedad + " por Un Valor Total de $" + pedidolata2.precio);
                 break;
             case 3:
-                let cantidad3 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let cantidad3;
+                do{cantidad3 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataPaleAle.cantidad));
+                }while (cantidad3 >= lataPaleAle.cantidad + 1);
                 let pedidolata3 = new Pedido(lataPaleAle.tipo, "Pale Ale", cantidad3, lataPaleAle.precio * cantidad3);
                 Carrito.push(pedidolata3);
+                const buscarPaleAle = Carrito.find(producto => producto.variedad === "Pale Ale");
+                lataPaleAle.cantidad = lataPaleAle.cantidad - buscarPaleAle.cantidad;
                 alert("Ud ha seleccionado " + pedidolata3.cantidad + " " + pedidolata3.tipo + "/s de " + pedidolata3.variedad + " por Un Valor Total de $" + pedidolata3.precio);
                 break;
             case 4:
-                let cantidad4 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let cantidad4;
+                do{cantidad4 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataDoblePale.cantidad));
+                }while (cantidad4 >= lataDoblePale.cantidad + 1);
                 let pedidolata4 = new Pedido(lataDoblePale.tipo, "Doble Pale", cantidad4, lataDoblePale.precio * cantidad4);
                 Carrito.push(pedidolata4);
+                const buscarDoblePale = Carrito.find(producto => producto.variedad === "Doble Pale");
+                lataDoblePale.cantidad = lataDoblePale.cantidad - buscarDoblePale.cantidad;
                 alert("Ud ha seleccionado " + pedidolata4.cantidad + " " + pedidolata4.tipo + "/s de " + pedidolata4.variedad + " por Un Valor Total de $" + pedidolata4.precio);
                 break;
             case 5:
-                let cantidad5 = parseInt(prompt("Indique cuantas latas quiere:"));
-                let pedidolata5 = new Pedido(lataHibiscus.tipo, "Hibiscus", cantidad5, lataHibiscus.precio * cantidad5);
-                Carrito.push(pedidolata5);
-                alert("Ud ha seleccionado " + pedidolata5.cantidad + " " + pedidolata5.tipo + "/s de " + pedidolata5.variedad + " por Un Valor Total de $" + pedidolata5.precio);
-                break;
+                let cantidad5;
+                do{cantidad5 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataHibiscus.cantidad));
+                }while (cantidad5 >= lataHibiscus.cantidad + 1);
+                    let pedidolata5 = new Pedido(lataHibiscus.tipo, "Hibiscus", cantidad5, lataHibiscus.precio * cantidad5);
+                    Carrito.push(pedidolata5);
+                    const buscarHibiscus = Carrito.find(producto => producto.variedad === "Hibiscus");
+                    lataHibiscus.cantidad = lataHibiscus.cantidad - buscarHibiscus.cantidad;
+                    alert("Ud ha seleccionado " + pedidolata5.cantidad + " " + pedidolata5.tipo + "/s de " + pedidolata5.variedad + " por Un Valor Total de $" + pedidolata5.precio);
+                    break;
             case 6:
-                let cantidad6 = parseInt(prompt("Indique cuantas latas quiere:"));
+                let cantidad6;
+                do{cantidad6 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataFaramir.cantidad));
+                }while (cantidad6 >= lataFaramir.cantidad + 1);
                 let pedidolata6 = new Pedido(lataFaramir.tipo, "Faramir", cantidad6, lataFaramir.precio * cantidad6);
                 Carrito.push(pedidolata6);
+                const buscarFaramir = Carrito.find(producto => producto.variedad === "Faramir");
+                lataFaramir.cantidad = lataFaramir.cantidad - buscarFaramir.cantidad;
                 alert("Ud ha seleccionado " + pedidolata6.cantidad + " " + pedidolata6.tipo + "/s de " + pedidolata6.variedad + " por Un Valor Total de $" + pedidolata6.precio);
                 break;
         }
@@ -141,27 +159,35 @@ switch (opciones) {
         switch (variedad2){
             case 1:
                 let variedad1 = prompt("Indique que variedad quiere entre Honey, Blonde:")
-                let cantidadGrowler1 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let cantidadGrowler1;
+                do{cantidadGrowler1 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + growlerTradicional.cantidad));
+                }while (cantidadGrowler1 >= growlerTradicional.cantidad + 1);
                 let pedidogrowler1 = new Pedido(growlerTradicional.tipo, variedad1, cantidadGrowler1, growlerTradicional.precio * cantidadGrowler1);
                 Carrito.push(pedidogrowler1);
                 alert("Ud ha seleccionado " + pedidogrowler1.cantidad + " " + pedidogrowler1.tipo + "/s de tipo " + pedidogrowler1.variedad + " por Un Valor Total de $" + pedidogrowler1.precio);
                 break;
             case 2:
                 let variedad2 = prompt("Indique que variedad quiere entre Pale y Doble Pale:")
-                let cantidadGrowler2 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let cantidadGrowler2;
+                do{cantidadGrowler2 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + growlerEstacion.cantidad));
+                }while (cantidadGrowler2 >= growlerEstacion.cantidad + 1);
                 let pedidogrowler2 = new Pedido(growlerEstacion.tipo, variedad2, cantidadGrowler2, growlerEstacion.precio * cantidadGrowler2);
                 Carrito.push(pedidogrowler2);
                 alert("Ud ha seleccionado " + pedidogrowler2.cantidad + " " + pedidogrowler2.tipo + "/s de tipo " + pedidogrowler2.variedad + " por Un Valor Total de $" + pedidogrowler2.precio);
                 break;
             case 3:
                 let variedad3 = prompt("Indique que variedad quiere entre Hibiscus y Faramir:")
-                let cantidadGrowler3 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let cantidadGrowler3;
+                do{cantidadGrowler3 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + growlerAutor.cantidad));
+                }while (cantidadGrowler3 >= growlerAutor.cantidad + 1);
                 let pedidogrowler3 = new Pedido(growlerAutor.tipo, variedad3, cantidadGrowler3, growlerAutor.precio * cantidadGrowler3);
                 Carrito.push(pedidogrowler3);
                 alert("Ud ha seleccionado " + pedidogrowler3.cantidad + " " + pedidogrowler3.tipo + "/s de tipo " + pedidogrowler3.variedad + " por Un Valor Total de $" + pedidogrowler3.precio);
                 break;
             case 4:
-                let cantidadGrowler4 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let cantidadGrowler4;
+                do{cantidadGrowler4 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + growlerEnvase.cantidad));
+                }while (cantidadGrowler4 >= growlerEnvase.cantidad + 1);
                 let pedidogrowler4 = new Pedido(growlerEnvase.tipo, growlerEnvase.variedad, cantidadGrowler4, growlerEnvase.precio * cantidadGrowler4);
                 Carrito.push(pedidogrowler4);
                 alert("Ud ha seleccionado " + pedidogrowler4.cantidad + " Envase/s de " + pedidogrowler4.tipo + "/s por Un Valor Total de $" + pedidogrowler4.precio);
@@ -172,28 +198,43 @@ switch (opciones) {
         let variedad3 = gorras();
         switch (variedad3){
             case 1:
-                let cantidad1 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let cantidad1;
+                do{cantidad1 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + gorraAzul.cantidad));
+                }while (cantidad1 >= gorraAzul.cantidad + 1);
                 let pedidogorra1 = new Pedido(gorraAzul.tipo, "Azul", cantidad1, gorraAzul.precio * cantidad1);
                 Carrito.push(pedidogorra1);
+                const buscarAzul = Carrito.find(producto => producto.variedad === "Azul");
+                gorraAzul.cantidad = gorraAzul.cantidad - buscarAzul.cantidad;
                 alert("Ud ha seleccionado " + pedidogorra1.cantidad + " " + pedidogorra1.tipo + "/s " + pedidogorra1.variedad + "/es por Un Valor Total de $" + pedidogorra1.precio);
                 break;
             case 2:
-                let cantidad2 = parseInt(prompt("Indique cuantas Unidades quiere:"));
+                let cantidad2;
+                do{cantidad2 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + gorraGris.cantidad));
+                }while (cantidad2 >= gorraGris.cantidad + 1);
                 let pedidogorra2 = new Pedido(gorraGris.tipo, "Gris", cantidad2, gorraGris.precio * cantidad2);
                 Carrito.push(pedidogorra2);
+                const buscarGris = Carrito.find(producto => producto.variedad === "Gris");
+                gorraGris.cantidad = gorraGris.cantidad - buscarGris.cantidad;
                 alert("Ud ha seleccionado " + pedidogorra2.cantidad + " " + pedidogorra2.tipo + "/s " + pedidogorra2.variedad + "/es por Un Valor Total de $" + pedidogorra2.precio);
                 break;
-        }
+            }
         break;
     case 4:
-        copas();
+        let cantidad;
+        do{cantidad = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + copa.cantidad));
+        }while (cantidad >= copa.cantidad + 1);
+        let pedidocopa = new Pedido(copa.tipo, copa.variedad, cantidad, copa.precio * cantidad);
+        Carrito.push(pedidocopa);
+        const buscarCopa = Carrito.find(producto => producto.tipo === "Copa");
+        copa.cantidad = copa.cantidad - buscarCopa.cantidad;
+        alert("Ud ha seleccionado " + pedidocopa.cantidad + " " + pedidocopa.tipo + "/s de " + pedidocopa.variedad + " por Un Valor Total de $" + pedidocopa.precio);
         break;
     case 5:
         salir();
         break;
 }
 function compra(){
-    let opciones = parseInt(prompt("Elija una de las Siguientes Opciones: \n 1) FINALIZAR LA COMPRA \n 2) ELIMINAR ITEMS \n 3) SALIR"));
+    let opciones = parseInt(prompt("Elija una de las Siguientes Opciones: \n 1) FINALIZAR LA COMPRA \n 2) ELIMINAR ITEMS \n 3) VACIAR CARRITO \n 4) SALIR"));
     return opciones;
 }
 function finalizar(){
@@ -205,6 +246,10 @@ function eliminar(){
     let indice = Carrito.indexOf(cancelacion);
     Carrito.splice(indice, 1);
     alert("Su pedido ha sido eliminado")
+}
+function vaciarCarrito(){
+    Carrito.splice(0,100);
+    return Carrito;
 }
 function salir(){
     alert("Vuelva Pronto!")
@@ -218,193 +263,16 @@ switch (final){
         eliminar();
         break;
     case 3:
+        vaciarCarrito();
+        break;
+    case 4:
         salir();
         break;
 }
 Carrito.forEach(pedido => console.log(pedido))
+Stock.forEach(pedido => console.log(pedido))
+/*CALCULAR TOTAL CARRITO*/
+let totalCarrito = Carrito.reduce((acumulador, elemento) => acumulador + elemento.precio, 0);
+console.log(totalCarrito);
 
-
-// console.log("El 6 Pack de latas de " + lataBlonde.variedad + " tiene un costo final de $" + lataBlonde.sixpack());
-// console.log("La " + lataHoney.tipo + " de " + lataHoney.variedad + " tiene un costo mayorista de $ " + lataHoney.mayorista());
-
-
-// let array = [1, 2, 3]; // Inicializando un array con valores number
-// let arrayVacio = []; //Array Vacio
-// arrayVacio = [25, 36, 99]; //Puedo ir agregando valores a un Array vacio despues de haberlo declarado
-// let arrayCombinado = ["Hola", 99, true]; //Array combinado
-// console.log(arrayCombinado[2])
-// arrayCombinado[2] = 100;
-// // for(let i = 0; i < arrayCombinado.length; i++){
-// //     alert(arrayCombinado[i]);
-// // } // Me muestra y recorre los elementos del array
-// let number = [1,2,3];
-// console.log("Propiedad Length: " + number.length)
-// /*PUSH*/
-// let familia = ["Sonia", "Dani", "Santiago", "victoria"];
-// console.log("Array mi familia: ")
-// console.log(familia);
-// familia.push("Pulga"); //Agrega un elemento al final
-// console.log(familia)
-// /*UNSHIFT*/
-// familia.unshift("firulais");
-// /*POP*/
-// let eliminado = familia.pop();
-// let eliminadoShift = familia.shift();
-// /*SPLICE*/
-// let integrantesEliminados = familia.splice(2, 2);
-// /*JOIN*/
-// let stringFamilia = familia.join(" * ");
-// console.log(stringFamilia);
-// /*CONCAT*/
-// let familiaUnidaOtraVez = familia.concat(integrantesEliminados);
-// console.log(familiaUnidaOtraVez);
-// /*SLICE*/
-// let slice = familiaUnidaotraVez.slice(0,2);
-// /*INDEXOF*/
-// let indiceSamuel = familiaUnidaOtraVez.indexOf("Samuel");
-// /*INCLUDES*/
-// let booleanoSamuel = familiaUnidaOtraVez.includes("Samuel");
-// /*REVERSE*/
-// familiaUnidaOtraVez.reverse();
-
-
-// /*ARRAY OBJETOS*/
-// class Producto {
-//     constructor(nombre, precio){
-//         this.nombre = nombre;
-//         this.precio = precio;
-//         this.cantidad = 10;
-//     }
-//     sumarStock(cantidad){
-//         this.cantidad = this.cantidad + cantidad;
-//     }
-// }
-// const yerba = new Producto("Yerba", 360);
-// const harina = new Producto("Harina", 100);
-// const fideos = new Producto("Fideos", 90);
-
-// // const stockProductos  = [yerba, harina, fideos]
-// // console.log(stockProductos)
-// const stockProductos = [];
-// stockProductos.push(yerba),
-// stockProductos.push(harina),
-// stockProductos.push(fideos);
-
-// console.log(stockProductos)
-// /*recorrer array de objetos*/
-// for(let producto of stockProductos){
-//     console.log(producto);
-// }
-// /*funcion que aumente solo un elemento*/
-// function aumentarStockHarina (arrayProductos){
-//     for(let producto of arrayProductos){
-//         if(producto.nombre === "Harina"){
-//             producto.sumarStock(100);
-//         }
-//     }
-// }
-// aumentarStockHarina(stockProductos);
-// console.log(stockProductos)
-
-// //FUNCION QUE SALUDA
-// function crearSaludo(finalDeFrase){
-//     return function(nombre){
-//         console.log("Hola " + nombre + " " + finalDeFrase)
-//     }
-// }
-// const saludoArgentino = crearSaludo("che");
-// saludoArgentino("Juan");
-
-// //EJEMPLO DE FUNCION QUE RETORNA OTRA FUNCION
-// function crearProducto(nombre){
-//     return function(precio){
-//         console.log("El producto " + nombre + " tiene un precio de $" + precio)
-//     }
-// }
-// const productoFideo = crearProducto("Fideos");
-// productoFideo(100);
-
-// // //EJEMPLO DE FUNCION DE ORDEN SUPERIOR QUE RECIBE UNA FUNCION POR PARAMETRO
-// // function saludoPorConsola(funcion){
-// //     console.log("Hola " + funcion)
-// // }
-// // saludoPorConsola(prompt("Ingrese su nombre: "));
-
-// //OTRO EJEMPLO
-// let arrayPersonas = ["Carlos", "Lucas", "Federico", "Natalia", "Maria"];
-// function muestroNombresEnMayuscula(array, funcion){
-//     for(let nombre of array) {
-//         funcion(nombre);
-//     }
-// }
-// function pasarMayuscula(nombre){
-//     return console.log(nombre.toUpperCase());
-// }
-// muestroNombresEnMayuscula(arrayPersonas, pasarMayuscula)
-
-// //EJEMPLO CON ARRAY DE OBJETOS
-// class Producto {
-//     constructor(nombre, precio){
-//         this.nombre = nombre;
-//         this.precio = precio;
-//     }
-// }
-
-// const fideos = new Producto("Fideos", 100);
-// const harina = new Producto("Harina", 250)
-// const gaseosa = new Producto("Coca Cola", 180);
-// const pan = new Producto("Pan", 120);
-
-// const arrayProductos = [fideos, harina, gaseosa, pan];
-
-// //forEach
-// arrayProductos.forEach((producto) => {
-//     console.log(producto);
-// })
-// //O MAS SIMPLE
-// arrayProductos.forEach(producto => console.log(producto))
-
-// //FIND
-// const buscado = arrayProductos.find(producto => producto.nombre === "Coca Cola");
-// console.log("Find: ");
-// console.log(buscado);
-
-// //FILTER
-// const arrayProductosMenos200 = arrayProductos.filter(producto => producto.precio < 200);
-// console.log(arrayProductosMenos200)
-
-// //SOME
-// const hayFideos = arrayProductos.some(producto => producto.nombre ==="Fideos");
-// console.log(hayFideos);
-
-// //MAP
-// //ARRAY DE PRODUCTOS CON IVA
-// const arrayProductosConIva = arrayProductos.map( (producto) => {
-//     return {
-//         nombre: producto.nombre,
-//         precio: producto.precio * 1.21
-//     }
-// });
-
-// //REDUCE
-// //EJEMPLO TOTAL DE CARRITO DE COMPRAS
-// //EJEMPLO DE DOS PARAMETROS: UN ACUMULADOR Y EL ELEMENTO QUE QUEREMOS QUE VAYA ITERANDO
-// //TAMBIEN DEBEMOS COLOCAR EL VALOR INICIAL DEL ACUMULADOR
-// let totalPrecio = arrayProductos.reduce((acumulador, elemento) => acumulador + elemento.precio, 0);
-// console.log(totalPrecio);
-
-// //SORT
-// //EJEMPLO DE NUMEROS DE MENOR A MAYOR
-// const numeros = [99, 58, 74, 8, 23];
-
-// numeros.sort((a,b) => a - b)
-// console.log(numeros);
-
-// //DE MAYOR A MENOR
-// numeros.sort((a,b) => b - a)
-// console.log(numeros);
-
-// //ORDENO PRECIOS EN UN ARRAY DE OBJETOS
-// arrayProductos.sort((a,b) => a.precio - b.precio);
-// console.log(arrayProductos)
 
