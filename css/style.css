@@ -8937,32 +8937,32 @@ main section form fieldset {
 
 .titulo-cervezas {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3.3rem;
   font-weight: 400;
   color: #000000;
   margin-bottom: 2rem;
   font-family: "hk-grotesk, sans-serif"; }
   @media screen and (max-width: 361px) {
     .titulo-cervezas {
-      font-size: 1.9rem; } }
+      font-size: 2.4rem; } }
   @media screen and (max-width: 450px) and (min-width: 362px) {
     .titulo-cervezas {
-      font-size: 2.1rem; } }
+      font-size: 2.6rem; } }
   @media screen and (max-width: 687px) and (min-width: 451px) {
     .titulo-cervezas {
-      font-size: 2.2rem; } }
+      font-size: 2.7rem; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .titulo-cervezas {
-      font-size: 2.3rem; } }
+      font-size: 2.9rem; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .titulo-cervezas {
-      font-size: 2.3rem; } }
+      font-size: 2.9rem; } }
   @media screen and (min-width: 1111px) and (max-width: 1350px) {
     .titulo-cervezas {
-      font-size: 2.5rem; } }
+      font-size: 3rem; } }
 
 .titulos-feria {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #000000;
   margin-bottom: 1rem; }
@@ -8982,10 +8982,12 @@ main section form fieldset {
     .titulos-feria {
       font-size: 1.8rem; } }
 
-.div-texto-feria {
-  margin-top: 1rem; }
-
 .img-feria {
+  width: 100%;
+  height: auto;
+  object-fit: cover; }
+
+.img-feria-gr {
   width: 100%;
   height: 15vh;
   object-fit: contain; }
@@ -9037,22 +9039,22 @@ main section form fieldset {
 
 .precios {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   font-weight: 400;
   color: #000000;
   font-family: "hk-grotesk, sans-serif"; }
   @media screen and (max-width: 361px) {
     .precios {
-      font-size: 1.4rem; } }
+      font-size: 1.6rem; } }
   @media screen and (max-width: 450px) and (min-width: 362px) {
     .precios {
-      font-size: 1.5rem; } }
+      font-size: 1.7rem; } }
   @media screen and (max-width: 687px) and (min-width: 451px) {
     .precios {
-      font-size: 1.5rem; } }
+      font-size: 1.7rem; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .precios {
-      font-size: 1.7rem; } }
+      font-size: 1.8rem; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .precios {
       font-size: 1.8rem; } }
@@ -9061,15 +9063,47 @@ main section form fieldset {
       font-size: 1.8rem; } }
 
 .botonera-sumar {
-  width: 35px;
-  height: auto; }
+  width: auto;
+  height: auto;
+  padding-left: .2rem; }
 
-.boton-sumar {
-  height: auto; }
+.boton-sumar1 {
+  width: 3.2rem; }
+  @media screen and (max-width: 1540px) and (min-width: 1351px) {
+    .boton-sumar1 {
+      width: 3rem; } }
 
 .boton-sumar2 {
-  height: auto;
-  cursor: default; }
+  width: 3.2rem;
+  border-right: 2px #000000 solid;
+  border-left: 2px #000000 solid;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #000000; }
+  @media screen and (max-width: 361px) {
+    .boton-sumar2 {
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 687px) and (min-width: 362px) {
+    .boton-sumar2 {
+      font-size: 1.35rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .boton-sumar2 {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .boton-sumar2 {
+      font-size: 1.6rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .boton-sumar2 {
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 1540px) and (min-width: 1351px) {
+    .boton-sumar2 {
+      width: 3rem; } }
+
+.boton-sumar3 {
+  width: 3.2rem; }
+  @media screen and (max-width: 1540px) and (min-width: 1351px) {
+    .boton-sumar3 {
+      width: 3rem; } }
 
 .boton-carrito {
   background-color: red;
@@ -9079,10 +9113,31 @@ main section form fieldset {
 .texto-boton {
   text-align: center;
   margin: auto auto;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 400;
   color: #ffffff;
   padding: 3px; }
+  @media screen and (max-width: 361px) {
+    .texto-boton {
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .texto-boton {
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .texto-boton {
+      font-size: 1.1rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .texto-boton {
+      font-size: 1.5rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .texto-boton {
+      font-size: 1.6rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .texto-boton {
+      font-size: 1.4rem; } }
+  @media screen and (max-width: 1540px) and (min-width: 1351px) {
+    .texto-boton {
+      font-size: 1.1rem; } }
 
 .grid-feria {
   width: 80%;
@@ -9117,7 +9172,9 @@ main section form fieldset {
   grid-column: 1/2;
   grid-row: 1/2;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding-left: 1rem;
+  padding-right: .5rem; }
   @media screen and (max-width: 361px) {
     .feria-1 {
       grid-column: 1/2;
@@ -9881,11 +9938,11 @@ main section form fieldset {
 
 .grid-botonera {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, auto); }
 
 .botonera1 {
-  grid-column: 1/4;
+  grid-column: 1/6;
   grid-row: 1/2; }
 
 .botonera2 {
@@ -9893,7 +9950,7 @@ main section form fieldset {
   grid-row: 2/3; }
 
 .botonera3 {
-  grid-column: 2/3;
+  grid-column: 2/5;
   grid-row: 2/3; }
 
 .texto-404 {

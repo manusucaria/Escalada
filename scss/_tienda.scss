@@ -53,30 +53,30 @@
 }
 .titulo-cervezas{
     text-align: center;
-    @include texto(2.5rem,400,map-get($map:$paleta, $key: 'black'));
+    @include texto(3.3rem,400,map-get($map:$paleta, $key: 'black'));
     margin-bottom: 2rem;
     font-family: $cuerpo;
     @include cel{
-        font-size: 1.9rem;
+        font-size: 2.4rem;
     }
     @include smart{
-        font-size: 2.1rem;
+        font-size: 2.6rem;
     }
     @include tablet{
-        font-size: 2.2rem;
+        font-size: 2.7rem;
     }
     @include tablet-xl{
-        font-size: 2.3rem;
+        font-size: 2.9rem;
     }
     @include desktop{
-        font-size: 2.3rem;
+        font-size: 2.9rem;
     }
     @include wide{
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 }
 .titulos-feria{
-    @include texto(2rem,400,map-get($map:$paleta, $key: 'black'));
+    @include texto(1.5rem,400,map-get($map:$paleta, $key: 'black'));
     margin-bottom: 1rem;
     @include cel{
         font-size: 1.6rem;
@@ -94,10 +94,13 @@
         font-size: 1.8rem;
     }
 }
-.div-texto-feria{
-    margin-top: 1rem;
-}
+
 .img-feria{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.img-feria-gr{
     width: 100%;
     height: 15vh;
     object-fit: contain;
@@ -149,19 +152,19 @@
 }
 .precios{
     text-align: center;
-    @include texto(1.7rem,400,map-get($map:$paleta, $key: 'black'));
+    @include texto(1.6rem,400,map-get($map:$paleta, $key: 'black'));
     font-family: $cuerpo;
     @include cel{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
     }
     @include smart{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     @include tablet{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     @include tablet-xl{
-        font-size: 1.7rem;
+        font-size: 1.8rem;
     }
     @include desktop{
         font-size: 1.8rem;
@@ -171,14 +174,46 @@
     }
 }
 .botonera-sumar{
-    width: 35px;
+    width: auto;
     height: auto;
+    padding-left: .2rem;
 }
-.boton-sumar{
-    height: auto;
+.boton-sumar1{
+    width: 3.2rem;
+    @media screen and (max-width: 1540px) and (min-width: 1351px){
+        width: 3rem;
+    }
+
 }
 .boton-sumar2{
-    height: auto;
+    width: 3.2rem;
+    border-right: 2px map-get($map: $paleta, $key: 'black') solid;
+    border-left: 2px map-get($map: $paleta, $key: 'black') solid;
+    @include texto(1.4rem,800,map-get($map:$paleta, $key: 'black'));
+    @include cel{
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 687px) and (min-width: 362px){
+        font-size: 1.35rem;
+    }
+    @include tablet-xl{
+        font-size: 1.5rem;
+    }
+    @include desktop{
+        font-size: 1.6rem;
+    }
+    @include wide{
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 1540px) and (min-width: 1351px){
+        width: 3rem;
+    }
+}
+.boton-sumar3{
+    width: 3.2rem;
+    @media screen and (max-width: 1540px) and (min-width: 1351px){
+        width: 3rem;
+    }
 }
 .boton-carrito{
     background-color: red;
@@ -188,8 +223,29 @@
 .texto-boton{
     text-align: center;
     margin: auto auto;
-    @include texto(1.5rem,400,map-get($map:$paleta, $key: 'white'));
+    @include texto(1.3rem,400,map-get($map:$paleta, $key: 'white'));
     padding: 3px;
+    @include cel{
+        font-size: 1.4rem;
+    }
+    @include smart{
+        font-size: 1.4rem;
+    }
+    @include tablet{
+        font-size: 1.1rem;
+    }
+    @include tablet-xl{
+        font-size: 1.5rem;
+    }
+    @include desktop{
+        font-size: 1.6rem;
+    }
+    @include wide{
+        font-size: 1.4rem;
+    }
+    @media screen and (max-width: 1540px) and (min-width: 1351px){
+        font-size: 1.1rem;
+    }
 }
 //**GRID**//
 //**LATAS*//
@@ -227,9 +283,8 @@
     grid-row: 1/2;
     width: 100%;
     height: 100%;
-    // padding-left: 1rem;
-    // padding-right: .5rem;
-    // border: 0.1px map-get($map: $paleta, $key: 'black') solid;
+    padding-left: 1rem;
+    padding-right: .5rem;
     @include cel{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -996,11 +1051,11 @@
 }
 .grid-botonera{
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, auto);
 }
 .botonera1{
-    grid-column: 1/4;
+    grid-column: 1/6;
     grid-row: 1/2;
 }
 .botonera2{
@@ -1008,6 +1063,6 @@
     grid-row: 2/3;
 }
 .botonera3{
-    grid-column: 2/3;
+    grid-column: 2/5;
     grid-row: 2/3;
 }
