@@ -95,10 +95,9 @@
     }
 }
 .div-texto-feria{
-    margin-top: 1.3rem;
+    margin-top: 1rem;
 }
 .img-feria{
-    margin-top: 1rem;
     width: 100%;
     height: 15vh;
     object-fit: contain;
@@ -171,6 +170,16 @@
         font-size: 1.8rem;
     }
 }
+.botonera-sumar{
+    width: 35px;
+    height: auto;
+}
+.boton-sumar{
+    height: auto;
+}
+.boton-sumar2{
+    height: auto;
+}
 .boton-carrito{
     background-color: red;
     border: none;
@@ -217,8 +226,10 @@
     grid-column: 1/2;
     grid-row: 1/2;
     width: 100%;
-    padding-left: 1rem;
-    padding-right: .5rem;
+    height: 100%;
+    // padding-left: 1rem;
+    // padding-right: .5rem;
+    // border: 0.1px map-get($map: $paleta, $key: 'black') solid;
     @include cel{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -982,4 +993,21 @@
         grid-column: 2/3;
         grid-row: 1/2;
     }
+}
+.grid-botonera{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+.botonera1{
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+.botonera2{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.botonera3{
+    grid-column: 2/3;
+    grid-row: 2/3;
 }

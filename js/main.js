@@ -9,7 +9,6 @@ class Producto{
         this.variedad = variedad;
         this.cantidad = cantidad;
         this.precio = precio;
-        this.vendido = false;
     }
     sixpack(){
         return ((this.precio * 0.95) * 6).toFixed(0);
@@ -22,9 +21,6 @@ class Producto{
     }
     mayorista(){
         return (this.precio * 0.85).toFixed(0);
-    }
-    vender(){
-        this.vendido = true;
     }
 }
 class Pedido{
@@ -51,6 +47,29 @@ const growlerEnvase = new Producto("Growler", "Solo Envase", 100, 200);
 const gorraAzul = new Producto("Gorra", "Azul", 10, 580);
 const gorraGris = new Producto("Gorra", "Gris", 10, 580);
 const copa = new Producto("Copa", "250ml", 10, 1290);
+/*PACKS*/
+/*SIX*/
+const sixPackHoney = new Producto("Six Pack", "Honey", 200, lataHoney.sixpack());
+const sixPackBlonde = new Producto("Six Pack", "Blonde", 200, lataBlonde.sixpack());
+const sixPackPaleAle = new Producto("Six Pack", "Pale Ale", 200, lataPaleAle.sixpack());
+const sixPackDoblePale = new Producto("Six Pack", "Doble Pale", 200, lataDoblePale.sixpack());
+const sixPackHibiscus = new Producto("Six Pack", "Hibiscus", 200, lataHibiscus.sixpack());
+const sixPackFaramir = new Producto("Six Pack", "Faramir", 200, lataFaramir.sixpack());
+/*TWELVE*/
+const twelvePackHoney = new Producto("Twelve Pack", "Honey", 200, lataHoney.twelvepack());
+const twelvePackBlonde = new Producto("Twelve Pack", "Blonde", 200, lataBlonde.twelvepack());
+const twelvePackPaleAle = new Producto("Twelve Pack", "Pale Ale", 200, lataPaleAle.twelvepack());
+const twelvePackDoblePale = new Producto("Twelve Pack", "Doble Pale", 200, lataDoblePale.twelvepack());
+const twelvePackHibiscus = new Producto("Twelve Pack", "Hibiscus", 200, lataHibiscus.twelvepack());
+const twelvePackFaramir = new Producto("Twelve Pack", "Faramir", 200, lataFaramir.twelvepack());
+/*TWENTYFOUR*/
+const twentyfourPackHoney = new Producto("Twentyfour Pack", "Honey", 200, lataHoney.twentyfourpack());
+const twentyfourPackBlonde = new Producto("Twentyfour Pack", "Blonde", 200, lataBlonde.twentyfourpack());
+const twentyfourPackPaleAle = new Producto("Twentyfour Pack", "Pale Ale", 200, lataPaleAle.twentyfourpack());
+const twentyfourPackDoblePale = new Producto("Twentyfour Pack", "Doble Pale", 200, lataDoblePale.twentyfourpack());
+const twentyfourPackHibiscus = new Producto("Twentyfour Pack", "Hibiscus", 200, lataHibiscus.twentyfourpack());
+const twentyfourPackFaramir = new Producto("Twentyfour Pack", "Faramir", 200, lataFaramir.twentyfourpack());
+
 /*PUSH AL STOCK*/
 Stock.push(lataHoney);
 Stock.push(lataBlonde);
@@ -65,6 +84,24 @@ Stock.push(growlerEnvase);
 Stock.push(gorraAzul);
 Stock.push(gorraGris);
 Stock.push(copa);
+Stock.push(sixPackHoney);
+Stock.push(sixPackBlonde);
+Stock.push(sixPackPaleAle);
+Stock.push(sixPackDoblePale);
+Stock.push(sixPackHibiscus);
+Stock.push(sixPackFaramir);
+Stock.push(twelvePackHoney);
+Stock.push(twelvePackBlonde);
+Stock.push(twelvePackPaleAle);
+Stock.push(twelvePackDoblePale);
+Stock.push(twelvePackHibiscus);
+Stock.push(twelvePackFaramir);
+Stock.push(twentyfourPackHoney);
+Stock.push(twentyfourPackBlonde);
+Stock.push(twentyfourPackPaleAle);
+Stock.push(twentyfourPackDoblePale);
+Stock.push(twentyfourPackHibiscus);
+Stock.push(twentyfourPackFaramir);
 
 /*MENU*/
 function menu(){
@@ -136,12 +173,12 @@ switch (opciones) {
                 let cantidad5;
                 do{cantidad5 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataHibiscus.cantidad));
                 }while (cantidad5 >= lataHibiscus.cantidad + 1);
-                    let pedidolata5 = new Pedido(lataHibiscus.tipo, "Hibiscus", cantidad5, lataHibiscus.precio * cantidad5);
-                    Carrito.push(pedidolata5);
-                    const buscarHibiscus = Carrito.find(producto => producto.variedad === "Hibiscus");
-                    lataHibiscus.cantidad = lataHibiscus.cantidad - buscarHibiscus.cantidad;
-                    alert("Ud ha seleccionado " + pedidolata5.cantidad + " " + pedidolata5.tipo + "/s de " + pedidolata5.variedad + " por Un Valor Total de $" + pedidolata5.precio);
-                    break;
+                let pedidolata5 = new Pedido(lataHibiscus.tipo, "Hibiscus", cantidad5, lataHibiscus.precio * cantidad5);
+                Carrito.push(pedidolata5);
+                const buscarHibiscus = Carrito.find(producto => producto.variedad === "Hibiscus");
+                lataHibiscus.cantidad = lataHibiscus.cantidad - buscarHibiscus.cantidad;
+                alert("Ud ha seleccionado " + pedidolata5.cantidad + " " + pedidolata5.tipo + "/s de " + pedidolata5.variedad + " por Un Valor Total de $" + pedidolata5.precio);
+                break;
             case 6:
                 let cantidad6;
                 do{cantidad6 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataFaramir.cantidad));
@@ -233,6 +270,7 @@ switch (opciones) {
         salir();
         break;
 }
+/*MENU PARTE 2*/
 function compra(){
     let opciones = parseInt(prompt("Elija una de las Siguientes Opciones: \n 1) FINALIZAR LA COMPRA \n 2) ELIMINAR ITEMS \n 3) VACIAR CARRITO \n 4) SALIR"));
     return opciones;
@@ -269,10 +307,9 @@ switch (final){
         salir();
         break;
 }
+/*CIERRE MENU*/
 Carrito.forEach(pedido => console.log(pedido))
 Stock.forEach(pedido => console.log(pedido))
 /*CALCULAR TOTAL CARRITO*/
 let totalCarrito = Carrito.reduce((acumulador, elemento) => acumulador + elemento.precio, 0);
-console.log(totalCarrito);
-
-
+console.log("El Total de su compra es de: " + totalCarrito);
