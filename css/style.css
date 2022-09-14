@@ -8860,6 +8860,12 @@ main section form fieldset {
   width: 3rem;
   border-radius: 100%; }
 
+.img-carrito {
+  width: 6rem;
+  height: 6rem;
+  object-fit: contain;
+  border-radius: 60%; }
+
 /**CLASES NOSOTROS**/
 .main-nos {
   margin: 0; }
