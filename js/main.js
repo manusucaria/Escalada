@@ -1,107 +1,204 @@
-// /*CARRITO*/
-// const Carrito = [];
-// /*STOCK*/
-// const Stock = [];
-// /*PRODUCTOS*/
-// class Producto{
-//     constructor(tipo, variedad, cantidad, precio){
-//         this.tipo = tipo;
-//         this.variedad = variedad;
-//         this.cantidad = cantidad;
-//         this.precio = precio;
-//     }
-//     sixpack(){
-//         return ((this.precio * 0.95) * 6).toFixed(0);
-//     }
-//     twelvepack(){
-//         return ((this.precio * 0.93) * 6).toFixed(0);
-//     }
-//     twentyfourpack(){
-//         return ((this.precio * 0.91) * 6).toFixed(0);
-//     }
-//     mayorista(){
-//         return (this.precio * 0.85).toFixed(0);
-//     }
-// }
-// class Pedido{
-//     constructor(tipo, variedad, cantidad, precio){
-//         this.tipo = tipo;
-//         this.variedad = variedad;
-//         this.cantidad = cantidad;
-//         this.precio = precio;
-//     }
-// }
-// /*LATAS*/
-// const lataHoney = new Producto("Lata", "Honey", 1000, 380);
-// const lataBlonde = new Producto("Lata", "Blonde", 1000, 380);
-// const lataPaleAle = new Producto("Lata", "Pale Ale", 1000, 380);
-// const lataDoblePale = new Producto("Lata", "Doble Pale", 1000, 380);
-// const lataHibiscus = new Producto("Lata", "Hibiscus", 1000, 380);
-// const lataFaramir = new Producto("Lata", "Faramir", 1000, 380);
-// /*GROWLERS*/
-// const growlerTradicional = new Producto("Growler", "Tradicional", 100, 580);
-// const growlerEstacion = new Producto("Growler", "de Estación", 100, 590);
-// const growlerAutor = new Producto("Growler", "de Autor", 100, 630);
-// const growlerEnvase = new Producto("Growler", "Solo Envase", 100, 200);
-// /*OTROS*/
-// const gorraAzul = new Producto("Gorra", "Azul", 10, 580);
-// const gorraGris = new Producto("Gorra", "Gris", 10, 580);
-// const copa = new Producto("Copa", "250ml", 10, 1290);
-// /*PACKS*/
-// /*SIX*/
-// const sixPackHoney = new Producto("Six Pack", "Honey", 200, lataHoney.sixpack());
-// const sixPackBlonde = new Producto("Six Pack", "Blonde", 200, lataBlonde.sixpack());
-// const sixPackPaleAle = new Producto("Six Pack", "Pale Ale", 200, lataPaleAle.sixpack());
-// const sixPackDoblePale = new Producto("Six Pack", "Doble Pale", 200, lataDoblePale.sixpack());
-// const sixPackHibiscus = new Producto("Six Pack", "Hibiscus", 200, lataHibiscus.sixpack());
-// const sixPackFaramir = new Producto("Six Pack", "Faramir", 200, lataFaramir.sixpack());
-// /*TWELVE*/
-// const twelvePackHoney = new Producto("Twelve Pack", "Honey", 200, lataHoney.twelvepack());
-// const twelvePackBlonde = new Producto("Twelve Pack", "Blonde", 200, lataBlonde.twelvepack());
-// const twelvePackPaleAle = new Producto("Twelve Pack", "Pale Ale", 200, lataPaleAle.twelvepack());
-// const twelvePackDoblePale = new Producto("Twelve Pack", "Doble Pale", 200, lataDoblePale.twelvepack());
-// const twelvePackHibiscus = new Producto("Twelve Pack", "Hibiscus", 200, lataHibiscus.twelvepack());
-// const twelvePackFaramir = new Producto("Twelve Pack", "Faramir", 200, lataFaramir.twelvepack());
-// /*TWENTYFOUR*/
-// const twentyfourPackHoney = new Producto("Twentyfour Pack", "Honey", 200, lataHoney.twentyfourpack());
-// const twentyfourPackBlonde = new Producto("Twentyfour Pack", "Blonde", 200, lataBlonde.twentyfourpack());
-// const twentyfourPackPaleAle = new Producto("Twentyfour Pack", "Pale Ale", 200, lataPaleAle.twentyfourpack());
-// const twentyfourPackDoblePale = new Producto("Twentyfour Pack", "Doble Pale", 200, lataDoblePale.twentyfourpack());
-// const twentyfourPackHibiscus = new Producto("Twentyfour Pack", "Hibiscus", 200, lataHibiscus.twentyfourpack());
-// const twentyfourPackFaramir = new Producto("Twentyfour Pack", "Faramir", 200, lataFaramir.twentyfourpack());
+/*CARRITO*/
+const Carrito = [];
+/*STOCK*/
+const Stock = [];
+/*PRODUCTOS*/
+class Producto{
+    constructor(tipo, variedad, cantidad, precio){
+        this.tipo = tipo;
+        this.variedad = variedad;
+        this.cantidad = cantidad;
+        this.precio = precio;
+    }
+    sixpack(){
+        return ((this.precio * 0.95) * 6).toFixed(0);
+    }
+    twelvepack(){
+        return ((this.precio * 0.93) * 12).toFixed(0);
+    }
+    twentyfourpack(){
+        return ((this.precio * 0.91) * 24).toFixed(0);
+    }
+    mayorista(){
+        return (this.precio * 0.85).toFixed(0);
+    }
+}
+class Pedido{
+    constructor(tipo, variedad, cantidad, precio){
+        this.tipo = tipo;
+        this.variedad = variedad;
+        this.cantidad = cantidad;
+        this.precio = precio;
+    }
+}
+/*LATAS*/
+const lataHoney = new Producto("Lata", "Honey", 1000, 380);
+const lataBlonde = new Producto("Lata", "Blonde", 1000, 380);
+const lataPaleAle = new Producto("Lata", "Pale Ale", 1000, 380);
+const lataDoblePale = new Producto("Lata", "Doble Pale", 1000, 390);
+const lataHibiscus = new Producto("Lata", "Hibiscus", 1000, 400);
+const lataFaramir = new Producto("Lata", "Faramir", 1000, 400);
+/*GROWLERS*/
+const growlerTradicional = new Producto("Growler", "Tradicional", 100, 580);
+const growlerEstacion = new Producto("Growler", "de Estación", 100, 590);
+const growlerAutor = new Producto("Growler", "de Autor", 100, 630);
+const growlerEnvase = new Producto("Growler", "Solo Envase", 100, 200);
+/*OTROS*/
+const gorraAzul = new Producto("Gorra", "Azul", 10, 580);
+const gorraGris = new Producto("Gorra", "Gris", 10, 580);
+const copa = new Producto("Copa", "250ml", 10, 1290);
+/*PACKS*/
+/*SIX*/
+const sixPackHoney = new Producto("Six Pack", "Honey", 200, lataHoney.sixpack());
+const sixPackBlonde = new Producto("Six Pack", "Blonde", 200, lataBlonde.sixpack());
+const sixPackPaleAle = new Producto("Six Pack", "Pale Ale", 200, lataPaleAle.sixpack());
+const sixPackDoblePale = new Producto("Six Pack", "Doble Pale", 200, lataDoblePale.sixpack());
+const sixPackHibiscus = new Producto("Six Pack", "Hibiscus", 200, lataHibiscus.sixpack());
+const sixPackFaramir = new Producto("Six Pack", "Faramir", 200, lataFaramir.sixpack());
+/*TWELVE*/
+const twelvePackHoney = new Producto("Twelve Pack", "Honey", 200, lataHoney.twelvepack());
+const twelvePackBlonde = new Producto("Twelve Pack", "Blonde", 200, lataBlonde.twelvepack());
+const twelvePackPaleAle = new Producto("Twelve Pack", "Pale Ale", 200, lataPaleAle.twelvepack());
+const twelvePackDoblePale = new Producto("Twelve Pack", "Doble Pale", 200, lataDoblePale.twelvepack());
+const twelvePackHibiscus = new Producto("Twelve Pack", "Hibiscus", 200, lataHibiscus.twelvepack());
+const twelvePackFaramir = new Producto("Twelve Pack", "Faramir", 200, lataFaramir.twelvepack());
+/*TWENTYFOUR*/
+const twentyfourPackHoney = new Producto("Twentyfour Pack", "Honey", 200, lataHoney.twentyfourpack());
+const twentyfourPackBlonde = new Producto("Twentyfour Pack", "Blonde", 200, lataBlonde.twentyfourpack());
+const twentyfourPackPaleAle = new Producto("Twentyfour Pack", "Pale Ale", 200, lataPaleAle.twentyfourpack());
+const twentyfourPackDoblePale = new Producto("Twentyfour Pack", "Doble Pale", 200, lataDoblePale.twentyfourpack());
+const twentyfourPackHibiscus = new Producto("Twentyfour Pack", "Hibiscus", 200, lataHibiscus.twentyfourpack());
+const twentyfourPackFaramir = new Producto("Twentyfour Pack", "Faramir", 200, lataFaramir.twentyfourpack());
 
-// /*PUSH AL STOCK*/
-// Stock.push(lataHoney);
-// Stock.push(lataBlonde);
-// Stock.push(lataPaleAle);
-// Stock.push(lataDoblePale);
-// Stock.push(lataHibiscus);
-// Stock.push(lataFaramir);
-// Stock.push(growlerTradicional);
-// Stock.push(growlerEstacion);
-// Stock.push(growlerAutor);
-// Stock.push(growlerEnvase);
-// Stock.push(gorraAzul);
-// Stock.push(gorraGris);
-// Stock.push(copa);
-// Stock.push(sixPackHoney);
-// Stock.push(sixPackBlonde);
-// Stock.push(sixPackPaleAle);
-// Stock.push(sixPackDoblePale);
-// Stock.push(sixPackHibiscus);
-// Stock.push(sixPackFaramir);
-// Stock.push(twelvePackHoney);
-// Stock.push(twelvePackBlonde);
-// Stock.push(twelvePackPaleAle);
-// Stock.push(twelvePackDoblePale);
-// Stock.push(twelvePackHibiscus);
-// Stock.push(twelvePackFaramir);
-// Stock.push(twentyfourPackHoney);
-// Stock.push(twentyfourPackBlonde);
-// Stock.push(twentyfourPackPaleAle);
-// Stock.push(twentyfourPackDoblePale);
-// Stock.push(twentyfourPackHibiscus);
-// Stock.push(twentyfourPackFaramir);
+/*PUSH AL STOCK*/
+Stock.push(lataHoney);
+Stock.push(lataBlonde);
+Stock.push(lataPaleAle);
+Stock.push(lataDoblePale);
+Stock.push(lataHibiscus);
+Stock.push(lataFaramir);
+Stock.push(growlerTradicional);
+Stock.push(growlerEstacion);
+Stock.push(growlerAutor);
+Stock.push(growlerEnvase);
+Stock.push(gorraAzul);
+Stock.push(gorraGris);
+Stock.push(copa);
+Stock.push(sixPackHoney);
+Stock.push(sixPackBlonde);
+Stock.push(sixPackPaleAle);
+Stock.push(sixPackDoblePale);
+Stock.push(sixPackHibiscus);
+Stock.push(sixPackFaramir);
+Stock.push(twelvePackHoney);
+Stock.push(twelvePackBlonde);
+Stock.push(twelvePackPaleAle);
+Stock.push(twelvePackDoblePale);
+Stock.push(twelvePackHibiscus);
+Stock.push(twelvePackFaramir);
+Stock.push(twentyfourPackHoney);
+Stock.push(twentyfourPackBlonde);
+Stock.push(twentyfourPackPaleAle);
+Stock.push(twentyfourPackDoblePale);
+Stock.push(twentyfourPackHibiscus);
+Stock.push(twentyfourPackFaramir);
+/*DOM*/
+/*TIENDA*/
+/*LATA BLONDE*/
+const nombreBlonde = document.getElementById("nombreBlonde");
+nombreBlonde.innerText = `${lataBlonde.tipo} ${lataBlonde.variedad}`;
+const precioBlonde = document.getElementById("precioBlonde");
+precioBlonde.innerText = `$${lataBlonde.precio}`;
+/*LATA HONEY*/
+const nombreHoney = document.getElementById("nombreHoney");
+nombreHoney.innerText = `${lataHoney.tipo} ${lataHoney.variedad}`;
+const precioHoney = document.getElementById("precioHoney");
+precioHoney.innerText = `$${lataHoney.precio}`;
+/*LATA PALE ALE*/
+const nombreAle = document.getElementById("nombreAle");
+nombreAle.innerText = `${lataPaleAle.tipo} ${lataPaleAle.variedad}`;
+const precioAle = document.getElementById("precioAle");
+precioAle.innerText = `$${lataPaleAle.precio}`;
+/*LATA Dole Pale*/
+const nombreDoble = document.getElementById("nombreDoble");
+nombreDoble.innerText = `${lataDoblePale.tipo} ${lataDoblePale.variedad}`;
+const precioDoble = document.getElementById("precioDoble");
+precioDoble.innerText = `$${lataDoblePale.precio}`;
+/*LATA HIBISCUS*/
+const nombreHibiscus = document.getElementById("nombreHibiscus");
+nombreHibiscus.innerText = `${lataHibiscus.tipo} ${lataHibiscus.variedad}`;
+const precioHibiscus = document.getElementById("precioHibiscus");
+precioHibiscus.innerText = `$${lataHibiscus.precio}`;
+/*LATA FARAMIR*/
+const nombreFaramir = document.getElementById("nombreFaramir");
+nombreFaramir.innerText = `${lataFaramir.tipo} ${lataFaramir.variedad}`;
+const precioFaramir = document.getElementById("precioFaramir");
+precioFaramir.innerText = `$${lataFaramir.precio}`;
+/*GROWLER TRADICIONAL*/
+const nombreGrowlerTradicional = document.getElementById("nombreGrowlerTradicional");
+nombreGrowlerTradicional.innerText = `${growlerTradicional.tipo} ${growlerTradicional.variedad}`;
+const precioGrowlerTradicional = document.getElementById("precioGrowlerTradicional");
+precioGrowlerTradicional.innerText = `$${growlerTradicional.precio}`;
+/*GROWLER ESTACION*/
+const nombreGrowlerEstacion = document.getElementById("nombreGrowlerEstacion");
+nombreGrowlerEstacion.innerText = `${growlerEstacion.tipo} ${growlerEstacion.variedad}`;
+const precioGrowlerEstacion = document.getElementById("precioGrowlerEstacion");
+precioGrowlerEstacion.innerText = `$${growlerEstacion.precio}`;
+/*GROWLER AUTOR*/
+const nombreGrowlerAutor = document.getElementById("nombreGrowlerAutor");
+nombreGrowlerAutor.innerText = `${growlerAutor.tipo} ${growlerAutor.variedad}`;
+const precioGrowlerAutor = document.getElementById("precioGrowlerAutor");
+precioGrowlerAutor.innerText = `$${growlerAutor.precio}`;
+/*GROWLER ENVASE*/
+const nombreGrowlerEnvase = document.getElementById("nombreGrowlerEnvase");
+nombreGrowlerEnvase.innerText = `${growlerEnvase.tipo} ${growlerEnvase.variedad}`;
+const precioGrowlerEnvase = document.getElementById("precioGrowlerEnvase");
+precioGrowlerEnvase.innerText = `$${growlerEnvase.precio}`;
+/*SIX PACK HONEY*/
+const nombreSixTrad = document.getElementById("nombreSixTrad");
+nombreSixTrad.innerText = `${sixPackHoney.tipo} ${sixPackHoney.variedad}`;
+const precioSixTrad = document.getElementById("precioSixTrad");
+precioSixTrad.innerText = `$${sixPackHoney.precio}`;
+/*SIX PACK FARAMIR*/
+const nombreSixAutor = document.getElementById("nombreSixAutor");
+nombreSixAutor.innerText = `${sixPackHibiscus.tipo} ${sixPackHibiscus.variedad}`;
+const precioSixAutor = document.getElementById("precioSixAutor");
+precioSixAutor.innerText = `$${sixPackHibiscus.precio}`;
+/*12 PACK HONEY*/
+const nombre12Trad = document.getElementById("nombre12Trad");
+nombre12Trad.innerText = `${twelvePackHoney.tipo} ${twelvePackHoney.variedad}`;
+const precio12Trad = document.getElementById("precio12Trad");
+precio12Trad.innerText = `$${twelvePackHoney.precio}`;
+/*12 PACK FARAMIR*/
+const nombre12Autor = document.getElementById("nombre12Autor");
+nombre12Autor.innerText = `${twelvePackHibiscus.tipo} ${twelvePackHibiscus.variedad}`;
+const precio12Autor = document.getElementById("precio12Autor");
+precio12Autor.innerText = `$${twelvePackHibiscus.precio}`;
+/*24 PACK HONEY*/
+const nombre24Trad = document.getElementById("nombre24Trad");
+nombre24Trad.innerText = `${twentyfourPackHoney.tipo} ${twentyfourPackHoney.variedad}`;
+const precio24Trad = document.getElementById("precio24Trad");
+precio24Trad.innerText = `$${twentyfourPackHoney.precio}`;
+/*24 PACK FARAMIR*/
+const nombre24Autor = document.getElementById("nombre24Autor");
+nombre24Autor.innerText = `${twentyfourPackHibiscus.tipo} ${twentyfourPackHibiscus.variedad}`;
+const precio24Autor = document.getElementById("precio24Autor");
+precio24Autor.innerText = `$${twentyfourPackHibiscus.precio}`;
+/*GORRA AZUL*/
+const nombreGorraAzul = document.getElementById("nombreGorraAzul");
+nombreGorraAzul.innerText = `${gorraAzul.tipo} ${gorraAzul.variedad}`;
+const precioGorraAzul = document.getElementById("precioGorraAzul");
+precioGorraAzul.innerText = `$${gorraAzul.precio}`;
+/*GORRA GRIS*/
+const nombreGorraGris = document.getElementById("nombreGorraGris");
+nombreGorraGris.innerText = `${gorraGris.tipo} ${gorraGris.variedad}`;
+const precioGorraGris = document.getElementById("precioGorraGris");
+precioGorraGris.innerText = `$${gorraGris.precio}`;
+/*COPA*/
+const nombreCopa = document.getElementById("nombreCopa");
+nombreCopa.innerText = `${copa.tipo} ${copa.variedad}`;
+const precioCopa = document.getElementById("precioCopa");
+precioCopa.innerText = `$${copa.precio}`;
 
 // /*MENU*/
 // function menu(){
@@ -340,26 +437,27 @@
 //     listaPersonas.appendChild(itemLista);
 // }
 
-class Producto{
-    constructor(nombre, precio){
-        this.nombre = nombre;
-        this.precio = precio;
-    }
-}
+// class Producto{
+//     constructor(nombre, precio){
+//         this.nombre = nombre;
+//         this.precio = precio;
+//     }
+// }
 
-const yerba = new Producto("Yerba", 360);
-const harina = new Producto("Harina", 180);
-const pan = new Producto("Pan", 200);
-const leche = new Producto("Leche", 150);
+// const yerba = new Producto("Yerba", 360);
+// const harina = new Producto("Harina", 180);
+// const pan = new Producto("Pan", 200);
+// const leche = new Producto("Leche", 150);
 
-const arrayProductos = [yerba, harina, pan, leche];
+// const arrayProductos = [yerba, harina, pan, leche];
 
-const contenedorProductos = document.getElementById("contenedorProductos");
+// const contenedorProductos = document.getElementById("contenedorProductos");
 
-arrayProductos.forEach(producto => {
-    let div = document.createElement("div");
-    div.innerHTML = `<p> ${producto.nombre} </p>
-                    <p> Precio: ${producto.precio} </p>
-                    <button> Agregar al Carrito </button>`;
-    contenedorProductos.appendChild(div);
-})
+// arrayProductos.forEach(producto => {
+//     let div = document.createElement("div");
+//     div.innerHTML = `<p> ${producto.nombre} </p>
+//                     <p> Precio: ${producto.precio} </p>
+//                     <button> Agregar al Carrito </button>`;
+//     contenedorProductos.appendChild(div);
+// })
+

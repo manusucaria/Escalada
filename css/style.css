@@ -8864,7 +8864,7 @@ main section form fieldset {
   width: 6rem;
   height: 6rem;
   object-fit: contain;
-  border-radius: 60%; }
+  border-radius: 6%; }
 
 /**CLASES NOSOTROS**/
 .main-nos {
@@ -9959,6 +9959,46 @@ main section form fieldset {
       grid-column: 2/3;
       grid-row: 1/2; } }
 
+.feria-3-v {
+  width: 100%;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  padding-left: .5rem;
+  padding-right: .5rem; }
+  @media screen and (max-width: 361px) {
+    .feria-3-v {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 362px) {
+    .feria-3-v {
+      grid-column: 1/2;
+      grid-row: 3/4;
+      padding: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 451px) {
+    .feria-3-v {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+  @media screen and (min-width: 688px) and (max-width: 900px) {
+    .feria-3-v {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      padding-left: 1rem;
+      padding-right: .5rem; } }
+  @media screen and (min-width: 901px) and (max-width: 1110px) {
+    .feria-3-v {
+      grid-column: 3/4;
+      grid-row: 1/2;
+      padding-left: .5rem;
+      padding-right: 1rem; } }
+  @media screen and (min-width: 1111px) and (max-width: 1350px) {
+    .feria-3-v {
+      grid-column: 3/4;
+      grid-row: 1/2; } }
+
+/*GRID BOTONERA*/
 .grid-botonera {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

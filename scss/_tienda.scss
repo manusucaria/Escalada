@@ -1049,6 +1049,46 @@
         grid-row: 1/2;
     }
 }
+.feria-3-v{
+    width: 100%;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    @include cel{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0;
+    }
+    @include smart{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding: 0;
+    }
+    @include tablet{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include tablet-xl{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        padding-left: 1rem;
+        padding-right: .5rem;
+    }
+    @include desktop{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        padding-left: .5rem;
+        padding-right: 1rem;
+    }
+    @include wide{
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+}
+/*GRID BOTONERA*/
 .grid-botonera{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
