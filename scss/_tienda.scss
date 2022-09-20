@@ -176,19 +176,24 @@
 .botonera-sumar{
     width: auto;
     height: auto;
-    padding-left: .2rem;
+    padding: .2rem;
 }
 .boton-sumar1{
     width: 3.2rem;
     @media screen and (max-width: 1540px) and (min-width: 1351px){
         width: 3rem;
     }
-
+}
+.boton-sumar3{
+    width: 3.2rem;
+    @media screen and (max-width: 1540px) and (min-width: 1351px){
+        width: 3rem;
+    }
 }
 .boton-sumar2{
     width: 3.2rem;
-    border-right: 2px map-get($map: $paleta, $key: 'black') solid;
     border-left: 2px map-get($map: $paleta, $key: 'black') solid;
+    border-right: 2px map-get($map: $paleta, $key: 'black') solid;
     @include texto(1.4rem,800,map-get($map:$paleta, $key: 'black'));
     @include cel{
         font-size: 1.4rem;
@@ -205,12 +210,6 @@
     @include wide{
         font-size: 1.4rem;
     }
-    @media screen and (max-width: 1540px) and (min-width: 1351px){
-        width: 3rem;
-    }
-}
-.boton-sumar3{
-    width: 3.2rem;
     @media screen and (max-width: 1540px) and (min-width: 1351px){
         width: 3rem;
     }
