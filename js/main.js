@@ -796,3 +796,69 @@ document.getElementById('restar19').addEventListener('click', restar19);
 //     console.log("Pasaste el Mouse or a caja")
 // }
 
+// //EVENTOS CON EL TECLADO
+// const campoTexto = document.getElementById("campoTexto"); //Est generando un input con ese id
+// campoTexto.onkeydown = () => {
+//     console.log("Presionaste un tecla")
+// };
+// campoTexto.onkeyup = () => {
+//     console.log("SOltaste la tecla")
+// };
+
+// //EVENTO CHANGE 
+// //se activa cuando cambia el valor de un elemento
+// //creo un label con for texto y adentro un input con un id texto
+// const texto = document.getElementById("texto")
+// texto.addEventListener("change", () => {
+//     console.log("Ud INgreso textto aqui")
+// });
+
+// //EVENTO INPUT
+// //Me permite ejecutar una funcion cada vez que se ingresa texto en un campo. Sirve para buscador
+// texto.addEventListener("inut", () => {
+//     console.log(texto.value)
+// });
+// //La propiedad value me permite acceder al texto ingresado por el usuario
+
+// //EVENTO SUBMIT
+// //Se activa cuando un formulario es enviado
+// //creo un form con id formulario con un label con un for nombre y un input con id que sea nombre
+// //Mismo con apellido
+// //Abajo un button con e texto enviar
+// const formulario = document.getElementById("formulario");
+// formulario.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     const nombre = document.getElementById("nombre")//para almacenar info de los campos
+//     const apellido = document.getElementById("apellido")
+//     console.log("El nombre ingresado es: " + nombre.value + " " + apellido.value)
+//     console.log("Formulario Enviado");
+//     formulario.reset();//esto me limpia el formulario una vez pesionado el submit
+// });
+// //Botones de formularios por default recargan la pagina
+// //Se usa el e o event y el preventdefault para evitar comprtamientos por defecto
+
+// //Ejemplo de formulario de cliente que se almacene en un ojeto que aya a un array
+// class Cliente {
+//     construtor(nombre, apellido, edad) {
+//         this.nombre = nombre;
+//         this.apellido = apellido;
+//         this.edad = edad;
+//     }
+// }
+// const arrayClientes = [];
+// //Creo un form con id de formulario, un label con for nombre y su input con id nombre
+// //otro label e input con apellido
+// //Y otro con edad
+// //y boton con palabra enviar
+// const miFormulario = document.getElementById("miFormulario");
+// miFormulario.addEventListener("submit", (e) => {
+//     e.preventDefault();
+//     const nombre = document.getElementById("nombre");
+//     const apellido = document.getElementById("apellido");
+//     const edad = document.getElementById("edad");
+//     const cliente = new Cliente(nombre.value, apellido.value, edad.value);
+//     arrayClientes.push(cliente);
+//     console.log(arrayClientes);
+//     miFormulario.reset();
+// })
+
