@@ -1,7 +1,7 @@
 /*CARRITO*/
-const Carrito = [];
+const carrito = [];
 /*STOCK*/
-const Stock = [];
+const stock = [];
 /*PRODUCTOS*/
 class Producto{
     constructor(tipo, variedad, cantidad, precio){
@@ -71,37 +71,37 @@ const twentyfourPackHibiscus = new Producto("Twentyfour Pack", "Hibiscus", 200, 
 const twentyfourPackFaramir = new Producto("Twentyfour Pack", "Faramir", 200, lataFaramir.twentyfourpack());
 
 /*PUSH AL STOCK*/
-Stock.push(lataHoney);
-Stock.push(lataBlonde);
-Stock.push(lataPaleAle);
-Stock.push(lataDoblePale);
-Stock.push(lataHibiscus);
-Stock.push(lataFaramir);
-Stock.push(growlerTradicional);
-Stock.push(growlerEstacion);
-Stock.push(growlerAutor);
-Stock.push(growlerEnvase);
-Stock.push(gorraAzul);
-Stock.push(gorraGris);
-Stock.push(copa);
-Stock.push(sixPackHoney);
-Stock.push(sixPackBlonde);
-Stock.push(sixPackPaleAle);
-Stock.push(sixPackDoblePale);
-Stock.push(sixPackHibiscus);
-Stock.push(sixPackFaramir);
-Stock.push(twelvePackHoney);
-Stock.push(twelvePackBlonde);
-Stock.push(twelvePackPaleAle);
-Stock.push(twelvePackDoblePale);
-Stock.push(twelvePackHibiscus);
-Stock.push(twelvePackFaramir);
-Stock.push(twentyfourPackHoney);
-Stock.push(twentyfourPackBlonde);
-Stock.push(twentyfourPackPaleAle);
-Stock.push(twentyfourPackDoblePale);
-Stock.push(twentyfourPackHibiscus);
-Stock.push(twentyfourPackFaramir);
+stock.push(lataHoney);
+stock.push(lataBlonde);
+stock.push(lataPaleAle);
+stock.push(lataDoblePale);
+stock.push(lataHibiscus);
+stock.push(lataFaramir);
+stock.push(growlerTradicional);
+stock.push(growlerEstacion);
+stock.push(growlerAutor);
+stock.push(growlerEnvase);
+stock.push(gorraAzul);
+stock.push(gorraGris);
+stock.push(copa);
+stock.push(sixPackHoney);
+stock.push(sixPackBlonde);
+stock.push(sixPackPaleAle);
+stock.push(sixPackDoblePale);
+stock.push(sixPackHibiscus);
+stock.push(sixPackFaramir);
+stock.push(twelvePackHoney);
+stock.push(twelvePackBlonde);
+stock.push(twelvePackPaleAle);
+stock.push(twelvePackDoblePale);
+stock.push(twelvePackHibiscus);
+stock.push(twelvePackFaramir);
+stock.push(twentyfourPackHoney);
+stock.push(twentyfourPackBlonde);
+stock.push(twentyfourPackPaleAle);
+stock.push(twentyfourPackDoblePale);
+stock.push(twentyfourPackHibiscus);
+stock.push(twentyfourPackFaramir);
 
 /*DOM*/
 
@@ -125,14 +125,16 @@ function restar1 () {
 }
 document.getElementById('sumar1').addEventListener('click', sumar1);
 document.getElementById('restar1').addEventListener('click', restar1);
+/*AGREGAR ACL CARRITO*/
 function agregarAlCarrito1 () {
-    let pedidoLata1 = new Pedido(lataBlonde.tipo, lataBlonde.variedad, total1.innerHTML, lataBlonde.precio * total1.innerHTML);
-    Carrito.push(pedidoLata1);
-    const buscarBlonde = Carrito.find(producto => producto.variedad === "Blonde");
-    lataBlonde.cantidad = lataBlonde.cantidad - buscarBlonde.cantidad;
+    let pedidoLata = new Pedido(lataBlonde.tipo, lataBlonde.variedad, total1.innerHTML, lataBlonde.precio * total1.innerHTML);
+    carrito.push(pedidoLata);
+    const buscarBlonde = carrito.find(producto => producto.variedad === "Blonde");
+    const buscarStockBlonde = stock.find(producto => producto.variedad === "Blonde");
+    lataBlonde.cantidad = buscarStockBlonde.cantidad - buscarBlonde.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
 }
 document.getElementById('botonBlonde').addEventListener('click', agregarAlCarrito1);
-console.log(Carrito);
 
 /*LATA HONEY*/
 const nombreHoney = document.getElementById("nombreHoney");
@@ -153,6 +155,16 @@ function restar2 () {
 }
 document.getElementById('sumar2').addEventListener('click', sumar2);
 document.getElementById('restar2').addEventListener('click', restar2);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito2 () {
+    let pedidoLata = new Pedido(lataHoney.tipo, lataHoney.variedad, total2.innerHTML, lataHoney.precio * total2.innerHTML);
+    carrito.push(pedidoLata);
+    const buscarHoney = carrito.find(producto => producto.variedad === "Honey");
+    const buscarStockHoney = stock.find(producto => producto.variedad === "Honey");
+    lataHoney.cantidad = buscarStockHoney.cantidad - buscarHoney.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonHoney').addEventListener('click', agregarAlCarrito2);
 
 /*LATA PALE ALE*/
 const nombreAle = document.getElementById("nombreAle");
@@ -173,8 +185,18 @@ function restar3 () {
 }
 document.getElementById('sumar3').addEventListener('click', sumar3);
 document.getElementById('restar3').addEventListener('click', restar3);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito3 () {
+    let pedidoLata = new Pedido(lataPaleAle.tipo, lataPaleAle.variedad, total3.innerHTML, lataPaleAle.precio * total3.innerHTML);
+    carrito.push(pedidoLata);
+    const buscarPaleAle = carrito.find(producto => producto.variedad === "Pale Ale");
+    const buscarStockPaleAle = stock.find(producto => producto.variedad === "Pale Ale");
+    lataPaleAle.cantidad = buscarStockPaleAle.cantidad - buscarPaleAle.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonPaleAle').addEventListener('click', agregarAlCarrito3);
 
-/*LATA Dole Pale*/
+/*LATA Doble Pale*/
 const nombreDoble = document.getElementById("nombreDoble");
 nombreDoble.innerText = `${lataDoblePale.tipo} ${lataDoblePale.variedad}`;
 const precioDoble = document.getElementById("precioDoble");
@@ -193,6 +215,16 @@ function restar4 () {
 }
 document.getElementById('sumar4').addEventListener('click', sumar4);
 document.getElementById('restar4').addEventListener('click', restar4);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito4 () {
+    let pedidoLata = new Pedido(lataDoblePale.tipo, lataDoblePale.variedad, total4.innerHTML, lataDoblePale.precio * total4.innerHTML);
+    carrito.push(pedidoLata);
+    const buscarDoblePale = carrito.find(producto => producto.variedad === "Doble Pale");
+    const buscarStockDoblePale = stock.find(producto => producto.variedad === "Doble Pale");
+    lataDoblePale.cantidad = buscarStockDoblePale.cantidad - buscarDoblePale.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonDoblePale').addEventListener('click', agregarAlCarrito4);
 
 /*LATA HIBISCUS*/
 const nombreHibiscus = document.getElementById("nombreHibiscus");
@@ -213,6 +245,16 @@ function restar5 () {
 }
 document.getElementById('sumar5').addEventListener('click', sumar5);
 document.getElementById('restar5').addEventListener('click', restar5);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito5 () {
+    let pedidoLata = new Pedido(lataHibiscus.tipo, lataHibiscus.variedad, total5.innerHTML, lataHibiscus.precio * total5.innerHTML);
+    carrito.push(pedidoLata);
+    const buscarHibiscus = carrito.find(producto => producto.variedad === "Hibiscus");
+    const buscarStockHibiscus = stock.find(producto => producto.variedad === "Hibiscus");
+    lataHibiscus.cantidad = buscarStockHibiscus.cantidad - buscarHibiscus.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonHibiscus').addEventListener('click', agregarAlCarrito5);
 
 /*LATA FARAMIR*/
 const nombreFaramir = document.getElementById("nombreFaramir");
@@ -233,6 +275,16 @@ function restar6 () {
 }
 document.getElementById('sumar6').addEventListener('click', sumar6);
 document.getElementById('restar6').addEventListener('click', restar6);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito6 () {
+    let pedidoLata = new Pedido(lataFaramir.tipo, lataFaramir.variedad, total6.innerHTML, lataFaramir.precio * total6.innerHTML);
+    carrito.push(pedidoLata);
+    const buscarFaramir = carrito.find(producto => producto.variedad === "Faramir");
+    const buscarStockFaramir = stock.find(producto => producto.variedad === "Faramir");
+    lataFaramir.cantidad = buscarStockFaramir.cantidad - buscarFaramir.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonFaramir').addEventListener('click', agregarAlCarrito6);
 
 /*GROWLER TRADICIONAL*/
 const nombreGrowlerTradicional = document.getElementById("nombreGrowlerTradicional");
@@ -253,6 +305,16 @@ function restar7 () {
 }
 document.getElementById('sumar7').addEventListener('click', sumar7);
 document.getElementById('restar7').addEventListener('click', restar7);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito7 () {
+    let pedidoGrowler = new Pedido(growlerTradicional.tipo, growlerTradicional.variedad, total7.innerHTML, growlerTradicional.precio * total7.innerHTML);
+    carrito.push(pedidoGrowler);
+    const buscarGrowlerTradicional = carrito.find(producto => producto.variedad === "Tradicional");
+    const buscarStockGrowlerTradicional = stock.find(producto => producto.variedad === "Tradicional");
+    growlerTradicional.cantidad = buscarStockGrowlerTradicional.cantidad - buscarGrowlerTradicional.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonGrowlerTrad').addEventListener('click', agregarAlCarrito7);
 
 /*GROWLER ESTACION*/
 const nombreGrowlerEstacion = document.getElementById("nombreGrowlerEstacion");
@@ -273,6 +335,16 @@ function restar8 () {
 }
 document.getElementById('sumar8').addEventListener('click', sumar8);
 document.getElementById('restar8').addEventListener('click', restar8);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito8 () {
+    let pedidoGrowler = new Pedido(growlerEstacion.tipo, growlerEstacion.variedad, total8.innerHTML, growlerEstacion.precio * total8.innerHTML);
+    carrito.push(pedidoGrowler);
+    const buscarGrowlerEstacion = carrito.find(producto => producto.variedad === "de Estación");
+    const buscarStockGrowlerEstacion = stock.find(producto => producto.variedad === "de Estación");
+    growlerEstacion.cantidad = buscarStockGrowlerEstacion.cantidad - buscarGrowlerEstacion.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonGrowlerEst').addEventListener('click', agregarAlCarrito8);
 
 /*GROWLER AUTOR*/
 const nombreGrowlerAutor = document.getElementById("nombreGrowlerAutor");
@@ -293,6 +365,16 @@ function restar9 () {
 }
 document.getElementById('sumar9').addEventListener('click', sumar9);
 document.getElementById('restar9').addEventListener('click', restar9);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito9 () {
+    let pedidoGrowler = new Pedido(growlerAutor.tipo, growlerAutor.variedad, total9.innerHTML, growlerAutor.precio * total9.innerHTML);
+    carrito.push(pedidoGrowler);
+    const buscarGrowlerAutor = carrito.find(producto => producto.variedad === "de Autor");
+    const buscarStockGrowlerAutor = stock.find(producto => producto.variedad === "de Autor");
+    growlerAutor.cantidad = buscarStockGrowlerAutor.cantidad - buscarGrowlerAutor.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonGrowlerAutor').addEventListener('click', agregarAlCarrito9);
 
 /*GROWLER ENVASE*/
 const nombreGrowlerEnvase = document.getElementById("nombreGrowlerEnvase");
@@ -313,6 +395,16 @@ function restar10 () {
 }
 document.getElementById('sumar10').addEventListener('click', sumar10);
 document.getElementById('restar10').addEventListener('click', restar10);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito10 () {
+    let pedidoGrowler = new Pedido(growlerEnvase.tipo, growlerEnvase.variedad, total10.innerHTML, growlerEnvase.precio * total10.innerHTML);
+    carrito.push(pedidoGrowler);
+    const buscarGrowlerEnvase = carrito.find(producto => producto.variedad === "Solo Envase");
+    const buscarStockGrowlerEnvase = stock.find(producto => producto.variedad === "Solo Envase");
+    growlerEnvase.cantidad = buscarStockGrowlerEnvase.cantidad - buscarGrowlerEnvase.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonGrowlerEnvase').addEventListener('click', agregarAlCarrito10);
 
 /*SIX PACK HONEY*/
 const nombreSixTrad = document.getElementById("nombreSixTrad");
@@ -333,8 +425,18 @@ function restar11 () {
 }
 document.getElementById('sumar11').addEventListener('click', sumar11);
 document.getElementById('restar11').addEventListener('click', restar11);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito11 () {
+    let pedidoPack = new Pedido(sixPackHoney.tipo, sixPackHoney.variedad, total11.innerHTML, sixPackHoney.precio * total11.innerHTML);
+    carrito.push(pedidoPack);
+    const buscarSixPackHoney = carrito.find(producto => producto.variedad === "Honey");
+    const buscarStockSixPackHoney = stock.find(producto => producto.variedad === "Honey");
+    sixPackHoney.cantidad = buscarStockSixPackHoney.cantidad - buscarSixPackHoney.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonSixPackTrad').addEventListener('click', agregarAlCarrito11);
 
-/*SIX PACK FARAMIR*/
+/*SIX PACK HIBISCUS*/
 const nombreSixAutor = document.getElementById("nombreSixAutor");
 nombreSixAutor.innerText = `${sixPackHibiscus.tipo} ${sixPackHibiscus.variedad}`;
 const precioSixAutor = document.getElementById("precioSixAutor");
@@ -353,6 +455,16 @@ function restar12 () {
 }
 document.getElementById('sumar12').addEventListener('click', sumar12);
 document.getElementById('restar12').addEventListener('click', restar12);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito12 () {
+    let pedidoPack = new Pedido(sixPackHibiscus.tipo, sixPackHibiscus.variedad, total12.innerHTML, sixPackHibiscus.precio * total12.innerHTML);
+    carrito.push(pedidoPack);
+    const buscarSixPackHibiscus = carrito.find(producto => producto.variedad === "Hibiscus");
+    const buscarStockSixPackHibiscus = stock.find(producto => producto.variedad === "Hibiscus");
+    sixPackHibiscus.cantidad = buscarStockSixPackHibiscus.cantidad - buscarSixPackHibiscus.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonSixPackAut').addEventListener('click', agregarAlCarrito12);
 
 /*12 PACK HONEY*/
 const nombre12Trad = document.getElementById("nombre12Trad");
@@ -373,8 +485,18 @@ function restar13 () {
 }
 document.getElementById('sumar13').addEventListener('click', sumar13);
 document.getElementById('restar13').addEventListener('click', restar13);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito13 () {
+    let pedidoPack = new Pedido(twelvePackHoney.tipo, twelvePackHoney.variedad, total13.innerHTML, twelvePackHoney.precio * total13.innerHTML);
+    carrito.push(pedidoPack);
+    const buscarTwelvePackHoney = carrito.find(producto => producto.variedad === "Honey");
+    const buscarStockTwelvePackHoney = stock.find(producto => producto.variedad === "Honey");
+    twelvePackHoney.cantidad = buscarStockTwelvePackHoney.cantidad - buscarTwelvePackHoney.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('boton12PackTrad').addEventListener('click', agregarAlCarrito13);
 
-/*12 PACK FARAMIR*/
+/*12 PACK HIBISCUS*/
 const nombre12Autor = document.getElementById("nombre12Autor");
 nombre12Autor.innerText = `${twelvePackHibiscus.tipo} ${twelvePackHibiscus.variedad}`;
 const precio12Autor = document.getElementById("precio12Autor");
@@ -393,6 +515,16 @@ function restar14 () {
 }
 document.getElementById('sumar14').addEventListener('click', sumar14);
 document.getElementById('restar14').addEventListener('click', restar14);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito14 () {
+    let pedidoPack = new Pedido(twelvePackHibiscus.tipo, twelvePackHibiscus.variedad, total14.innerHTML, twelvePackHibiscus.precio * total14.innerHTML);
+    carrito.push(pedidoPack);
+    const buscarTwelvePackHibiscus = carrito.find(producto => producto.variedad === "Hibiscus");
+    const buscarStockTwelvePackHibiscus = stock.find(producto => producto.variedad === "Hibiscus");
+    twelvePackHibiscus.cantidad = buscarStockTwelvePackHibiscus.cantidad - buscarTwelvePackHibiscus.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('boton12PackAut').addEventListener('click', agregarAlCarrito14);
 
 /*24 PACK HONEY*/
 const nombre24Trad = document.getElementById("nombre24Trad");
@@ -413,8 +545,18 @@ function restar15 () {
 }
 document.getElementById('sumar15').addEventListener('click', sumar15);
 document.getElementById('restar15').addEventListener('click', restar15);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito15 () {
+    let pedidoPack = new Pedido(twentyfourPackHoney.tipo, twentyfourPackHoney.variedad, total15.innerHTML, twentyfourPackHoney.precio * total15.innerHTML);
+    carrito.push(pedidoPack);
+    const buscarTwentyfourPackHoney = carrito.find(producto => producto.variedad === "Honey");
+    const buscarStockTwentyfourPackHoney = stock.find(producto => producto.variedad === "Honey");
+    twentyfourPackHoney.cantidad = buscarStockTwentyfourPackHoney.cantidad - buscarTwentyfourPackHoney.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('boton24PackTrad').addEventListener('click', agregarAlCarrito15);
 
-/*24 PACK FARAMIR*/
+/*24 PACK HIBISCUS*/
 const nombre24Autor = document.getElementById("nombre24Autor");
 nombre24Autor.innerText = `${twentyfourPackHibiscus.tipo} ${twentyfourPackHibiscus.variedad}`;
 const precio24Autor = document.getElementById("precio24Autor");
@@ -433,6 +575,16 @@ function restar16 () {
 }
 document.getElementById('sumar16').addEventListener('click', sumar16);
 document.getElementById('restar16').addEventListener('click', restar16);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito16 () {
+    let pedidoPack = new Pedido(twentyfourPackHibiscus.tipo, twentyfourPackHibiscus.variedad, total16.innerHTML, twentyfourPackHibiscus.precio * total16.innerHTML);
+    carrito.push(pedidoPack);
+    const buscarTwentyfourPackHibiscus = carrito.find(producto => producto.variedad === "Hibiscus");
+    const buscarStockTwentyfourPackHibiscus = stock.find(producto => producto.variedad === "Hibiscus");
+    twentyfourPackHibiscus.cantidad = buscarStockTwentyfourPackHibiscus.cantidad - buscarTwentyfourPackHibiscus.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('boton24PackAut').addEventListener('click', agregarAlCarrito16);
 
 /*GORRA AZUL*/
 const nombreGorraAzul = document.getElementById("nombreGorraAzul");
@@ -453,6 +605,16 @@ function restar17 () {
 }
 document.getElementById('sumar17').addEventListener('click', sumar17);
 document.getElementById('restar17').addEventListener('click', restar17);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito17 () {
+    let pedidoGorra = new Pedido(gorraAzul.tipo, gorraAzul.variedad, total17.innerHTML, gorraAzul.precio * total17.innerHTML);
+    carrito.push(pedidoGorra);
+    const buscarGorraAzul = carrito.find(producto => producto.variedad === "Azul");
+    const buscarStockGorraAzul = stock.find(producto => producto.variedad === "Azul");
+    gorraAzul.cantidad = buscarStockGorraAzul.cantidad - buscarGorraAzul.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonGorraAzul').addEventListener('click', agregarAlCarrito17);
 
 /*GORRA GRIS*/
 const nombreGorraGris = document.getElementById("nombreGorraGris");
@@ -473,6 +635,16 @@ function restar18 () {
 }
 document.getElementById('sumar18').addEventListener('click', sumar18);
 document.getElementById('restar18').addEventListener('click', restar18);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito18 () {
+    let pedidoGorra = new Pedido(gorraGris.tipo, gorraGris.variedad, total17.innerHTML, gorraGris.precio * total18.innerHTML);
+    carrito.push(pedidoGorra);
+    const buscarGorraGris = carrito.find(producto => producto.variedad === "Gris");
+    const buscarStockGorraGris = stock.find(producto => producto.variedad === "Gris");
+    gorraGris.cantidad = buscarStockGorraGris.cantidad - buscarGorraGris.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonGorraGris').addEventListener('click', agregarAlCarrito18);
 
 /*COPA*/
 const nombreCopa = document.getElementById("nombreCopa");
@@ -493,372 +665,64 @@ function restar19 () {
 }
 document.getElementById('sumar19').addEventListener('click', sumar19);
 document.getElementById('restar19').addEventListener('click', restar19);
+/*AGREGAR ACL CARRITO*/
+function agregarAlCarrito19 () {
+    let pedidoCopa = new Pedido(copa.tipo, copa.variedad, total19.innerHTML, copa.precio * total19.innerHTML);
+    carrito.push(pedidoCopa);
+    const buscarCopa = carrito.find(producto => producto.variedad === "250ml");
+    const buscarStockCopa = stock.find(producto => producto.variedad === "250ml");
+    copa.cantidad = buscarStockCopa.cantidad - buscarCopa.cantidad;
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+}
+document.getElementById('botonCopa').addEventListener('click', agregarAlCarrito19);
 
-
-// /*MENU*/
-// function menu(){
-//     alert("Bienvenido a Escalada Pedidos Online");
-//     let opcion = parseInt(prompt("Ingrese en que producto está interesado: \n 1) LATAS DE CERVEZA \n 2) GROWLERS \n 3) GORRAS \n 4) COPAS \n 5) SALIR"));
-//     return opcion;
-// }
-// function latas(){
-//     let variedad = parseInt(prompt("Indique la variedad de lata a elegir entre: \n 1) Honey \n 2) Blonde \n 3) Pale Ale \n 4) Doble Pale \n 5) Hibiscus \n 6) Faramir:"));
-//     return variedad;
-// }
-// function growlers(){
-//     let variedad = parseInt(prompt("Indique la variedad de Cerveza en Growler a elegir entre: \n 1) Tradicional \n 2) Estacion \n 3) Autor \n 4) Envase"));
-//     return variedad;
-// }
-// function gorras(){
-//     let variedad = parseInt(prompt("Elija color entre: \n 1) Azul \n 2) Gris"));
-//     return variedad;
-// }
-// function salir(){
-//     alert("Gracias por Elegirnos!")
-// }
-// let opciones = menu();
-// switch (opciones) {
-//     case 1:
-//         let variedad1 = latas();
-//         switch (variedad1){
-//             case 1:
-//                 let cantidad1;
-//                 do{cantidad1 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataHoney.cantidad));
-//                 }while (cantidad1 >= lataHoney.cantidad + 1);
-//                 let pedidolata1 = new Pedido(lataHoney.tipo, "Honey", cantidad1, lataHoney.precio * cantidad1);
-//                 Carrito.push(pedidolata1);
-//                 const buscarHoney = Carrito.find(producto => producto.variedad === "Honey");
-//                 lataHoney.cantidad = lataHoney.cantidad - buscarHoney.cantidad;
-//                 alert("Ud ha seleccionado " + pedidolata1.cantidad + " " + pedidolata1.tipo + "/s de " + pedidolata1.variedad + " por Un Valor Total de $" + pedidolata1.precio);
-//                 break;
-//             case 2:
-//                 let cantidad2;
-//                 do{cantidad2 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataBlonde.cantidad));
-//                 }while (cantidad2 >= lataBlonde.cantidad + 1);
-//                 let pedidolata2 = new Pedido(lataBlonde.tipo, "Blonde", cantidad2, lataBlonde.precio * cantidad2);
-//                 Carrito.push(pedidolata2);
-//                 const buscarBlonde = Carrito.find(producto => producto.variedad === "Blonde");
-//                 lataBlonde.cantidad = lataBlonde.cantidad - buscarBlonde.cantidad;
-//                 alert("Ud ha seleccionado " + pedidolata2.cantidad + " " + pedidolata2.tipo + "/s de " + pedidolata2.variedad + " por Un Valor Total de $" + pedidolata2.precio);
-//                 break;
-//             case 3:
-//                 let cantidad3;
-//                 do{cantidad3 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataPaleAle.cantidad));
-//                 }while (cantidad3 >= lataPaleAle.cantidad + 1);
-//                 let pedidolata3 = new Pedido(lataPaleAle.tipo, "Pale Ale", cantidad3, lataPaleAle.precio * cantidad3);
-//                 Carrito.push(pedidolata3);
-//                 const buscarPaleAle = Carrito.find(producto => producto.variedad === "Pale Ale");
-//                 lataPaleAle.cantidad = lataPaleAle.cantidad - buscarPaleAle.cantidad;
-//                 alert("Ud ha seleccionado " + pedidolata3.cantidad + " " + pedidolata3.tipo + "/s de " + pedidolata3.variedad + " por Un Valor Total de $" + pedidolata3.precio);
-//                 break;
-//             case 4:
-//                 let cantidad4;
-//                 do{cantidad4 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataDoblePale.cantidad));
-//                 }while (cantidad4 >= lataDoblePale.cantidad + 1);
-//                 let pedidolata4 = new Pedido(lataDoblePale.tipo, "Doble Pale", cantidad4, lataDoblePale.precio * cantidad4);
-//                 Carrito.push(pedidolata4);
-//                 const buscarDoblePale = Carrito.find(producto => producto.variedad === "Doble Pale");
-//                 lataDoblePale.cantidad = lataDoblePale.cantidad - buscarDoblePale.cantidad;
-//                 alert("Ud ha seleccionado " + pedidolata4.cantidad + " " + pedidolata4.tipo + "/s de " + pedidolata4.variedad + " por Un Valor Total de $" + pedidolata4.precio);
-//                 break;
-//             case 5:
-//                 let cantidad5;
-//                 do{cantidad5 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataHibiscus.cantidad));
-//                 }while (cantidad5 >= lataHibiscus.cantidad + 1);
-//                 let pedidolata5 = new Pedido(lataHibiscus.tipo, "Hibiscus", cantidad5, lataHibiscus.precio * cantidad5);
-//                 Carrito.push(pedidolata5);
-//                 const buscarHibiscus = Carrito.find(producto => producto.variedad === "Hibiscus");
-//                 lataHibiscus.cantidad = lataHibiscus.cantidad - buscarHibiscus.cantidad;
-//                 alert("Ud ha seleccionado " + pedidolata5.cantidad + " " + pedidolata5.tipo + "/s de " + pedidolata5.variedad + " por Un Valor Total de $" + pedidolata5.precio);
-//                 break;
-//             case 6:
-//                 let cantidad6;
-//                 do{cantidad6 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + lataFaramir.cantidad));
-//                 }while (cantidad6 >= lataFaramir.cantidad + 1);
-//                 let pedidolata6 = new Pedido(lataFaramir.tipo, "Faramir", cantidad6, lataFaramir.precio * cantidad6);
-//                 Carrito.push(pedidolata6);
-//                 const buscarFaramir = Carrito.find(producto => producto.variedad === "Faramir");
-//                 lataFaramir.cantidad = lataFaramir.cantidad - buscarFaramir.cantidad;
-//                 alert("Ud ha seleccionado " + pedidolata6.cantidad + " " + pedidolata6.tipo + "/s de " + pedidolata6.variedad + " por Un Valor Total de $" + pedidolata6.precio);
-//                 break;
-//         }
-//         break;
-//     case 2:
-//         let variedad2 = growlers();
-//         switch (variedad2){
-//             case 1:
-//                 let variedad1 = prompt("Indique que variedad quiere entre Honey, Blonde:")
-//                 let cantidadGrowler1;
-//                 do{cantidadGrowler1 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + growlerTradicional.cantidad));
-//                 }while (cantidadGrowler1 >= growlerTradicional.cantidad + 1);
-//                 let pedidogrowler1 = new Pedido(growlerTradicional.tipo, variedad1, cantidadGrowler1, growlerTradicional.precio * cantidadGrowler1);
-//                 Carrito.push(pedidogrowler1);
-//                 alert("Ud ha seleccionado " + pedidogrowler1.cantidad + " " + pedidogrowler1.tipo + "/s de tipo " + pedidogrowler1.variedad + " por Un Valor Total de $" + pedidogrowler1.precio);
-//                 break;
-//             case 2:
-//                 let variedad2 = prompt("Indique que variedad quiere entre Pale y Doble Pale:")
-//                 let cantidadGrowler2;
-//                 do{cantidadGrowler2 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + growlerEstacion.cantidad));
-//                 }while (cantidadGrowler2 >= growlerEstacion.cantidad + 1);
-//                 let pedidogrowler2 = new Pedido(growlerEstacion.tipo, variedad2, cantidadGrowler2, growlerEstacion.precio * cantidadGrowler2);
-//                 Carrito.push(pedidogrowler2);
-//                 alert("Ud ha seleccionado " + pedidogrowler2.cantidad + " " + pedidogrowler2.tipo + "/s de tipo " + pedidogrowler2.variedad + " por Un Valor Total de $" + pedidogrowler2.precio);
-//                 break;
-//             case 3:
-//                 let variedad3 = prompt("Indique que variedad quiere entre Hibiscus y Faramir:")
-//                 let cantidadGrowler3;
-//                 do{cantidadGrowler3 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + growlerAutor.cantidad));
-//                 }while (cantidadGrowler3 >= growlerAutor.cantidad + 1);
-//                 let pedidogrowler3 = new Pedido(growlerAutor.tipo, variedad3, cantidadGrowler3, growlerAutor.precio * cantidadGrowler3);
-//                 Carrito.push(pedidogrowler3);
-//                 alert("Ud ha seleccionado " + pedidogrowler3.cantidad + " " + pedidogrowler3.tipo + "/s de tipo " + pedidogrowler3.variedad + " por Un Valor Total de $" + pedidogrowler3.precio);
-//                 break;
-//             case 4:
-//                 let cantidadGrowler4;
-//                 do{cantidadGrowler4 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + growlerEnvase.cantidad));
-//                 }while (cantidadGrowler4 >= growlerEnvase.cantidad + 1);
-//                 let pedidogrowler4 = new Pedido(growlerEnvase.tipo, growlerEnvase.variedad, cantidadGrowler4, growlerEnvase.precio * cantidadGrowler4);
-//                 Carrito.push(pedidogrowler4);
-//                 alert("Ud ha seleccionado " + pedidogrowler4.cantidad + " Envase/s de " + pedidogrowler4.tipo + "/s por Un Valor Total de $" + pedidogrowler4.precio);
-//                 break;
-//         }
-//         break;
-//     case 3:
-//         let variedad3 = gorras();
-//         switch (variedad3){
-//             case 1:
-//                 let cantidad1;
-//                 do{cantidad1 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + gorraAzul.cantidad));
-//                 }while (cantidad1 >= gorraAzul.cantidad + 1);
-//                 let pedidogorra1 = new Pedido(gorraAzul.tipo, "Azul", cantidad1, gorraAzul.precio * cantidad1);
-//                 Carrito.push(pedidogorra1);
-//                 const buscarAzul = Carrito.find(producto => producto.variedad === "Azul");
-//                 gorraAzul.cantidad = gorraAzul.cantidad - buscarAzul.cantidad;
-//                 alert("Ud ha seleccionado " + pedidogorra1.cantidad + " " + pedidogorra1.tipo + "/s " + pedidogorra1.variedad + "/es por Un Valor Total de $" + pedidogorra1.precio);
-//                 break;
-//             case 2:
-//                 let cantidad2;
-//                 do{cantidad2 = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + gorraGris.cantidad));
-//                 }while (cantidad2 >= gorraGris.cantidad + 1);
-//                 let pedidogorra2 = new Pedido(gorraGris.tipo, "Gris", cantidad2, gorraGris.precio * cantidad2);
-//                 Carrito.push(pedidogorra2);
-//                 const buscarGris = Carrito.find(producto => producto.variedad === "Gris");
-//                 gorraGris.cantidad = gorraGris.cantidad - buscarGris.cantidad;
-//                 alert("Ud ha seleccionado " + pedidogorra2.cantidad + " " + pedidogorra2.tipo + "/s " + pedidogorra2.variedad + "/es por Un Valor Total de $" + pedidogorra2.precio);
-//                 break;
-//             }
-//         break;
-//     case 4:
-//         let cantidad;
-//         do{cantidad = parseInt(prompt("Indique cuantas Unidades quiere entre 0 y " + copa.cantidad));
-//         }while (cantidad >= copa.cantidad + 1);
-//         let pedidocopa = new Pedido(copa.tipo, copa.variedad, cantidad, copa.precio * cantidad);
-//         Carrito.push(pedidocopa);
-//         const buscarCopa = Carrito.find(producto => producto.tipo === "Copa");
-//         copa.cantidad = copa.cantidad - buscarCopa.cantidad;
-//         alert("Ud ha seleccionado " + pedidocopa.cantidad + " " + pedidocopa.tipo + "/s de " + pedidocopa.variedad + " por Un Valor Total de $" + pedidocopa.precio);
-//         break;
-//     case 5:
-//         salir();
-//         break;
-// }
-// /*MENU PARTE 2*/
-// function compra(){
-//     let opciones = parseInt(prompt("Elija una de las Siguientes Opciones: \n 1) FINALIZAR LA COMPRA \n 2) ELIMINAR ITEMS \n 3) VACIAR CARRITO \n 4) SALIR"));
-//     return opciones;
-// }
-// function finalizar(){
-//     alert("Gracias en Breve le Estará llegando su Pedido");
-// }
-// function eliminar(){
-//     let eliminar = prompt("Ingrese La Variedad del producto:");
-//     let cancelacion = Carrito.find(Pedido => Pedido.variedad === eliminar);
-//     let indice = Carrito.indexOf(cancelacion);
-//     Carrito.splice(indice, 1);
-//     alert("Su pedido ha sido eliminado")
-// }
-// function vaciarCarrito(){
-//     Carrito.splice(0,100);
-//     return Carrito;
-// }
-// function salir(){
-//     alert("Vuelva Pronto!")
-// }
-// let final = compra();
-// switch (final){
-//     case 1:
-//         finalizar();
-//         break;
-//     case 2:
-//         eliminar();
-//         break;
-//     case 3:
-//         vaciarCarrito();
-//         break;
-//     case 4:
-//         salir();
-//         break;
-// }
-// /*CIERRE MENU*/
-// Carrito.forEach(pedido => console.log(pedido))
-// Stock.forEach(pedido => console.log(pedido))
-// /*CALCULAR TOTAL CARRITO*/
-// let totalCarrito = Carrito.reduce((acumulador, elemento) => acumulador + elemento.precio, 0);
-// console.log("El Total de su compra es de: $" + totalCarrito);
-
-
-// //DOM
-// const tituloPrincipal = document.getElementById("tituloPrincipal");
-// const nombres = document.getElementsByClassName("nombres");
-// const meses = document.getElementsByTagName("li");
-// const queryNombres = document.querySelector(".nombres");
-
-// tituloPrincipal.innerText = "Modificamos el texto desde JS";
-// tituloPrincipal.innerHTML = `<p>Parrafo</p>`;
-// tituloPrincipal.className = "titulo";
-
-// const contenedor = document.getElementById("contenedor");
-// const parrafo = document.createElement("p");
-// parrafo.innerText = "Pepito";
-// parrafo.className = "titulo";
-// contenedor.appendChild(parrafo);
-// parrafo.remove();
-
-// const arrayPersonas = ["Juan", "Maria", "Pedro", "Ana", "Pepelepu"];
-// const listaPersonas = document.getElementById("listaPersonas");
-// for(let persona of arrayPersonas){
-//     let itemLista = document.createElement("li");
-//     itemLista.innerText = persona;
-//     listaPersonas.appendChild(itemLista);
-// }
-
-// class Producto{
-//     constructor(nombre, precio){
-//         this.nombre = nombre;
-//         this.precio = precio;
+/*MOSTRAR CARRITO*/
+// if(localStorage.getItem("carrito")){
+//     let pedido = JSON.parse(localStorage.getItem("carrito"));
+//     for(let i = 0; i < pedido.length; i++){
+//         carrito.push(carrito[i]);
 //     }
 // }
+const contenedorCarrito = document.getElementById("contenedorCarrito");
+carrito.forEach(producto => {
+    const productoCarrito = document.createElement("tr");
+    productoCarrito.innerHTML = `<tr>
+                                    <th scope="row">1</th>
+                                    <td class="d-flex">
+                                        <p class="me-auto mb-auto">${producto.tipo} ${producto.variedad}</p>
+                                        <img class="d-flex img-carrito mx-auto mb-auto" src="../assets/img/feria/blonde.jpg" alt="Cerveza Blonde">
+                                    </td>
+                                    <td class="my-auto">${producto.precio}</td>
+                                    <td class="my-auto">
+                                        <p class="my-auto boton-sumar2-carrito text-center">${producto.cantidad}</p>
+                                    </td>
+                                </tr>`;
+    contenedorCarrito.appendChild(productoCarrito);
+})
 
-// const yerba = new Producto("Yerba", 360);
-// const harina = new Producto("Harina", 180);
-// const pan = new Producto("Pan", 200);
-// const leche = new Producto("Leche", 150);
-
-// const arrayProductos = [yerba, harina, pan, leche];
-
-// const contenedorProductos = document.getElementById("contenedorProductos");
-
-// arrayProductos.forEach(producto => {
-//     let div = document.createElement("div");
-//     div.innerHTML = `<p> ${producto.nombre} </p>
-//                     <p> Precio: ${producto.precio} </p>
-//                     <button> Agregar al Carrito </button>`;
-//     contenedorProductos.appendChild(div);
-// })
-
-// //EVENTOS
-// //Son la manera que tenemos en JS de contraolara las acciones de los usuarios
-// //Se puede hacer que un mismo click haga dos comportamentos diferentes
-
-// //1) MEDIANTE ADD EVENT LISTENER
-// const btn = document.getElementById("btn");
-// btn.addEventListener("click", () => {
-//     console.log ("hola, me hiciste click")
-// });
-// //El EVENTO CLICK DISPARA AL CLICKEAR CON EL MOUSE
-// //Usamos en este caso una funcion flecha para asosiar un comportamiento a este evento
-
-// //2) UTILIZANDO PROPIEDADES DEL NODO
-// btn.onclick = () => {
-//     alert("Segunda FOrma")
-// };
-
-// //3) FUNCION EN EL HTML
-// //Por ej 
-// onclick="JSenHTML()"; //en la etiqueta HTML
-// function JSenHTML() { //Esto linkea con js
-//     console.log("HOla")
-// };
-
-// //EVENTOS MAS COMUNES
-// //RELACIONADOS CON EL MOUSE
-// //Se producen con la ineraccion del usuario con el mouse
-// //MOUS UP O DOWN cuando se oprime o suelta el boton del raton
-// btn.onmousedown = () => {
-//     console.log("Oprimiste el boton")
-// };
-// //MOUEOVER MOUSEOUT El puntero sale o se mueve sobre el elemento
-// btn.onmouseover = () => { //cuando entrea al elemento el mouse
-//     console.log("INgreso el puntero")
-// };
-// //MOUSEMOVE
-// btn.onmousemove = () => { //mover el mouse sobre el elemento
-//     console.log("Pasaste el Mouse or a caja")
+// const vaciarCarrito = document.getElementById("vaciarCarrito");
+// document.getElementById('vaciarCarrito').addEventListener('click', vaciar);
+// function vaciar(){
+//     carrito.splice(0,100);
+//     return carrito;
 // }
 
-// //EVENTOS CON EL TECLADO
-// const campoTexto = document.getElementById("campoTexto"); //Est generando un input con ese id
-// campoTexto.onkeydown = () => {
-//     console.log("Presionaste un tecla")
-// };
-// campoTexto.onkeyup = () => {
-//     console.log("SOltaste la tecla")
-// };
-
-// //EVENTO CHANGE 
-// //se activa cuando cambia el valor de un elemento
-// //creo un label con for texto y adentro un input con un id texto
-// const texto = document.getElementById("texto")
-// texto.addEventListener("change", () => {
-//     console.log("Ud INgreso textto aqui")
-// });
-
-// //EVENTO INPUT
-// //Me permite ejecutar una funcion cada vez que se ingresa texto en un campo. Sirve para buscador
-// texto.addEventListener("inut", () => {
-//     console.log(texto.value)
-// });
-// //La propiedad value me permite acceder al texto ingresado por el usuario
-
-// //EVENTO SUBMIT
-// //Se activa cuando un formulario es enviado
-// //creo un form con id formulario con un label con un for nombre y un input con id que sea nombre
-// //Mismo con apellido
-// //Abajo un button con e texto enviar
-// const formulario = document.getElementById("formulario");
-// formulario.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     const nombre = document.getElementById("nombre")//para almacenar info de los campos
-//     const apellido = document.getElementById("apellido")
-//     console.log("El nombre ingresado es: " + nombre.value + " " + apellido.value)
-//     console.log("Formulario Enviado");
-//     formulario.reset();//esto me limpia el formulario una vez pesionado el submit
-// });
-// //Botones de formularios por default recargan la pagina
-// //Se usa el e o event y el preventdefault para evitar comprtamientos por defecto
-
-// //Ejemplo de formulario de cliente que se almacene en un ojeto que aya a un array
-// class Cliente {
-//     construtor(nombre, apellido, edad) {
-//         this.nombre = nombre;
-//         this.apellido = apellido;
-//         this.edad = edad;
-//     }
+// let contenedorCarrito = document.getElementById("contenedorCarrito");
+// function mostrarCarrito() {
+//     let pedido = JSON.parse(localStorage.getItem("pedido"));
+//     let aux = "";
+//     pedido.forEach(item => {
+//         aux += `<tr>
+//                     <th scope="row">1</th>
+//                     <td class="d-flex">
+//                         <p class="me-auto mb-auto">${item.tipo} ${item.variedad}</p>
+//                         <img class="d-flex img-carrito mx-auto mb-auto" src="../assets/img/feria/blonde.jpg" alt="Cerveza Blonde">
+//                     </td>
+//                     <td class="my-auto">${item.precio}</td>
+//                     <td class="my-auto">
+//                         <p class="my-auto boton-sumar2-carrito text-center">${item.cantidad}</p>
+//                     </td>
+//                 </tr>`;
+//     })
+//     contenedorCarrito = aux;
 // }
-// const arrayClientes = [];
-// //Creo un form con id de formulario, un label con for nombre y su input con id nombre
-// //otro label e input con apellido
-// //Y otro con edad
-// //y boton con palabra enviar
-// const miFormulario = document.getElementById("miFormulario");
-// miFormulario.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     const nombre = document.getElementById("nombre");
-//     const apellido = document.getElementById("apellido");
-//     const edad = document.getElementById("edad");
-//     const cliente = new Cliente(nombre.value, apellido.value, edad.value);
-//     arrayClientes.push(cliente);
-//     console.log(arrayClientes);
-//     miFormulario.reset();
-// })
-
