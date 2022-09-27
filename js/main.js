@@ -118,7 +118,7 @@ const contenedorLatas = document.getElementById("contenedorLatas");
 latas.forEach(producto => {
     const divProducto = document.createElement("div");
     divProducto.classList.add(`feria-${producto.id}`, "grid-botonera");
-    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/blonde.jpg" alt="Lata Blonde">
+    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
                             <div class="botonera2 my-auto me-auto d-flex flex-column botonera-sumar">
                                 <button id="sumar${producto.id}" class="boton-sumar1 my-auto mx-auto"><p class="my-auto mx-auto">▲</p></button>
                                 <div class="boton-sumar2"><p id="cantidad${producto.id}" class="my-auto text-center"></p></div>
@@ -159,8 +159,8 @@ latas.forEach(producto => {
 const contenedorGrowlers = document.getElementById("contenedorGrowlers");
 growlers.forEach(producto => {
     const divProducto = document.createElement("div");
-    divProducto.classList.add(`feria-${producto.id}`, "grid-botonera");
-    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/blonde.jpg" alt="Lata Blonde">
+    divProducto.classList.add(`feria-${producto.id}-gr`, "grid-botonera");
+    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
                             <div class="botonera2 my-auto me-auto d-flex flex-column botonera-sumar">
                                 <button id="sumar${producto.id}" class="boton-sumar1 my-auto mx-auto"><p class="my-auto mx-auto">▲</p></button>
                                 <div class="boton-sumar2"><p id="cantidad${producto.id}" class="my-auto text-center"></p></div>
@@ -201,8 +201,8 @@ growlers.forEach(producto => {
 const contenedorPacks = document.getElementById("contenedorPacks");
 packs.forEach(producto => {
     const divProducto = document.createElement("div");
-    divProducto.classList.add(`feria-${producto.id}`, "grid-botonera");
-    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/blonde.jpg" alt="Lata Blonde">
+    divProducto.classList.add(`feria-${producto.id}-p`, "grid-botonera");
+    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
                             <div class="botonera2 my-auto me-auto d-flex flex-column botonera-sumar">
                                 <button id="sumar${producto.id}" class="boton-sumar1 my-auto mx-auto"><p class="my-auto mx-auto">▲</p></button>
                                 <div class="boton-sumar2"><p id="cantidad${producto.id}" class="my-auto text-center"></p></div>
@@ -243,8 +243,8 @@ packs.forEach(producto => {
 const contenedorVarios = document.getElementById("contenedorVarios");
 varios.forEach(producto => {
     const divProducto = document.createElement("div");
-    divProducto.classList.add(`feria-${producto.id}`, "grid-botonera");
-    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/blonde.jpg" alt="Lata Blonde">
+    divProducto.classList.add(`feria-${producto.id}-v`, "grid-botonera");
+    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
                             <div class="botonera2 my-auto me-auto d-flex flex-column botonera-sumar">
                                 <button id="sumar${producto.id}" class="boton-sumar1 my-auto mx-auto"><p class="my-auto mx-auto">▲</p></button>
                                 <div class="boton-sumar2"><p id="cantidad${producto.id}" class="my-auto text-center"></p></div>
