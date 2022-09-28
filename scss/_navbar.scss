@@ -177,6 +177,12 @@ header{
         margin-right: 4rem;
     }
 }
+.lista2{
+    display:none;
+    @media screen and (max-width: 767px){
+        display: flex;
+    }
+}
 .lista-nav{
     text-align: center;
 }

@@ -8117,6 +8117,12 @@ header {
     .listas {
       margin-right: 4rem; } }
 
+.lista2 {
+  display: none; }
+  @media screen and (max-width: 767px) {
+    .lista2 {
+      display: flex; } }
+
 .lista-nav {
   text-align: center; }
 
