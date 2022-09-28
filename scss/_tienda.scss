@@ -76,7 +76,7 @@
     }
 }
 .titulos-feria{
-    @include texto(1.5rem,400,map-get($map:$paleta, $key: 'black'));
+    @include texto(1.3rem,400,map-get($map:$paleta, $key: 'black'));
     margin-bottom: 1rem;
     @include cel{
         font-size: 1.6rem;
@@ -152,7 +152,7 @@
 }
 .precios{
     text-align: center;
-    @include texto(1.6rem,400,map-get($map:$paleta, $key: 'black'));
+    @include texto(1.4rem,400,map-get($map:$paleta, $key: 'black'));
     font-family: $cuerpo;
     @include cel{
         font-size: 1.6rem;

@@ -148,7 +148,7 @@ latas.forEach(producto => {
         agregarLata(producto.id)
     })
     const agregarLata= (id) => {
-        const producto = latas.find(producto => producto.id ===id);
+        const producto = latas.find(producto => producto.id === id);
         const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
@@ -160,7 +160,7 @@ const contenedorGrowlers = document.getElementById("contenedorGrowlers");
 growlers.forEach(producto => {
     const divProducto = document.createElement("div");
     divProducto.classList.add(`feria-${producto.id}-gr`, "grid-botonera");
-    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
+    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria-gr mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
                             <div class="botonera2 my-auto me-auto d-flex flex-column botonera-sumar">
                                 <button id="sumar${producto.id}" class="boton-sumar1 my-auto mx-auto"><p class="my-auto mx-auto">▲</p></button>
                                 <div class="boton-sumar2"><p id="cantidad${producto.id}" class="my-auto text-center"></p></div>
@@ -190,7 +190,7 @@ growlers.forEach(producto => {
         agregarGrowler(producto.id)
     })
     const agregarGrowler= (id) => {
-        const producto = growlers.find(producto => producto.id ===id);
+        const producto = growlers.find(producto => producto.id === id);
         const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
@@ -232,7 +232,7 @@ packs.forEach(producto => {
         agregarPack(producto.id)
     })
     const agregarPack= (id) => {
-        const producto = packs.find(producto => producto.id ===id);
+        const producto = packs.find(producto => producto.id === id);
         const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
@@ -271,30 +271,33 @@ varios.forEach(producto => {
     document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
     const boton = document.getElementById(`boton${producto.id}`);
     boton.addEventListener("click", () => {
-        agregarLata(producto.id)
+        agregarVarios(producto.id)
     })
-    const agregarLata= (id) => {
-        const producto = varios.find(producto => producto.id ===id);
+    const agregarVarios= (id) => {
+        const producto = varios.find(producto => producto.id === id);
         const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
     }
 });
-
 let contenedorCarrito = document.getElementById("contenedorCarrito");
 let pedido = JSON.parse(localStorage.getItem("pedido"));
-let aux = "";
 pedido.forEach(item => {
-    aux += `<tr>
-                <th scope="row">1</th>
-                <td class="d-flex">
-                    <p class="me-auto mb-auto">${item.tipo} ${item.variedad}</p>
-                    <img class="d-flex img-carrito mx-auto mb-auto" src="../assets/img/feria/blonde.jpg" alt="Cerveza Blonde">
-                </td>
-                <td class="my-auto">$${item.precio}</td>
-                <td class="my-auto">
-                    <p class="my-auto boton-sumar2-carrito text-center">${item.cantidad}</p>
-                </td>
-            </tr>`;
+    const pedidoNuevo = new Pedido(item.id, item.tipo, item.variedad, item.cantidad, item.precio);
+    carrito.push(pedidoNuevo)
 })
-contenedorCarrito = aux;
+pedido.forEach(pedido => {
+    const pedidoNuevo = new Pedido(item.id, item.tipo, item.variedad, item.cantidad, item.precio);
+    pedidoNuevo = document.createElement("tr");
+    pedidoNuevo.innerHTML =  `<th scope="row">1</th>
+                            <td class="d-flex">
+                                <p class="me-auto mb-auto">${pedido.tipo} ${pedido.variedad}</p>
+                                <img class="d-flex img-carrito mx-auto mb-auto" src="../assets/img/feria/1.jpg" alt="Cerveza Blonde">
+                            </td>
+                            <td class="my-auto">$${pedido.precio}</td>
+                            <td class="my-auto">
+                                <p class="my-auto boton-sumar2-carrito text-center">${pedido.cantidad}</p>
+                            </td>`;
+    contenedorCarrito.appendChild(pedidoNuevo);
+})
+
