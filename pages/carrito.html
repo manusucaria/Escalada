@@ -115,16 +115,21 @@
                     <tr>
                         <th scope="col"></th>
                         <th scope="col">Producto</th>
+                        <th scope="col">Descripción</th>
                         <th scope="col">Precio</th>
                         <th scope="col">Cantidad</th>
-                        <th scope="col">Subtotal</th>
-                        <th scope="col">Total Compra</th>
                     </tr>
                 </thead>
                 <tbody id="contenedorCarrito">
                 </tbody>
             </table>
-            <button id="vaciarCarrito" class="d-flex ms-auto"><p>Vaciar Carrito</p></button>
+            <div class="d-flex">
+                <p>TOTAL COMPRA:</p>
+                <p id="totalCompra"></p>
+            </div>
+            <button id="vaciarCarrito" class="d-flex ms-auto"><p class="my-auto mx-auto">Vaciar Carrito</p></button>
+            <button id="actualizarCarrito" class="d-flex ms-auto"><p class="my-auto mx-auto">Actualizar Carrito</p></button>
+            <button id="finalizarCompra" class="d-flex me-auto"><p class="my-auto mx-auto">FINALIZAR COMPRA</p></button>
             <div id="contenedorProductos"></div>
         </main>
         <!--FOOTER-->
@@ -155,7 +160,8 @@
                 </div>
             </div>
         </footer>
-        <script src="../js/main.js"></script>
+        <!-- <script src="../js/main.js"></script> -->
+        <script src="../js/carrito.js"></script>
         <script src="../js/bootstrap.bundle.min.js">
         </script>
         <script src="../js/wow.min.js"></script>

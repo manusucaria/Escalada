@@ -104,6 +104,9 @@ footer{
     }
 }
 .img-wa{
+    position: fixed;
+    bottom: .1rem;
+    right: .1rem;
     margin-top: auto;
     margin-right: 2px;
     margin-bottom: 6px;
@@ -124,6 +127,10 @@ footer{
     @include tablet-xl{
         height: 5rem;
         width: 5rem;
+    }
+    &:hover{
+        transform: scale(1.04);
+        transition: transform .6s ease;
     }
 }
 /**GRID FOOTER**/

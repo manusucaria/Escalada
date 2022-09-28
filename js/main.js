@@ -280,24 +280,4 @@ varios.forEach(producto => {
         localStorage.setItem("pedido", JSON.stringify(carrito));
     }
 });
-let contenedorCarrito = document.getElementById("contenedorCarrito");
-let pedido = JSON.parse(localStorage.getItem("pedido"));
-pedido.forEach(item => {
-    const pedidoNuevo = new Pedido(item.id, item.tipo, item.variedad, item.cantidad, item.precio);
-    carrito.push(pedidoNuevo)
-})
-pedido.forEach(pedido => {
-    const pedidoNuevo = new Pedido(item.id, item.tipo, item.variedad, item.cantidad, item.precio);
-    pedidoNuevo = document.createElement("tr");
-    pedidoNuevo.innerHTML =  `<th scope="row">1</th>
-                            <td class="d-flex">
-                                <p class="me-auto mb-auto">${pedido.tipo} ${pedido.variedad}</p>
-                                <img class="d-flex img-carrito mx-auto mb-auto" src="../assets/img/feria/1.jpg" alt="Cerveza Blonde">
-                            </td>
-                            <td class="my-auto">$${pedido.precio}</td>
-                            <td class="my-auto">
-                                <p class="my-auto boton-sumar2-carrito text-center">${pedido.cantidad}</p>
-                            </td>`;
-    contenedorCarrito.appendChild(pedidoNuevo);
-})
 
