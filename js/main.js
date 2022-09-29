@@ -54,26 +54,26 @@ const gorraGris = new Producto(15, "Gorra", "Gris", 10, 580);
 const copa = new Producto(16, "Copa", "250ml", 10, 1290);
 /*PACKS*/
 /*SIX*/
-const sixPackHoney = new Producto(17, "Six Pack", "Honey", 200, lataHoney.sixpack());
-const sixPackBlonde = new Producto(18, "Six Pack", "Blonde", 200, lataBlonde.sixpack());
-const sixPackPaleAle = new Producto(19, "Six Pack", "Pale Ale", 200, lataPaleAle.sixpack());
-const sixPackDoblePale = new Producto(20, "Six Pack", "Doble Pale", 200, lataDoblePale.sixpack());
-const sixPackHibiscus = new Producto(21, "Six Pack", "Hibiscus", 200, lataHibiscus.sixpack());
-const sixPackFaramir = new Producto(22, "Six Pack", "Faramir", 200, lataFaramir.sixpack());
+const sixPackHoney = new Producto(17, "6 Pack", "Honey", 200, lataHoney.sixpack());
+const sixPackBlonde = new Producto(18, "6 Pack", "Blonde", 200, lataBlonde.sixpack());
+const sixPackPaleAle = new Producto(19, "6 Pack", "Pale Ale", 200, lataPaleAle.sixpack());
+const sixPackDoblePale = new Producto(20, "6 Pack", "Doble Pale", 200, lataDoblePale.sixpack());
+const sixPackHibiscus = new Producto(21, "6 Pack", "Hibiscus", 200, lataHibiscus.sixpack());
+const sixPackFaramir = new Producto(22, "6 Pack", "Faramir", 200, lataFaramir.sixpack());
 /*TWELVE*/
-const twelvePackHoney = new Producto(23, "Twelve Pack", "Honey", 200, lataHoney.twelvepack());
-const twelvePackBlonde = new Producto(24, "Twelve Pack", "Blonde", 200, lataBlonde.twelvepack());
-const twelvePackPaleAle = new Producto(25, "Twelve Pack", "Pale Ale", 200, lataPaleAle.twelvepack());
-const twelvePackDoblePale = new Producto(26, "Twelve Pack", "Doble Pale", 200, lataDoblePale.twelvepack());
-const twelvePackHibiscus = new Producto(27, "Twelve Pack", "Hibiscus", 200, lataHibiscus.twelvepack());
-const twelvePackFaramir = new Producto(28, "Twelve Pack", "Faramir", 200, lataFaramir.twelvepack());
+const twelvePackHoney = new Producto(23, "12 Pack", "Honey", 200, lataHoney.twelvepack());
+const twelvePackBlonde = new Producto(24, "12 Pack", "Blonde", 200, lataBlonde.twelvepack());
+const twelvePackPaleAle = new Producto(25, "12 Pack", "Pale Ale", 200, lataPaleAle.twelvepack());
+const twelvePackDoblePale = new Producto(26, "12 Pack", "Doble Pale", 200, lataDoblePale.twelvepack());
+const twelvePackHibiscus = new Producto(27, "12 Pack", "Hibiscus", 200, lataHibiscus.twelvepack());
+const twelvePackFaramir = new Producto(28, "12 Pack", "Faramir", 200, lataFaramir.twelvepack());
 /*TWENTYFOUR*/
-const twentyfourPackHoney = new Producto(29, "Twentyfour Pack", "Honey", 200, lataHoney.twentyfourpack());
-const twentyfourPackBlonde = new Producto(30, "Twentyfour Pack", "Blonde", 200, lataBlonde.twentyfourpack());
-const twentyfourPackPaleAle = new Producto(31, "Twentyfour Pack", "Pale Ale", 200, lataPaleAle.twentyfourpack());
-const twentyfourPackDoblePale = new Producto(32, "Twentyfour Pack", "Doble Pale", 200, lataDoblePale.twentyfourpack());
-const twentyfourPackHibiscus = new Producto(33, "Twentyfour Pack", "Hibiscus", 200, lataHibiscus.twentyfourpack());
-const twentyfourPackFaramir = new Producto(34, "Twentyfour Pack", "Faramir", 200, lataFaramir.twentyfourpack());
+const twentyfourPackHoney = new Producto(29, "24 Pack", "Honey", 200, lataHoney.twentyfourpack());
+const twentyfourPackBlonde = new Producto(30, "24 Pack", "Blonde", 200, lataBlonde.twentyfourpack());
+const twentyfourPackPaleAle = new Producto(31, "24 Pack", "Pale Ale", 200, lataPaleAle.twentyfourpack());
+const twentyfourPackDoblePale = new Producto(32, "24 Pack", "Doble Pale", 200, lataDoblePale.twentyfourpack());
+const twentyfourPackHibiscus = new Producto(33, "24 Pack", "Hibiscus", 200, lataHibiscus.twentyfourpack());
+const twentyfourPackFaramir = new Producto(34, "24 Pack", "Faramir", 200, lataFaramir.twentyfourpack());
 
 
 /*PUSH AL STOCK*/
