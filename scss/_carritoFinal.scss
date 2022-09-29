@@ -160,11 +160,10 @@
     }
     @media screen and (max-width: 1540px) and (min-width: 1351px){
         font-size: 1.5rem;
-    
     }
 }
 .texto-items{
-    @include texto(1.3rem,400,map-get($map:$paleta, $key: 'black'));
+    @include texto(1.5rem,400,map-get($map:$paleta, $key: 'black'));
     padding: 3px;
     @include cel{
         font-size: 1.3rem;
@@ -185,11 +184,11 @@
         font-size: 1.3rem;
     }
     @media screen and (max-width: 1540px) and (min-width: 1351px){
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 }
 .texto-tabla{
-    @include texto(1.3rem,700,map-get($map:$paleta, $key: 'black'));
+    @include texto(1.5rem,700,map-get($map:$paleta, $key: 'black'));
     padding: 3px;
     @include cel{
         font-size: 1.3rem;
@@ -210,7 +209,7 @@
         font-size: 1.3rem;
     }
     @media screen and (max-width: 1540px) and (min-width: 1351px){
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 }
 .boton-eliminar{

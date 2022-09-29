@@ -25,21 +25,23 @@ pedido.forEach(item => {
                             <td class="my-auto">
                                 <p class="texto-items my-auto boton-sumar2-carrito text-center">${item.cantidad}</p>
                             </td>
-                            <td scope="col"><button class="boton-eliminar" onClick = "eliminarItem(${item.id})"><p class="texto-eliminar my-auto mx-auto">Eliminar</p></button></td>
+                            <td scope="col"><button class="boton-eliminar" id="eliminarItem${item.id}"><p class="texto-eliminar my-auto mx-auto">Eliminar</p></button></td>
                             `;
     contenedorCarrito.appendChild(pedidoNuevo);
-    // const botonEliminar = document.getElementById(`botonEliminar${item.id}`);
-    // botonEliminar.addEventListener("click", () => {
-    //     eliminarProducto(item.id)
-    // })
+    const boton = document.getElementById(`eliminarItem${item.id}`);
+    boton.addEventListener("click", () => {
+        eliminarProducto(item.id)
+    })
+    const eliminarProducto= (id) => {
+        const producto = pedido.find(item => item.id === id);
+        pedido.splice(pedido.indexOf(producto), 1);
+        console.log(pedido);
+        localStorage.setItem("pedido", JSON.stringify(pedido));
+        actualizarCarrito()
+    }
 })
 /*ELIMINAR ITEM*/
-const eliminarItem = (id) => {
-    const producto = pedido.find(item => item.id === id);
-    pedido.splice(pedido.indexOf(producto), 1);
-    actualizarCarrito();
-}
-/*TOTAL COMPRA*/
+
 let totalCompra = document.getElementById("totalCompra");
 const suma = pedido.map(item => item.precio).reduce((prev, curr) => prev + curr, 0);
 totalCompra.innerText = ` $${suma}`;
@@ -54,3 +56,5 @@ function vaciar () {
     localStorage.clear();
     location.reload()
 };
+/*CONTINUAR COMPRA*/
+

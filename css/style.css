@@ -9030,7 +9030,7 @@ main section form fieldset {
       font-size: 1.5rem; } }
 
 .texto-items {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 400;
   color: #000000;
   padding: 3px; }
@@ -9054,10 +9054,10 @@ main section form fieldset {
       font-size: 1.3rem; } }
   @media screen and (max-width: 1540px) and (min-width: 1351px) {
     .texto-items {
-      font-size: 1.3rem; } }
+      font-size: 1.4rem; } }
 
 .texto-tabla {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #000000;
   padding: 3px; }
@@ -9081,7 +9081,7 @@ main section form fieldset {
       font-size: 1.3rem; } }
   @media screen and (max-width: 1540px) and (min-width: 1351px) {
     .texto-tabla {
-      font-size: 1.3rem; } }
+      font-size: 1.4rem; } }
 
 .boton-eliminar {
   background-color: red;
