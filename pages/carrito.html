@@ -117,23 +117,24 @@
                 <thead>
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col">Producto</th>
-                        <th scope="col">Descripción</th>
-                        <th scope="col">Precio</th>
-                        <th scope="col">Cantidad</th>
+                        <th class="texto-tabla" scope="col">Producto</th>
+                        <th class="texto-tabla" scope="col">Descripción</th>
+                        <th class="texto-tabla" scope="col">Precio</th>
+                        <th class="texto-tabla" scope="col">Cantidad</th>
                     </tr>
                 </thead>
                 <tbody id="contenedorCarrito">
                 </tbody>
             </table>
             <div class="d-flex">
-                <p>TOTAL COMPRA:</p>
+                <p class="total-compra">TOTAL COMPRA: </p>
                 <p id="totalCompra"></p>
             </div>
-            <button id="vaciarCarrito" class="d-flex ms-auto"><p class="my-auto mx-auto">Vaciar Carrito</p></button>
-            <button id="actualizarCarrito" class="d-flex ms-auto"><p class="my-auto mx-auto">Actualizar Carrito</p></button>
-            <button id="finalizarCompra" class="d-flex me-auto"><p class="my-auto mx-auto">FINALIZAR COMPRA</p></button>
-            <div id="contenedorProductos"></div>
+            <div class="d-flex">
+                <button id="actualizarCarrito" class="boton-actualizar ms-auto"><p class="texto-actualizar my-auto mx-auto">Actualizar</p></button>
+                <button id="finalizarCompra" class="boton-compra d-flex mx-auto my-auto"><p class="texto-compra my-auto mx-auto">CONTINUAR COMPRA</p></button>
+                <button id="vaciarCarrito" class="boton-vaciar me-auto"><p class="texto-vaciar my-auto mx-auto">Vaciar Carrito</p></button>
+            </div>
         </main>
         <!--FOOTER-->
         <footer>
