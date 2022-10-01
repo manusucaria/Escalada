@@ -28,6 +28,7 @@ pedido.forEach(item => {
                             <td scope="col"><button class="boton-eliminar" id="eliminarItem${item.id}"><p class="texto-eliminar my-auto mx-auto">Eliminar</p></button></td>
                             `;
     contenedorCarrito.appendChild(pedidoNuevo);
+        /*ELIMINAR ITEM*/
     const boton = document.getElementById(`eliminarItem${item.id}`);
     boton.addEventListener("click", () => {
         eliminarProducto(item.id)
@@ -40,8 +41,7 @@ pedido.forEach(item => {
         actualizarCarrito()
     }
 })
-/*ELIMINAR ITEM*/
-
+/*TOTAL COMPRA*/
 let totalCompra = document.getElementById("totalCompra");
 const suma = pedido.map(item => item.precio).reduce((prev, curr) => prev + curr, 0);
 totalCompra.innerText = ` $${suma}`;

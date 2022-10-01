@@ -149,7 +149,7 @@ latas.forEach(producto => {
     })
     const agregarLata= (id) => {
         const producto = latas.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
+        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
     }
@@ -280,4 +280,4 @@ varios.forEach(producto => {
         localStorage.setItem("pedido", JSON.stringify(carrito));
     }
 });
-
+console.log(carrito)
