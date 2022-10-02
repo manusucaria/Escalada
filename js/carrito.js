@@ -28,15 +28,28 @@ pedido.forEach(item => {
                             <td scope="col"><button class="boton-eliminar" id="eliminarItem${item.id}"><p class="texto-eliminar my-auto mx-auto">Eliminar</p></button></td>
                             `;
     contenedorCarrito.appendChild(pedidoNuevo);
-        /*ELIMINAR ITEM*/
+    /*ELIMINAR ITEM*/
     const boton = document.getElementById(`eliminarItem${item.id}`);
-    boton.addEventListener("click", () => {
-        eliminarProducto(item.id)
-    })
+    boton.addEventListener("click", ()=>{
+        Swal.fire({
+            width: "80rem",
+            title: "¿Eliminar Item?",
+            icon: "warning",
+            iconColor: "#FE5D1C",
+            confirmButtonText: "Confirmar",
+            confirmButtonColor: "#FE5D1C",
+            showCancelButton: true,
+            cancelButtonText: "Cancelar",
+            cancelButtonColor: "#FE5D1C",
+        }).then((result) => {
+            if(result.isConfirmed){
+                eliminarProducto(item.id)
+            }
+        })
+    });
     const eliminarProducto= (id) => {
         const producto = pedido.find(item => item.id === id);
         pedido.splice(pedido.indexOf(producto), 1);
-        console.log(pedido);
         localStorage.setItem("pedido", JSON.stringify(pedido));
         actualizarCarrito()
     }
@@ -50,7 +63,24 @@ function actualizarCarrito () {
     location.reload()
 }
 /*VACIAR CARRITO*/
-document.getElementById("vaciarCarrito").addEventListener('click', vaciar);
+const vaciarCarrito = document.getElementById("vaciarCarrito")
+vaciarCarrito.addEventListener("click", ()=>{
+    Swal.fire({
+        width: "80rem",
+        title: "¿Esta Seguro Que Desea Vaciar el Carrito?",
+        icon: "warning",
+        iconColor: "#FE5D1C",
+        confirmButtonText: "Confirmar",
+        confirmButtonColor: "#FE5D1C",
+        showCancelButton: true,
+        cancelButtonText: "Cancelar",
+        cancelButtonColor: "#FE5D1C",
+    }).then((result) => {
+        if(result.isConfirmed){
+            vaciar()
+        }
+    })
+});
 function vaciar () {
     localStorage.clear();
     location.reload()

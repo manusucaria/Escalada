@@ -133,9 +133,34 @@ latas.forEach(producto => {
     /*AGREGAR AL CARRITO*/
     let total = document.getElementById(`cantidad${producto.id}`);
     const boton = document.getElementById(`boton${producto.id}`);
-    boton.addEventListener("click", () => {
-        agregarLata(producto.id)
-    })
+    boton.addEventListener("click", ()=>{
+        Swal.fire({
+            width: "80rem",
+            title: "¿Agregar Item al Carrito?",
+            icon: "warning",
+            iconColor: "#FE5D1C",
+            confirmButtonText: "Confirmar",
+            confirmButtonColor: "#FE5D1C",
+            showCancelButton: true,
+            cancelButtonText: "Cancelar",
+            cancelButtonColor: "#FE5D1C",
+        }).then((result) => {
+            if(result.isConfirmed){
+                agregarLata(producto.id)
+                Toastify({
+                    text: "Producto Agregado",
+                    duration: 2500,
+                    position: "right",
+                    gravity: "top",
+                    close: true,
+                    style: {
+                        background: "#000000",
+                        color: "#E8FF94",
+                    }
+                }).showToast();
+            }
+        })
+    });
     const agregarLata= (id) => {
         const producto = latas.find(producto => producto.id === id);
         const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
@@ -180,9 +205,34 @@ growlers.forEach(producto => {
     /*AGREGAR AL CARRITO*/
     let total = document.getElementById(`cantidad${producto.id}`);
     const boton = document.getElementById(`boton${producto.id}`);
-    boton.addEventListener("click", () => {
-        agregarGrowler(producto.id)
-    })
+    boton.addEventListener("click", ()=>{
+        Swal.fire({
+            width: "80rem",
+            title: "¿Agregar Item al Carrito?",
+            icon: "warning",
+            iconColor: "#FE5D1C",
+            confirmButtonText: "Confirmar",
+            confirmButtonColor: "#FE5D1C",
+            showCancelButton: true,
+            cancelButtonText: "Cancelar",
+            cancelButtonColor: "#FE5D1C",
+        }).then((result) => {
+            if(result.isConfirmed){
+                agregarGrowler(producto.id)
+                Toastify({
+                    text: "Producto Agregado",
+                    duration: 2500,
+                    position: "right",
+                    gravity: "top",
+                    close: true,
+                    style: {
+                        background: "#000000",
+                        color: "#E8FF94",
+                    }
+                }).showToast();
+            }
+        })
+    });
     const agregarGrowler= (id) => {
         const producto = growlers.find(producto => producto.id === id);
         const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
@@ -227,9 +277,34 @@ packs.forEach(producto => {
     /*AGREGAR AL CARRITO*/
     let total = document.getElementById(`cantidad${producto.id}`);
     const boton = document.getElementById(`boton${producto.id}`);
-    boton.addEventListener("click", () => {
-        agregarPack(producto.id)
-    })
+    boton.addEventListener("click", ()=>{
+        Swal.fire({
+            width: "80rem",
+            title: "¿Agregar Item al Carrito?",
+            icon: "warning",
+            iconColor: "#FE5D1C",
+            confirmButtonText: "Confirmar",
+            confirmButtonColor: "#FE5D1C",
+            showCancelButton: true,
+            cancelButtonText: "Cancelar",
+            cancelButtonColor: "#FE5D1C",
+        }).then((result) => {
+            if(result.isConfirmed){
+                agregarPack(producto.id)
+                Toastify({
+                    text: "Producto Agregado",
+                    duration: 2500,
+                    position: "right",
+                    gravity: "top",
+                    close: true,
+                    style: {
+                        background: "#000000",
+                        color: "#E8FF94",
+                    }
+                }).showToast();
+            }
+        })
+    });
     const agregarPack= (id) => {
         const producto = packs.find(producto => producto.id === id);
         const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
@@ -274,9 +349,34 @@ varios.forEach(producto => {
     /*AGREGAR AL CARRITO*/
     let total = document.getElementById(`cantidad${producto.id}`);
     const boton = document.getElementById(`boton${producto.id}`);
-    boton.addEventListener("click", () => {
-        agregarVarios(producto.id)
-    })
+    boton.addEventListener("click", ()=>{
+        Swal.fire({
+            width: "80rem",
+            title: "¿Agregar Item al Carrito?",
+            icon: "warning",
+            iconColor: "#FE5D1C",
+            confirmButtonText: "Confirmar",
+            confirmButtonColor: "#FE5D1C",
+            showCancelButton: true,
+            cancelButtonText: "Cancelar",
+            cancelButtonColor: "#FE5D1C",
+        }).then((result) => {
+            if(result.isConfirmed){
+                agregarVarios(producto.id)
+                Toastify({
+                    text: "Producto Agregado",
+                    duration: 2500,
+                    position: "right",
+                    gravity: "top",
+                    close: true,
+                    style: {
+                        background: "#000000",
+                        color: "#E8FF94",
+                    }
+                }).showToast();
+            }
+        })
+    });
     const agregarVarios= (id) => {
         const producto = varios.find(producto => producto.id === id);
         const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
@@ -300,3 +400,4 @@ varios.forEach(producto => {
     document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
     document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
 })
+
