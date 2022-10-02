@@ -300,10 +300,3 @@ varios.forEach(producto => {
     document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
     document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
 })
-// /*VACIAR CARRITO*/
-// document.getElementById("vaciarCarrito").addEventListener('click', vaciar);
-// function vaciar () {
-//     localStorage.clear();
-//     location.reload()
-// };
-
