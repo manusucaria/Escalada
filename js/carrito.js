@@ -32,14 +32,14 @@ pedido.forEach(item => {
     const boton = document.getElementById(`eliminarItem${item.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
-            width: "80rem",
+            width: "50rem",
             title: "¿Eliminar Item?",
             icon: "warning",
             iconColor: "#FE5D1C",
-            confirmButtonText: "Confirmar",
+            confirmButtonText: "Si",
             confirmButtonColor: "#FE5D1C",
             showCancelButton: true,
-            cancelButtonText: "Cancelar",
+            cancelButtonText: "No",
             cancelButtonColor: "#FE5D1C",
         }).then((result) => {
             if(result.isConfirmed){
@@ -67,7 +67,7 @@ const vaciarCarrito = document.getElementById("vaciarCarrito")
 vaciarCarrito.addEventListener("click", ()=>{
     Swal.fire({
         width: "80rem",
-        title: "¿Esta Seguro Que Desea Vaciar el Carrito?",
+        title: "¿Está Seguro de Que Desea Vaciar el Carrito?",
         icon: "warning",
         iconColor: "#FE5D1C",
         confirmButtonText: "Confirmar",
