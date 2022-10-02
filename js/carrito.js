@@ -9,7 +9,7 @@ class Pedido{
 }
 /*CREAR ITEM*/
 let contenedorCarrito = document.getElementById("contenedorCarrito");
-let pedido = JSON.parse(localStorage.getItem("pedido"));
+let pedido = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
 pedido.forEach(item => {
     let pedidoNuevo = new Pedido(item.id, item.tipo, item.variedad, item.cantidad, item.precio);
     pedidoNuevo = document.createElement("tr");
@@ -41,7 +41,6 @@ pedido.forEach(item => {
     }
 })
 /*ELIMINAR ITEM*/
-
 let totalCompra = document.getElementById("totalCompra");
 const suma = pedido.map(item => item.precio).reduce((prev, curr) => prev + curr, 0);
 totalCompra.innerText = ` $${suma}`;

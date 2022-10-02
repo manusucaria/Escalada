@@ -130,6 +130,21 @@ latas.forEach(producto => {
                                 <button id="boton${producto.id}" class="boton-carrito mx-auto my-auto mt-1"><p class="texto-boton">Agregar al Carrito</p></button>
                             </div>`;
     contenedorLatas.appendChild(divProducto);
+    /*AGREGAR AL CARRITO*/
+    let total = document.getElementById(`cantidad${producto.id}`);
+    const boton = document.getElementById(`boton${producto.id}`);
+    boton.addEventListener("click", () => {
+        agregarLata(producto.id)
+    })
+    const agregarLata= (id) => {
+        const producto = latas.find(producto => producto.id === id);
+        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
+        carrito.push(pedido);
+        localStorage.setItem("pedido", JSON.stringify(carrito));
+    }
+});
+/*SUMA Y RESTA CANTIDADES*/
+latas.forEach(producto => {
     let total = document.getElementById(`cantidad${producto.id}`);
     total.innerText = 1;
     function sumar () {
@@ -143,17 +158,7 @@ latas.forEach(producto => {
     }
     document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
     document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
-    const boton = document.getElementById(`boton${producto.id}`);
-    boton.addEventListener("click", () => {
-        agregarLata(producto.id)
-    })
-    const agregarLata= (id) => {
-        const producto = latas.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
-        carrito.push(pedido);
-        localStorage.setItem("pedido", JSON.stringify(carrito));
-    }
-});
+})
 
 /*GROWLERS*/
 const contenedorGrowlers = document.getElementById("contenedorGrowlers");
@@ -172,6 +177,21 @@ growlers.forEach(producto => {
                                 <button id="boton${producto.id}" class="boton-carrito mx-auto my-auto mt-1"><p class="texto-boton">Agregar al Carrito</p></button>
                             </div>`;
     contenedorGrowlers.appendChild(divProducto);
+    /*AGREGAR AL CARRITO*/
+    let total = document.getElementById(`cantidad${producto.id}`);
+    const boton = document.getElementById(`boton${producto.id}`);
+    boton.addEventListener("click", () => {
+        agregarGrowler(producto.id)
+    })
+    const agregarGrowler= (id) => {
+        const producto = growlers.find(producto => producto.id === id);
+        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
+        carrito.push(pedido);
+        localStorage.setItem("pedido", JSON.stringify(carrito));
+    }
+});
+/*SUMA Y RESTA CANTIDADES*/
+growlers.forEach(producto => {
     let total = document.getElementById(`cantidad${producto.id}`);
     total.innerText = 1;
     function sumar () {
@@ -185,17 +205,7 @@ growlers.forEach(producto => {
     }
     document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
     document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
-    const boton = document.getElementById(`boton${producto.id}`);
-    boton.addEventListener("click", () => {
-        agregarGrowler(producto.id)
-    })
-    const agregarGrowler= (id) => {
-        const producto = growlers.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
-        carrito.push(pedido);
-        localStorage.setItem("pedido", JSON.stringify(carrito));
-    }
-});
+})
 
 /*PACKS*/
 const contenedorPacks = document.getElementById("contenedorPacks");
@@ -214,6 +224,21 @@ packs.forEach(producto => {
                                 <button id="boton${producto.id}" class="boton-carrito mx-auto my-auto mt-1"><p class="texto-boton">Agregar al Carrito</p></button>
                             </div>`;
     contenedorPacks.appendChild(divProducto);
+    /*AGREGAR AL CARRITO*/
+    let total = document.getElementById(`cantidad${producto.id}`);
+    const boton = document.getElementById(`boton${producto.id}`);
+    boton.addEventListener("click", () => {
+        agregarPack(producto.id)
+    })
+    const agregarPack= (id) => {
+        const producto = packs.find(producto => producto.id === id);
+        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
+        carrito.push(pedido);
+        localStorage.setItem("pedido", JSON.stringify(carrito));
+    }
+});
+/*SUMA Y RESTA CANTIDADES*/
+packs.forEach(producto => {
     let total = document.getElementById(`cantidad${producto.id}`);
     total.innerText = 1;
     function sumar () {
@@ -227,17 +252,7 @@ packs.forEach(producto => {
     }
     document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
     document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
-    const boton = document.getElementById(`boton${producto.id}`);
-    boton.addEventListener("click", () => {
-        agregarPack(producto.id)
-    })
-    const agregarPack= (id) => {
-        const producto = packs.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
-        carrito.push(pedido);
-        localStorage.setItem("pedido", JSON.stringify(carrito));
-    }
-});
+})
 
 /*VARIOS*/
 const contenedorVarios = document.getElementById("contenedorVarios");
@@ -256,6 +271,21 @@ varios.forEach(producto => {
                                 <button id="boton${producto.id}" class="boton-carrito mx-auto my-auto mt-1"><p class="texto-boton">Agregar al Carrito</p></button>
                             </div>`;
     contenedorVarios.appendChild(divProducto);
+    /*AGREGAR AL CARRITO*/
+    let total = document.getElementById(`cantidad${producto.id}`);
+    const boton = document.getElementById(`boton${producto.id}`);
+    boton.addEventListener("click", () => {
+        agregarVarios(producto.id)
+    })
+    const agregarVarios= (id) => {
+        const producto = varios.find(producto => producto.id === id);
+        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
+        carrito.push(pedido);
+        localStorage.setItem("pedido", JSON.stringify(carrito));
+    }
+});
+/*SUMA Y RESTA CANTIDADES*/
+varios.forEach(producto => {
     let total = document.getElementById(`cantidad${producto.id}`);
     total.innerText = 1;
     function sumar () {
@@ -269,15 +299,11 @@ varios.forEach(producto => {
     }
     document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
     document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
-    const boton = document.getElementById(`boton${producto.id}`);
-    boton.addEventListener("click", () => {
-        agregarVarios(producto.id)
-    })
-    const agregarVarios= (id) => {
-        const producto = varios.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
-        carrito.push(pedido);
-        localStorage.setItem("pedido", JSON.stringify(carrito));
-    }
-});
+})
+// /*VACIAR CARRITO*/
+// document.getElementById("vaciarCarrito").addEventListener('click', vaciar);
+// function vaciar () {
+//     localStorage.clear();
+//     location.reload()
+// };
 
