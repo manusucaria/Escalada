@@ -1,4 +1,4 @@
-const carrito = [];
+let carrito = [];
 const latas = [];
 const growlers = [];
 const packs = [];
@@ -163,7 +163,8 @@ latas.forEach(producto => {
     });
     const agregarLata= (id) => {
         const producto = latas.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
+        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
+        carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
     }
@@ -235,7 +236,8 @@ growlers.forEach(producto => {
     });
     const agregarGrowler= (id) => {
         const producto = growlers.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
+        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
+        carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
     }
@@ -307,7 +309,8 @@ packs.forEach(producto => {
     });
     const agregarPack= (id) => {
         const producto = packs.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
+        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
+        carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
     }
@@ -379,7 +382,8 @@ varios.forEach(producto => {
     });
     const agregarVarios= (id) => {
         const producto = varios.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML)
+        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
+        carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
     }
@@ -400,4 +404,5 @@ varios.forEach(producto => {
     document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
     document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
 })
-
+carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
+console.log(carrito)
