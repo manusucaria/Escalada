@@ -85,5 +85,6 @@ function vaciar () {
     localStorage.clear();
     location.reload()
 };
+console.log(...pedido)
 /*CONTINUAR COMPRA*/
 
