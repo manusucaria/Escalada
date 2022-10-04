@@ -78,23 +78,20 @@ header{
 }
 /**CLASES**/
 .contenedor-titulo{
-    margin-left: 2rem;
     @media screen and (max-width: 767px){
-        margin: auto auto;
+        margin: auto auto auto .5rem;
     }
 }
 .logo{
     object-fit: contain;
     width: 200px;
     height: 65px;
-    margin: auto 0;
-    margin-right: auto;
-    margin-left: 2rem;
     @include cel{
         width: 130px;
     }
-    @media screen and (max-width: 687px) and (min-width: 362px){
-        width: 150px;
+    @media screen and (max-width: 687px){
+        margin: 0;
+        width: 130px;
     }
     @include tablet-xl{
         margin-left: 0;
@@ -105,7 +102,7 @@ header{
         width: 135px;
     }
     @include wide{
-        margin-left: 2rem;
+        margin-left: .5rem;
         width: 180px;
     }
 }
@@ -147,10 +144,85 @@ header{
         margin-right: 2.5rem;
     }
 }
+.svg-cargado{
+    height: 30px;
+    width: 30px;
+    fill: map-get($map:$paleta, $key: 'red');
+    margin-right: 3rem;
+    transition: transform .1s;
+    &:hover{
+        transform: translateX(.5px);
+    }
+    @include cel{
+        height: 19px;
+        width: 19px;
+    }
+    @include smart{
+        height: 20px;
+        width: 20px;
+    }
+    @include tablet{
+        height: 22px;
+        width: 22px;
+    }
+    @include tablet-xl{
+        height: 24px;
+        width: 24px;
+        margin-right: 2rem;
+    }
+    @include desktop{
+        height: 26px;
+        width: 26px;
+        margin-right: 2.3rem;
+    }
+    @include wide{
+        height: 30px;
+        width: 30px;
+        margin-right: 2.5rem;
+    }
+}
+.svg-carrito{
+    height: 30px;
+    width: 30px;
+    fill: map-get($map:$paleta, $key: 'white');
+    margin-right: 3rem;
+    transition: transform .1s;
+    &:hover{
+        transform: translateX(.5px);
+    }
+    @include cel{
+        height: 19px;
+        width: 19px;
+    }
+    @include smart{
+        height: 20px;
+        width: 20px;
+    }
+    @include tablet{
+        height: 22px;
+        width: 22px;
+    }
+    @include tablet-xl{
+        height: 24px;
+        width: 24px;
+        margin-right: 2rem;
+    }
+    @include desktop{
+        height: 26px;
+        width: 26px;
+        margin-right: 2.3rem;
+    }
+    @include wide{
+        height: 30px;
+        width: 30px;
+        margin-right: 2.5rem;
+    }
+}
 /**HAMBURGUESA Y LISTA**/
 .contenedor-listas{
+    margin: auto auto;
     @media screen and (max-width: 767px){
-        margin: auto auto;
+        margin: auto 2.5rem auto auto;
     }
 }
 .lista{

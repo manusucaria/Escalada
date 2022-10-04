@@ -1,0 +1,248 @@
+@keyframes animateDiv{
+    0%{background:linear-gradient(to top map-get($map:$paleta, $key: 'fondo'), map-get($map:$paleta, $key: 'white'))}
+    25%{background:linear-gradient(to right, map-get($map:$paleta, $key: 'hovers2'), map-get($map:$paleta, $key: 'white'))}
+    50%{background:linear-gradient(to bottom, map-get($map:$paleta, $key: 'white'), map-get($map:$paleta, $key: 'hovers2'))}
+    75%{background:linear-gradient(to left, map-get($map:$paleta, $key: 'hovers2'), map-get($map:$paleta, $key: 'white'))}
+    100%{background:linear-gradient(to top, map-get($map:$paleta, $key: 'white'), map-get($map:$paleta, $key: 'fondo'))}
+}
+main section form fieldset{
+    border-color: transparent;
+    input{
+        @include texto(2.5rem, 400, map-get($map:$paleta, $key: 'black'));
+        background-color: map-get($map:$paleta, $key: 'white');
+        opacity: .9;
+        border: .5px solid $borders2;
+        border-bottom: map-get($map:$paleta, $key: 'forth') solid .5px;
+        @include cel{
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 687px) and (min-width: 362px){
+            font-size: 1.8rem;
+        }
+        @include tablet-xl{
+            font-size: 2.1rem;
+        }
+        @include desktop{
+            font-size: 2.2rem;
+        }
+        @include wide{
+            font-size: 2.3rem;
+        }
+    }
+    label{
+        @include texto (2.7rem,400,map-get($map:$paleta, $key: 'black'));
+        opacity: .9;
+        @include cel{
+            font-size: 1.8rem;
+        }
+        @media screen and (max-width: 687px) and (min-width: 362px){
+            font-size: 2rem;
+        }
+        @include tablet-xl{
+            font-size: 2.3rem;
+        }
+        @include desktop{
+            font-size: 2.4rem;
+        }
+        @include wide{
+            font-size: 2.6rem;
+        }
+    }
+    select{
+        @include texto(2.5rem,400,map-get($map:$paleta, $key: 'black'));
+        height: 5rem;
+        cursor: pointer;
+        opacity: .9;
+        border: .5px solid $borders2;
+        border-bottom: map-get($map:$paleta, $key: 'forth') solid .5px;
+        @include cel{
+            font-size: 1.5rem;
+            height: 3.6rem;
+        }
+        @media screen and (max-width: 687px) and (min-width: 362px){
+            font-size: 1.8rem;
+            height: 4rem;
+        }
+        @include tablet-xl{
+            font-size: 2.1rem;
+            height: 4.3rem;
+        }
+        @include desktop{
+            font-size: 2.2rem;
+            height: 4.7rem;
+        }
+        @include wide{
+            font-size: 2.3rem;
+            height: 5rem;
+        }
+        option{
+            @include texto(2.4rem,300,map-get($map:$paleta, $key: 'black'));
+            @include cel{
+                font-size: 1.4rem;
+            }
+            @media screen and (max-width: 687px) and (min-width: 362px){
+                font-size: 1.7rem;
+            }
+            @include tablet-xl{
+                font-size: 2rem;
+            }
+            @include desktop{
+                font-size: 2.1rem;
+            }
+            @include wide{
+                font-size: 2.2rem;
+            }
+        }
+    }
+    section{
+        input{
+            @include texto(2.5rem, 400, map-get($map:$paleta, $key: 'black'));
+            opacity: .9;
+            border: .5px solid $borders2;
+            border-bottom: map-get($map:$paleta, $key: 'forth') solid .5px;
+            @include cel{
+                font-size: 1.5rem;
+            }
+            @media screen and (max-width: 687px) and (min-width: 362px){
+                font-size: 1.8rem;
+            }
+            @include tablet-xl{
+                font-size: 2.1rem;
+            }
+            @include desktop{
+                font-size: 2.2rem;
+            }
+            @include wide{
+                font-size: 2.3rem;
+            }
+            &:hover{
+                animation-name: animateDiv;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+                animation-duration: 5s;
+                animation-delay: 0s;
+                transform: translateX(.5px);
+            }
+        }
+    }
+    textarea{
+        @include texto(2.5rem, 400, map-get($map:$paleta, $key: 'black'));
+        background-color: map-get($map:$paleta, $key: 'white');
+        opacity: .9;
+        border: .5 solid $borders2;
+        border-bottom: map-get($map:$paleta, $key: 'forth') solid .5px;
+        @include cel{
+            font-size: 1.5rem;
+        }
+        @media screen and (max-width: 687px) and (min-width: 362px){
+            font-size: 1.8rem;
+        }
+        @include tablet-xl{
+            font-size: 2.1rem;
+        }
+        @include desktop{
+            font-size: 2.2rem;
+        }
+        @include wide{
+            font-size: 2.3rem;
+        }
+    }
+    div{
+        input{
+            @include texto (2.3rem,300,map-get($map:$paleta, $key: 'black'));
+            background-color: map-get($map:$paleta, $key: 'white');
+            border-radius: 15%;
+            border-bottom: map-get($map:$paleta, $key: 'forth') solid .5px;
+        }
+        label{
+            @include texto (2.3rem,300,map-get($map:$paleta, $key: 'black'));
+            background-color: map-get($map:$paleta, $key: 'white');
+            border-radius: 10%;
+            @include cel{
+                font-size: 1.7rem;
+            }
+            @media screen and (max-width: 687px) and (min-width: 362px){
+                font-size: 1.9rem;
+            }
+            @include tablet-xl{
+                font-size: 2.2rem;
+            }
+            @include desktop{
+                font-size: 2.3rem;
+            }
+            @include wide{
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
+/**CLASES CARRITO**/
+.titulo-mapa{
+    @include texto(2.6rem,400,map-get($map:$paleta, $key: 'black'));
+    @include cel{
+        font-size: 1.8rem;
+    }
+    @media screen and (max-width: 687px) and (min-width: 362px){
+        font-size: 2rem;
+    }
+    @include tablet-xl{
+        font-size: 2.3rem;
+    }
+    @include desktop{
+        font-size: 2.4rem;
+    }
+    @include wide{
+        font-size: 2.5rem;
+    }
+}
+.form-fondo{
+    width: 70%;
+    @include cel{
+        width: 85%;
+    }
+    @include smart{
+        width: 85%;
+    }
+    @include tablet{
+        width: 90%;
+    }
+    @include tablet-xl{
+        width: 85%;
+    }
+    @include desktop{
+        width: 80%;
+    }
+    @include wide{
+        width: 75%;
+    }
+}
+.ubicacion{
+    margin-top: 5rem;
+    @include cel{
+        margin-top: 1rem;
+    }
+    @include smart{
+        margin-top: 2rem;
+    }
+    @include tablet{
+        margin-top: 3rem;
+    }
+}
+.botones-enviar{
+    cursor: pointer;
+}
+@keyframes animateCarrito{
+    0%{transform: translateX(0px);}
+    50%{transform: translateX(4px);}
+    100%{transform: translateX(0px);}
+}
+.animation-carrito{
+    animation-name: animateCarrito;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-duration: 1s;
+    animation-delay: 0s;
+}
+.mapa{
+    min-height: 35vh;
+}
