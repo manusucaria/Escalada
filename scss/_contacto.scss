@@ -1,9 +1,9 @@
 @keyframes animateDiv{
     0%{background:linear-gradient(to top map-get($map:$paleta, $key: 'fondo'), map-get($map:$paleta, $key: 'white'))}
-    25%{background:linear-gradient(to right, map-get($map:$paleta, $key: 'hovers2'), map-get($map:$paleta, $key: 'white'))}
-    50%{background:linear-gradient(to bottom, map-get($map:$paleta, $key: 'white'), map-get($map:$paleta, $key: 'hovers2'))}
-    75%{background:linear-gradient(to left, map-get($map:$paleta, $key: 'hovers2'), map-get($map:$paleta, $key: 'white'))}
-    100%{background:linear-gradient(to top, map-get($map:$paleta, $key: 'white'), map-get($map:$paleta, $key: 'fondo'))}
+    25%{background:linear-gradient(to right map-get($map:$paleta, $key: 'hovers2'), map-get($map:$paleta, $key: 'white'))}
+    50%{background:linear-gradient(to bottom map-get($map:$paleta, $key: 'white'), map-get($map:$paleta, $key: 'hovers2'))}
+    75%{background:linear-gradient(to left map-get($map:$paleta, $key: 'hovers2'), map-get($map:$paleta, $key: 'white'))}
+    100%{background:linear-gradient(to top map-get($map:$paleta, $key: 'white'), map-get($map:$paleta, $key: 'fondo'))}
 }
 main section form fieldset{
     border-color: transparent;

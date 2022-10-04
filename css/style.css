@@ -8668,13 +8668,13 @@ footer {
   0% {
     background: linear-gradient(to top, #ffffff); }
   25% {
-    background: linear-gradient(to right, , #ffffff); }
+    background: linear-gradient(to right, #ffffff); }
   50% {
-    background: linear-gradient(to bottom, #ffffff, ); }
+    background: linear-gradient(to bottom #ffffff, ); }
   75% {
-    background: linear-gradient(to left, , #ffffff); }
+    background: linear-gradient(to left, #ffffff); }
   100% {
-    background: linear-gradient(to top, #ffffff, ); } }
+    background: linear-gradient(to top #ffffff, ); } }
 
 main section form fieldset {
   border-color: transparent; }
@@ -8965,6 +8965,7 @@ main section form fieldset {
       height: 4.5rem; } }
 
 .texto-eliminar {
+  font-family: "hk-grotesk, sans-serif";
   font-size: 1.1rem;
   font-weight: 400;
   color: #ffffff;
@@ -8992,6 +8993,7 @@ main section form fieldset {
       font-size: 1.1rem; } }
 
 .texto-vaciar {
+  font-family: "hk-grotesk, sans-serif";
   font-size: 1.3rem;
   font-weight: 400;
   color: #ffffff;
@@ -9019,6 +9021,7 @@ main section form fieldset {
       font-size: 1.3rem; } }
 
 .total-compra {
+  font-family: "hk-grotesk, sans-serif";
   font-size: 1.3rem;
   font-weight: 700;
   color: #000000;
@@ -9046,6 +9049,7 @@ main section form fieldset {
       font-size: 1.3rem; } }
 
 .texto-actualizar {
+  font-family: "hk-grotesk, sans-serif";
   font-size: 1.3rem;
   font-weight: 400;
   color: #000000;
@@ -9073,6 +9077,7 @@ main section form fieldset {
       font-size: 1.3rem; } }
 
 .texto-compra {
+  font-family: "hk-grotesk, sans-serif";
   font-size: 1.5rem;
   font-weight: 400;
   color: #000000;
@@ -9100,6 +9105,7 @@ main section form fieldset {
       font-size: 1.5rem; } }
 
 .texto-items {
+  font-family: "hk-grotesk, sans-serif";
   font-size: 1.5rem;
   font-weight: 400;
   color: #000000;
@@ -9127,6 +9133,7 @@ main section form fieldset {
       font-size: 1.4rem; } }
 
 .texto-tabla {
+  font-family: "hk-grotesk, sans-serif";
   font-size: 1.5rem;
   font-weight: 700;
   color: #000000;
@@ -9154,23 +9161,23 @@ main section form fieldset {
       font-size: 1.4rem; } }
 
 .boton-eliminar {
-  background-color: red;
-  border: #5c0e0e solid 2px;
+  background-color: #FE5D1C;
+  border: #b82424 solid 2px;
   border-radius: 4px; }
 
 .boton-vaciar {
-  background-color: red;
-  border: #5c0e0e solid 2px;
+  background-color: #FE5D1C;
+  border: #b82424 solid 2px;
   border-radius: 4px; }
 
 .boton-actualizar {
-  background-color: #dbdb75;
-  border: #80952c solid 2px;
+  background-color: #E8FF94;
+  border: #a5c231 solid 2px;
   border-radius: 4px; }
 
 .boton-compra {
-  background-color: #dbdb75;
-  border: #80952c solid 2px;
+  background-color: #E8FF94;
+  border: #a5c231 solid 2px;
   border-radius: 4px; }
 
 /**CLASES NOSOTROS**/

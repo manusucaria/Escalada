@@ -38,6 +38,7 @@
     }
 }
 .texto-eliminar{
+    font-family: $cuerpo;
     @include texto(1.1rem,400,map-get($map:$paleta, $key: 'white'));
     padding: 3px;
     @include cel{
@@ -63,6 +64,7 @@
     }
 }
 .texto-vaciar{
+    font-family: $cuerpo;
     @include texto(1.3rem,400,map-get($map:$paleta, $key: 'white'));
     padding: 3px;
     @include cel{
@@ -88,6 +90,7 @@
     }
 }
 .total-compra{
+    font-family: $cuerpo;
     @include texto(1.3rem,700,map-get($map:$paleta, $key: 'black'));
     padding: 3px;
     @include cel{
@@ -113,6 +116,7 @@
     }
 }
 .texto-actualizar{
+    font-family: $cuerpo;
     @include texto(1.3rem,400,map-get($map:$paleta, $key: 'black'));
     padding: 3px;
     @include cel{
@@ -138,6 +142,7 @@
     }
 }
 .texto-compra{
+    font-family: $cuerpo;
     @include texto(1.5rem,400,map-get($map:$paleta, $key: 'black'));
     padding: 3px;
     @include cel{
@@ -163,6 +168,7 @@
     }
 }
 .texto-items{
+    font-family: $cuerpo;
     @include texto(1.5rem,400,map-get($map:$paleta, $key: 'black'));
     padding: 3px;
     @include cel{
@@ -188,6 +194,7 @@
     }
 }
 .texto-tabla{
+    font-family: $cuerpo;
     @include texto(1.5rem,700,map-get($map:$paleta, $key: 'black'));
     padding: 3px;
     @include cel{
@@ -213,22 +220,22 @@
     }
 }
 .boton-eliminar{
-    background-color: red;
-    border: rgb(92, 14, 14) solid 2px;
+    background-color: map-get($map: $paleta, $key: 'red');
+    border: rgb(184, 36, 36) solid 2px;
     border-radius: 4px;
 }
 .boton-vaciar{
-    background-color: red;
-    border: rgb(92, 14, 14) solid 2px;
+    background-color: map-get($map: $paleta, $key: 'red');
+    border: rgb(184, 36, 36) solid 2px;
     border-radius: 4px;
 }
 .boton-actualizar{
-    background-color: rgb(219, 219, 117);
-    border: rgb(128, 149, 44) solid 2px;
+    background-color: map-get($map: $paleta, $key: 'yellow');
+    border: rgb(165, 194, 49) solid 2px;
     border-radius: 4px;
 }
 .boton-compra{
-    background-color: rgb(219, 219, 117);
-    border: rgb(128, 149, 44) solid 2px;
+    background-color: map-get($map: $paleta, $key: 'yellow');
+    border: rgb(165, 194, 49) solid 2px;
     border-radius: 4px;
 }

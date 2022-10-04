@@ -85,11 +85,5 @@ function vaciar () {
     localStorage.clear();
     location.reload()
 };
-/*COLOR CARRITO*/
-// let svg = document.getElementById("svg-carrito");
-// if (pedido = localStorage.getItem("pedido")){
-//     svg.classList.add = "svg-cargado";
-//     console.log(svg)
-// }
 /*CONTINUAR COMPRA*/
 
