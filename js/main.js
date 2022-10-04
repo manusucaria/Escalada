@@ -149,9 +149,9 @@ latas.forEach(producto => {
                 agregarLata(producto.id)
                 Toastify({
                     text: "Producto Agregado",
-                    duration: 2500,
-                    position: "right",
-                    gravity: "top",
+                    duration: 2000,
+                    position: "center",
+                    gravity: "bottom",
                     close: true,
                     style: {
                         background: "#000000",
@@ -222,9 +222,9 @@ growlers.forEach(producto => {
                 agregarGrowler(producto.id)
                 Toastify({
                     text: "Producto Agregado",
-                    duration: 2500,
-                    position: "right",
-                    gravity: "top",
+                    duration: 2000,
+                    position: "center",
+                    gravity: "bottom",
                     close: true,
                     style: {
                         background: "#000000",
@@ -295,9 +295,9 @@ packs.forEach(producto => {
                 agregarPack(producto.id)
                 Toastify({
                     text: "Producto Agregado",
-                    duration: 2500,
-                    position: "right",
-                    gravity: "top",
+                    duration: 2000,
+                    position: "center",
+                    gravity: "bottom",
                     close: true,
                     style: {
                         background: "#000000",
@@ -368,9 +368,9 @@ varios.forEach(producto => {
                 agregarVarios(producto.id)
                 Toastify({
                     text: "Producto Agregado",
-                    duration: 2500,
-                    position: "right",
-                    gravity: "top",
+                    duration: 2000,
+                    position: "center",
+                    gravity: "bottom",
                     close: true,
                     style: {
                         background: "#000000",
@@ -404,5 +404,4 @@ varios.forEach(producto => {
     document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
     document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
 })
-carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
-console.log(carrito)
+
