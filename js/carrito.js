@@ -83,7 +83,7 @@ vaciarCarrito.addEventListener("click", ()=>{
 });
 function vaciar () {
     localStorage.clear();
-    location.reload()
+    location.reload();
 };
 console.log(...pedido)
 /*CONTINUAR COMPRA*/
