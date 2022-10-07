@@ -8,6 +8,12 @@
     grid-template-rows: 1fr;
     min-height: 100vh;
 }
+.texto-nos{
+    grid-column: 1/4;
+    grid-row: 1/2;
+    z-index: 10;
+    margin-bottom: 25rem;
+}
 .videonos{
     grid-column: 1/4;
     grid-row: 1/2;
@@ -23,15 +29,55 @@
     opacity: .5;
     mix-blend-mode: overlay;
 }
-.w-nos{
-    grid-column: 1/4;
-    grid-row: 1/2;
-    margin-top: 7rem;
-    margin-bottom: 5rem;
+.titulo-nos{
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-bottom: 3rem;
+    @include texto(5rem,700,map-get($map:$paleta, $key: 'yellow'));
+    font-family: $cuerpo;
     @include cel{
-        width: 80%;
+        font-size: 3rem;
+        padding-top: 4rem;
     }
     @include smart{
-        width: 80%;
+        font-size: 3rem;
+        padding-top: 4rem;
+    }
+    @include tablet{
+        font-size: 3.5rem;
+        padding-top: 4rem;
+    }
+    @include tablet-xl{
+        font-size: 4rem;
+    }
+    @include desktop{
+        font-size: 4.5rem;
+    }
+    @include wide{
+        font-size: 5rem;
+    }
+}
+.contenido-nos{
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    @include texto(3.5rem,400,map-get($map:$paleta, $key: 'red'));
+    font-family: $cuerpo;
+    @include cel{
+        font-size: 2rem;
+    }
+    @include smart{
+        font-size: 2rem;
+    }
+    @include tablet{
+        font-size: 2.5rem;
+    }
+    @include tablet-xl{
+        font-size: 3rem;
+    }
+    @include desktop{
+        font-size: 3.5rem;
+    }
+    @include wide{
+        font-size: 3.5rem;
     }
 }

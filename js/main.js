@@ -114,7 +114,7 @@ packs.push(twentyfourPackFaramir);
 
 
 /*LATAS*/
-const contenedorLatas = document.getElementById("contenedorLatas");
+const contenedorLatas = document.querySelector("#contenedorLatas");
 latas.forEach(producto => {
     const divProducto = document.createElement("div");
     divProducto.classList.add(`feria-${producto.id}`, "grid-botonera");
@@ -131,8 +131,8 @@ latas.forEach(producto => {
                             </div>`;
     contenedorLatas.appendChild(divProducto);
     /*AGREGAR AL CARRITO*/
-    let total = document.getElementById(`cantidad${producto.id}`);
-    const boton = document.getElementById(`boton${producto.id}`);
+    let total = document.querySelector(`#cantidad${producto.id}`);
+    const boton = document.querySelector(`#boton${producto.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
             width: "80rem",
@@ -167,11 +167,19 @@ latas.forEach(producto => {
         carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
+                /*NUMERO DE ITEMS CARRITO*/
+        let numeroSvg = document.querySelectorAll(".numero-svg");
+        let numeroItems = carrito.length;
+        for(let numeroSvgs of numeroSvg){
+            if (pedidos = localStorage.getItem("pedido")){
+                numeroSvgs.innerHTML = numeroItems;
+            }
+        }
     }
 });
 /*SUMA Y RESTA CANTIDADES*/
 latas.forEach(producto => {
-    let total = document.getElementById(`cantidad${producto.id}`);
+    let total = document.querySelector(`#cantidad${producto.id}`);
     total.innerText = 1;
     function sumar () {
         let valorTotal = parseInt(total.innerHTML);
@@ -182,12 +190,12 @@ latas.forEach(producto => {
         if (valorTotal == 1) return;
         total.innerHTML = valorTotal - 1;
     }
-    document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
-    document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
+    document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
+    document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
 })
 
 /*GROWLERS*/
-const contenedorGrowlers = document.getElementById("contenedorGrowlers");
+const contenedorGrowlers = document.querySelector("#contenedorGrowlers");
 growlers.forEach(producto => {
     const divProducto = document.createElement("div");
     divProducto.classList.add(`feria-${producto.id}-gr`, "grid-botonera");
@@ -204,8 +212,8 @@ growlers.forEach(producto => {
                             </div>`;
     contenedorGrowlers.appendChild(divProducto);
     /*AGREGAR AL CARRITO*/
-    let total = document.getElementById(`cantidad${producto.id}`);
-    const boton = document.getElementById(`boton${producto.id}`);
+    let total = document.querySelector(`#cantidad${producto.id}`);
+    const boton = document.querySelector(`#boton${producto.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
             width: "80rem",
@@ -240,11 +248,19 @@ growlers.forEach(producto => {
         carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
+        /*NUMERO DE ITEMS CARRITO*/
+        let numeroSvg = document.querySelectorAll(".numero-svg");
+        let numeroItems = carrito.length;
+        for(let numeroSvgs of numeroSvg){
+            if (pedidos = localStorage.getItem("pedido")){
+                numeroSvgs.innerHTML = numeroItems;
+            }
+        }
     }
 });
 /*SUMA Y RESTA CANTIDADES*/
 growlers.forEach(producto => {
-    let total = document.getElementById(`cantidad${producto.id}`);
+    let total = document.querySelector(`#cantidad${producto.id}`);
     total.innerText = 1;
     function sumar () {
         let valorTotal = parseInt(total.innerHTML);
@@ -255,12 +271,12 @@ growlers.forEach(producto => {
         if (valorTotal == 1) return;
         total.innerHTML = valorTotal - 1;
     }
-    document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
-    document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
+    document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
+    document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
 })
 
 /*PACKS*/
-const contenedorPacks = document.getElementById("contenedorPacks");
+const contenedorPacks = document.querySelector("#contenedorPacks");
 packs.forEach(producto => {
     const divProducto = document.createElement("div");
     divProducto.classList.add(`feria-${producto.id}-p`, "grid-botonera");
@@ -277,8 +293,8 @@ packs.forEach(producto => {
                             </div>`;
     contenedorPacks.appendChild(divProducto);
     /*AGREGAR AL CARRITO*/
-    let total = document.getElementById(`cantidad${producto.id}`);
-    const boton = document.getElementById(`boton${producto.id}`);
+    let total = document.querySelector(`#cantidad${producto.id}`);
+    const boton = document.querySelector(`#boton${producto.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
             width: "80rem",
@@ -313,11 +329,19 @@ packs.forEach(producto => {
         carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
+        /*NUMERO DE ITEMS CARRITO*/
+        let numeroSvg = document.querySelectorAll(".numero-svg");
+        let numeroItems = carrito.length;
+        for(let numeroSvgs of numeroSvg){
+            if (pedidos = localStorage.getItem("pedido")){
+                numeroSvgs.innerHTML = numeroItems;
+            }
+        }
     }
 });
 /*SUMA Y RESTA CANTIDADES*/
 packs.forEach(producto => {
-    let total = document.getElementById(`cantidad${producto.id}`);
+    let total = document.querySelector(`#cantidad${producto.id}`);
     total.innerText = 1;
     function sumar () {
         let valorTotal = parseInt(total.innerHTML);
@@ -328,12 +352,12 @@ packs.forEach(producto => {
         if (valorTotal == 1) return;
         total.innerHTML = valorTotal - 1;
     }
-    document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
-    document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
+    document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
+    document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
 })
 
 /*VARIOS*/
-const contenedorVarios = document.getElementById("contenedorVarios");
+const contenedorVarios = document.querySelector("#contenedorVarios");
 varios.forEach(producto => {
     const divProducto = document.createElement("div");
     divProducto.classList.add(`feria-${producto.id}-v`, "grid-botonera");
@@ -350,8 +374,8 @@ varios.forEach(producto => {
                             </div>`;
     contenedorVarios.appendChild(divProducto);
     /*AGREGAR AL CARRITO*/
-    let total = document.getElementById(`cantidad${producto.id}`);
-    const boton = document.getElementById(`boton${producto.id}`);
+    let total = document.querySelector(`#cantidad${producto.id}`);
+    const boton = document.querySelector(`#boton${producto.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
             width: "80rem",
@@ -386,11 +410,19 @@ varios.forEach(producto => {
         carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
+        /*NUMERO DE ITEMS CARRITO*/
+        let numeroSvg = document.querySelectorAll(".numero-svg");
+        let numeroItems = carrito.length;
+        for(let numeroSvgs of numeroSvg){
+            if (pedidos = localStorage.getItem("pedido")){
+                numeroSvgs.innerHTML = numeroItems;
+            }
+        }
     }
 });
 /*SUMA Y RESTA CANTIDADES*/
 varios.forEach(producto => {
-    let total = document.getElementById(`cantidad${producto.id}`);
+    let total = document.querySelector(`#cantidad${producto.id}`);
     total.innerText = 1;
     function sumar () {
         let valorTotal = parseInt(total.innerHTML);
@@ -401,7 +433,8 @@ varios.forEach(producto => {
         if (valorTotal == 1) return;
         total.innerHTML = valorTotal - 1;
     }
-    document.getElementById(`sumar${producto.id}`).addEventListener('click', sumar);
-    document.getElementById(`restar${producto.id}`).addEventListener('click', restar);
+    document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
+    document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
 })
+
 

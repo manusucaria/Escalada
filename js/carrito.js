@@ -8,7 +8,7 @@ class Pedido{
     }
 }
 /*CREAR ITEM*/
-let contenedorCarrito = document.getElementById("contenedorCarrito");
+let contenedorCarrito = document.querySelector("#contenedorCarrito");
 let pedido = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
 pedido.forEach(item => {
     let pedidoNuevo = new Pedido(item.id, item.tipo, item.variedad, item.cantidad, item.precio);
@@ -29,7 +29,7 @@ pedido.forEach(item => {
                             `;
     contenedorCarrito.appendChild(pedidoNuevo);
     /*ELIMINAR ITEM*/
-    const boton = document.getElementById(`eliminarItem${item.id}`);
+    const boton = document.querySelector(`#eliminarItem${item.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
             width: "50rem",
@@ -51,19 +51,26 @@ pedido.forEach(item => {
         const producto = pedido.find(item => item.id === id);
         pedido.splice(pedido.indexOf(producto), 1);
         localStorage.setItem("pedido", JSON.stringify(pedido));
+        if(pedido.length == 0){
+            localStorage.clear();
+        }
         actualizarCarrito()
     }
 })
-let totalCompra = document.getElementById("totalCompra");
+let totalCompra = document.querySelector("#totalCompra");
 const suma = pedido.map(item => item.precio).reduce((prev, curr) => prev + curr, 0);
 totalCompra.innerText = ` $${suma}`;
 /*ACTUALIZAR CARRITO*/
 document.getElementById("actualizarCarrito").addEventListener('click', actualizarCarrito);
 function actualizarCarrito () {
+    pedido = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
+    if(pedido.length == 0){
+        localStorage.clear();
+    }
     location.reload()
 }
 /*VACIAR CARRITO*/
-const vaciarCarrito = document.getElementById("vaciarCarrito")
+const vaciarCarrito = document.querySelector("#vaciarCarrito")
 vaciarCarrito.addEventListener("click", ()=>{
     Swal.fire({
         width: "80rem",
@@ -83,7 +90,7 @@ vaciarCarrito.addEventListener("click", ()=>{
 });
 function vaciar () {
     localStorage.clear();
-    location.reload();
+    actualizarCarrito()
 };
 console.log(...pedido)
 /*CONTINUAR COMPRA*/

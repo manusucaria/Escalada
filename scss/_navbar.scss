@@ -144,10 +144,10 @@ header{
         margin-right: 2.5rem;
     }
 }
-.svg-cargado{
+.svg-inicio{
     height: 30px;
     width: 30px;
-    fill: map-get($map:$paleta, $key: 'red');
+    fill: map-get($map:$paleta, $key: 'yellow');
     margin-right: 3rem;
     transition: transform .1s;
     &:hover{
@@ -257,4 +257,7 @@ header{
 }
 .lista-nav{
     text-align: center;
+}
+.numero-svg{
+    @include texto(1.5rem,100,map-get($map:$paleta, $key: 'red'));
 }

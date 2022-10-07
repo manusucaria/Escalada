@@ -16,7 +16,7 @@
     </head>
     <body>
         <!--HEADER-->
-        <header>
+        <header class="header-var">
             <nav class="navbar-dark navbar-expand-md d-flex">
                 <div class="contenedor-titulo me-auto my-auto">
                     <a class="my-auto" href="../index.html">
@@ -42,7 +42,7 @@
                                 <a class="nav-link" href="contacto.html"><p class="lista-nav">Contacto</p></a>
                             </li>
                             <li class="navbar-item listas">
-                                <a class="nav-link" href="../index.html"><p class="lista-nav">Variedades</p></a>
+                                <a class="nav-link" href="variedades.html"><p class="lista-nav">Variedades</p></a>
                             </li>
                             <li class="navbar-item lista2">
                                 <a class="nav-link" href="carrito.html"><p class="lista-nav">Carrito</p></a>
@@ -85,7 +85,8 @@
                                 </g>
                         </svg>
                     </a>
-                    <a href="carrito.html" target="_blank">
+                    <a class="d-flex" href="carrito.html" target="_blank">
+                        <p class="numero-svg"></p>
                         <svg class="svg-carrito" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         viewBox="0 0 331.099 331.1" style="enable-background:new 0 0 331.099 331.1;"
                         xml:space="preserve">
@@ -111,10 +112,42 @@
             </nav>
         </header>
         <!--MAIN-->
-        <main>
+        <main class="main-var">
+            <div class="carouseles">
+                <img class="imagenes-variedades-1" src="../assets/img/variedades/dedalus.jpg" alt="Logo Dedalus">
+                <img class="imagenes-variedades-2" src="../assets/img/variedades/dedalus2.jpg" alt="Etiqueta Dedalus">
+                <div class="texto-variedades d-flex flex-column">
+                    <h2 class="titulo-variedades-dedalus text-center mx-auto mt-auto">DEDALUS</h2>
+                    <p class="contenido-variedades-dedalus text-center mb-auto mx-auto">Cerveza de color Ámbar. En el aroma se siente un caracter a lúpulo especiado , sin opacar las características de la malta. En cuanto al sabor hay una tendencia hacia el amargor del lúpulo, con el debido soporte de la malta y con sutiles notas a pan y caramelo.</p>
+                </div>
+            </div>
+            <div class="carouseles">
+                <img class="imagenes-variedades-1" src="../assets/img/variedades/hibiscus.jpg" alt="Logo Hibiscus">
+                <img class="imagenes-variedades-2" src="../assets/img/variedades/hibiscus2.jpg" alt="Etiqueta Hibiscus">
+                <div class="texto-variedades d-flex flex-column">
+                    <h2 class="titulo-variedades text-center mx-auto mt-auto">HIBISCUS</h2>
+                    <p class="contenido-variedades text-center mb-auto mx-auto">Nuestra Cerveza Hibiscus es unica en su tipo, de graduación alcohólica alta, es un tipo de cerveza preciada y realmente gustosa. Es natural, ya que no lleva aditivos ni conservantes, sino levadura no filtrada. Con un color algo más claro, el sabor es cremoso y suave, muy puro al ser artesanal y tan natural.</p>
+                </div>
+            </div>
+            <div class="carouseles">
+                <img class="imagenes-variedades-1" src="../assets/img/variedades/honey.jpg" alt="Logo Nepal Honey">
+                <img class="imagenes-variedades-2" src="../assets/img/variedades/honey2.jpg" alt="Etiqueta Nepal Honey">
+                <div class="texto-variedades d-flex flex-column">
+                    <h2 class="titulo-variedades-honey text-center mx-auto mt-auto">NEPAL HONEY</h2>
+                    <p class="contenido-variedades-honey text-center mb-auto mx-auto">Cerveza rubia con el justo equilibrio entre malta y miel. Cerveza de color cobre y de un amargor bajo. Tanto en su aroma como en su sabor hay un equilibrio entre la malta y dulzor de la miel.</p>
+                </div>
+            </div>
+            <div class="carouseles">
+                <img class="imagenes-variedades-1" src="../assets/img/variedades/doblepale.jpg" alt="Logo Doble Pale">
+                <img class="imagenes-variedades-2" src="../assets/img/variedades/doblepale2.jpg" alt="Etiqueta Doble Pale">
+                <div class="texto-variedades d-flex flex-column">
+                    <h2 class="titulo-variedades-doblepale text-center mx-auto mt-auto">DOBLE PALE</h2>
+                    <p class="contenido-variedades-doblepale text-center mb-auto mx-auto">Nuestra Cerveza Doble Pale es de gran tomabilidad y alto amargor relativo. Con un aroma intenso a lúpulo y con características cítricas, frutales y resinosas.</p>
+                </div>
+            </div>
         </main>
         <!--FOOTER-->
-        <footer>
+        <footer class="footer-var">
             <div class="grid-footer">
                 <a class="grid-footer-1 mt-auto ms-auto" href="https://api.whatsapp.com/send?phone=5491156306090&text=Chateá%20con%20Nosotros">
                     <img class="img-wa" src="../assets/img/wa.png" alt="Ícono de Whatsapp">
