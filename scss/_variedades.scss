@@ -74,6 +74,7 @@
 }
 .imagenes-variedades-1{
     z-index: 1;
+
     grid-row: 1/2;
     grid-column: 1/3;
     height: 89vh;
@@ -88,6 +89,7 @@
         animation-delay: 0s;
     }
     @include cel{
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
@@ -99,6 +101,7 @@
         animation-delay: 0s;
     }
     @include smart{
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
@@ -110,6 +113,7 @@
         animation-delay: 0s;
     }
     @include tablet{
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
@@ -121,6 +125,7 @@
         animation-delay: 0s;
     }
     @include tablet-xl{
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
@@ -132,12 +137,14 @@
         animation-delay: 0s;
     }
     @include desktop{
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
         object-fit: contain;
     }
     @media screen and (min-width: 1111px) and (max-width: 1730px){
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
@@ -160,6 +167,7 @@
         animation-delay: 0s;
     }
     @include cel{
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
@@ -171,6 +179,7 @@
         animation-delay: 0s;
     }
     @include smart{
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
@@ -182,6 +191,7 @@
         animation-delay: 0s;
     }
     @include tablet{
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
@@ -193,6 +203,7 @@
         animation-delay: 0s;
     }
     @include tablet-xl{
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
@@ -204,12 +215,14 @@
         animation-delay: 0s;
     }
     @include desktop{
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
         object-fit: contain;
     }
     @media screen and (min-width: 1111px) and (max-width: 1730px){
+        border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
@@ -217,7 +230,7 @@
     }
 }
 .titulo-variedades{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
     @include texto(3rem,600,map-get($map:$paleta, $key: 'hibiscus'));
     font-family: $cuerpo;
@@ -300,7 +313,7 @@
     }
 }
 .titulo-variedades-dedalus{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
     @include texto(3rem,600,map-get($map:$paleta, $key: 'dedalus'));
     font-family: $cuerpo;
@@ -383,7 +396,7 @@
     }
 }
 .titulo-variedades-honey{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
     @include texto(3rem,600,map-get($map:$paleta, $key: 'honey'));
     font-family: $cuerpo;
@@ -466,7 +479,7 @@
     }
 }
 .titulo-variedades-doblepale{
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
     @include texto(3rem,600,map-get($map:$paleta, $key: 'doblepale'));
     font-family: $cuerpo;

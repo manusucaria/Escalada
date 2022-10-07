@@ -11091,6 +11091,7 @@ main section form fieldset {
     animation-delay: 0s; }
   @media screen and (max-width: 361px) {
     .imagenes-variedades-1 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
@@ -11102,6 +11103,7 @@ main section form fieldset {
       animation-delay: 0s; } }
   @media screen and (max-width: 450px) and (min-width: 362px) {
     .imagenes-variedades-1 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
@@ -11113,6 +11115,7 @@ main section form fieldset {
       animation-delay: 0s; } }
   @media screen and (max-width: 687px) and (min-width: 451px) {
     .imagenes-variedades-1 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
@@ -11124,6 +11127,7 @@ main section form fieldset {
       animation-delay: 0s; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .imagenes-variedades-1 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
@@ -11135,12 +11139,14 @@ main section form fieldset {
       animation-delay: 0s; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .imagenes-variedades-1 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
   @media screen and (min-width: 1111px) and (max-width: 1730px) {
     .imagenes-variedades-1 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
@@ -11162,6 +11168,7 @@ main section form fieldset {
     animation-delay: 0s; }
   @media screen and (max-width: 361px) {
     .imagenes-variedades-2 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
@@ -11173,6 +11180,7 @@ main section form fieldset {
       animation-delay: 0s; } }
   @media screen and (max-width: 450px) and (min-width: 362px) {
     .imagenes-variedades-2 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
@@ -11184,6 +11192,7 @@ main section form fieldset {
       animation-delay: 0s; } }
   @media screen and (max-width: 687px) and (min-width: 451px) {
     .imagenes-variedades-2 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
@@ -11195,6 +11204,7 @@ main section form fieldset {
       animation-delay: 0s; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .imagenes-variedades-2 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
@@ -11206,19 +11216,21 @@ main section form fieldset {
       animation-delay: 0s; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .imagenes-variedades-2 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
   @media screen and (min-width: 1111px) and (max-width: 1730px) {
     .imagenes-variedades-2 {
+      border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
 
 .titulo-variedades {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
@@ -11305,7 +11317,7 @@ main section form fieldset {
       padding-right: 2rem; } }
 
 .titulo-variedades-dedalus {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
@@ -11392,7 +11404,7 @@ main section form fieldset {
       padding-right: 2rem; } }
 
 .titulo-variedades-honey {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
@@ -11479,7 +11491,7 @@ main section form fieldset {
       padding-right: 2rem; } }
 
 .titulo-variedades-doblepale {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
   font-size: 3rem;
   font-weight: 600;
