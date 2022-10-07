@@ -11025,7 +11025,7 @@ main section form fieldset {
   border-bottom: 0.5px #ffffff solid;
   border-top: 0.5px #ffffff solid;
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(3, 1fr);
   grid-row: 1fr; }
   @media screen and (max-width: 361px) {
     .carouseles {

@@ -22,7 +22,7 @@
     border-bottom: .5px map-get($map: $paleta, $key: 'white') solid;
     border-top: .5px map-get($map: $paleta, $key: 'white') solid;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-row: 1fr;
     @include cel{
         grid-row: repeat(2, auto);
