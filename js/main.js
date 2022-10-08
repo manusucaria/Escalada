@@ -175,6 +175,12 @@ latas.forEach(producto => {
                 numeroSvgs.innerHTML = numeroItems;
             }
         }
+        let svg = document.querySelectorAll(".svg-carrito");
+        for(let svgs of svg){
+            if (pedidos = localStorage.getItem("pedido")){
+                svgs.style.fill = "#FE5D1C";
+            }
+        }
     }
 });
 /*SUMA Y RESTA CANTIDADES*/
@@ -254,6 +260,12 @@ growlers.forEach(producto => {
         for(let numeroSvgs of numeroSvg){
             if (pedidos = localStorage.getItem("pedido")){
                 numeroSvgs.innerHTML = numeroItems;
+            }
+        }
+        let svg = document.querySelectorAll(".svg-carrito");
+        for(let svgs of svg){
+            if (pedidos = localStorage.getItem("pedido")){
+                svgs.style.fill = "#FE5D1C";
             }
         }
     }
@@ -337,6 +349,12 @@ packs.forEach(producto => {
                 numeroSvgs.innerHTML = numeroItems;
             }
         }
+        let svg = document.querySelectorAll(".svg-carrito");
+        for(let svgs of svg){
+            if (pedidos = localStorage.getItem("pedido")){
+                svgs.style.fill = "#FE5D1C";
+            }
+        }
     }
 });
 /*SUMA Y RESTA CANTIDADES*/
@@ -416,6 +434,12 @@ varios.forEach(producto => {
         for(let numeroSvgs of numeroSvg){
             if (pedidos = localStorage.getItem("pedido")){
                 numeroSvgs.innerHTML = numeroItems;
+            }
+        }
+        let svg = document.querySelectorAll(".svg-carrito");
+        for(let svgs of svg){
+            if (pedidos = localStorage.getItem("pedido")){
+                svgs.style.fill = "#FE5D1C";
             }
         }
     }
