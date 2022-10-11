@@ -2,6 +2,27 @@
 .margin-index{
     margin-top: 0;
 }
+.inicio{
+    display: block;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    @media screen and (max-width: 910px){
+        display: none;
+    }
+}
+.video-inicio{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.video-mouse{
+    transition: opacity ease .5s;
+    opacity: 0;
+}
 /**SECCION 0**/
 .articulo-0{
     width: 100%;

@@ -28,3 +28,15 @@ for(let numeroSvgs of numeroSvg){
         numeroSvgs.innerHTML = numeroItems;
     }
 }
+/*VIDEO INICIO*/
+let videoInicio = document.querySelector("#video-inicio");
+videoInicio.onwheel = () =>{
+    let video = videoInicio;
+    video.classList.add("video-mouse")
+    setInterval(()=>{
+        video.style.transform = "traslate(1000px)"
+    },100)
+    setInterval(()=>{
+        video.style.display = "none"
+    },200)
+}
