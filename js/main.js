@@ -34,6 +34,12 @@ class Pedido{
     }
 }
 /*LATAS*/
+fetch("../json/productos.json")
+    .then((response)=> response.json())
+    .then((data) => {
+        const latas = [...data]
+        console.log(latas)
+    })
 const lataHoney = new Producto(1,"Lata", "Honey", 1000, 380);
 const lataBlonde = new Producto(2, "Lata", "Blonde", 1000, 380);
 const lataPaleAle = new Producto(3, "Lata", "Pale Ale", 1000, 380);

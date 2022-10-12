@@ -11103,61 +11103,40 @@ main section form fieldset {
   height: 89vh;
   width: 100%;
   object-fit: auto;
-  transition: z-index .5s ease; }
-  .imagenes-variedades-1:hover {
-    animation-name: animateImg-1;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 5s;
-    animation-delay: 0s; }
+  transition: z-index .5s ease;
+  animation-name: animateImg-1;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-delay: 0s; }
   @media screen and (max-width: 361px) {
     .imagenes-variedades-1 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
-      object-fit: contain;
-      animation-name: animateImg-1;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-duration: 5s;
-      animation-delay: 0s; } }
+      object-fit: contain; } }
   @media screen and (max-width: 450px) and (min-width: 362px) {
     .imagenes-variedades-1 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
-      object-fit: contain;
-      animation-name: animateImg-1;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-duration: 5s;
-      animation-delay: 0s; } }
+      object-fit: contain; } }
   @media screen and (max-width: 687px) and (min-width: 451px) {
     .imagenes-variedades-1 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
-      object-fit: contain;
-      animation-name: animateImg-1;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-duration: 5s;
-      animation-delay: 0s; } }
+      object-fit: contain; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .imagenes-variedades-1 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
-      object-fit: contain;
-      animation-name: animateImg-1;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-duration: 5s;
-      animation-delay: 0s; } }
+      object-fit: contain; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .imagenes-variedades-1 {
       border-bottom: 1px #ffffff solid;
@@ -11180,61 +11159,40 @@ main section form fieldset {
   height: 89vh;
   width: 100%;
   object-fit: auto;
-  transition: z-index .5s ease; }
-  .imagenes-variedades-2:hover {
-    animation-name: animateImg-2;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 5s;
-    animation-delay: 0s; }
+  transition: z-index .5s ease;
+  animation-name: animateImg-2;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-delay: 0s; }
   @media screen and (max-width: 361px) {
     .imagenes-variedades-2 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
-      object-fit: contain;
-      animation-name: animateImg-2;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-duration: 5s;
-      animation-delay: 0s; } }
+      object-fit: contain; } }
   @media screen and (max-width: 450px) and (min-width: 362px) {
     .imagenes-variedades-2 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
-      object-fit: contain;
-      animation-name: animateImg-2;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-duration: 5s;
-      animation-delay: 0s; } }
+      object-fit: contain; } }
   @media screen and (max-width: 687px) and (min-width: 451px) {
     .imagenes-variedades-2 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
-      object-fit: contain;
-      animation-name: animateImg-2;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-duration: 5s;
-      animation-delay: 0s; } }
+      object-fit: contain; } }
   @media screen and (min-width: 688px) and (max-width: 900px) {
     .imagenes-variedades-2 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
-      object-fit: contain;
-      animation-name: animateImg-2;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear;
-      animation-duration: 5s;
-      animation-delay: 0s; } }
+      object-fit: contain; } }
   @media screen and (min-width: 901px) and (max-width: 1110px) {
     .imagenes-variedades-2 {
       border-bottom: 1px #ffffff solid;

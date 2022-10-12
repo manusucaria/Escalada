@@ -74,31 +74,23 @@
 }
 .imagenes-variedades-1{
     z-index: 1;
-
     grid-row: 1/2;
     grid-column: 1/3;
     height: 89vh;
     width: 100%;
     object-fit: auto;
     transition: z-index .5s ease;
-    &:hover{
-        animation-name: animateImg-1;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 0s;
-    }
+    animation-name: animateImg-1;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 0s;
     @include cel{
         border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
         object-fit: contain;
-        animation-name: animateImg-1;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 0s;
     }
     @include smart{
         border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
@@ -106,11 +98,6 @@
         grid-column: 1/4;
         height: auto;
         object-fit: contain;
-        animation-name: animateImg-1;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 0s;
     }
     @include tablet{
         border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
@@ -118,11 +105,6 @@
         grid-column: 1/4;
         height: auto;
         object-fit: contain;
-        animation-name: animateImg-1;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 0s;
     }
     @include tablet-xl{
         border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
@@ -130,11 +112,6 @@
         grid-column: 1/4;
         height: auto;
         object-fit: contain;
-        animation-name: animateImg-1;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 0s;
     }
     @include desktop{
         border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
@@ -159,24 +136,17 @@
     width: 100%;
     object-fit: auto;
     transition: z-index .5s ease;
-    &:hover{
-        animation-name: animateImg-2;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 0s;
-    }
+    animation-name: animateImg-2;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 0s;
     @include cel{
         border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
         grid-row: 1/2;
         grid-column: 1/4;
         height: auto;
         object-fit: contain;
-        animation-name: animateImg-2;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 0s;
     }
     @include smart{
         border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
@@ -184,11 +154,6 @@
         grid-column: 1/4;
         height: auto;
         object-fit: contain;
-        animation-name: animateImg-2;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 0s;
     }
     @include tablet{
         border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
@@ -196,11 +161,6 @@
         grid-column: 1/4;
         height: auto;
         object-fit: contain;
-        animation-name: animateImg-2;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 0s;
     }
     @include tablet-xl{
         border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
@@ -208,11 +168,6 @@
         grid-column: 1/4;
         height: auto;
         object-fit: contain;
-        animation-name: animateImg-2;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-duration: 5s;
-        animation-delay: 0s;
     }
     @include desktop{
         border-bottom: 1px map-get($map: $paleta, $key: 'white') solid;
