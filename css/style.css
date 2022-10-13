@@ -8560,14 +8560,17 @@ footer {
       transform: translateX(0.3px); }
     @media screen and (max-width: 361px) {
       footer p {
+        margin-top: 2.5rem;
         font-size: .9rem;
         margin-right: 0; } }
     @media screen and (max-width: 450px) and (min-width: 362px) {
       footer p {
+        margin-top: 2.5rem;
         font-size: 1rem;
         margin-right: 0; } }
     @media screen and (max-width: 687px) and (min-width: 451px) {
       footer p {
+        margin-top: 2.5rem;
         font-size: 1.2rem;
         margin-right: 1.2rem; } }
     @media screen and (min-width: 688px) and (max-width: 900px) {
