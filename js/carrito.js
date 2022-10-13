@@ -75,7 +75,7 @@ function actualizarCarrito () {
 };
 /*VACIAR CARRITO*/
 const vaciarCarrito = document.querySelector("#vaciarCarrito")
-vaciarCarrito.addEventListener("click", ()=>{
+vaciarCarrito.addEventListener("click", () => {
     Swal.fire({
         width: "80rem",
         title: "¿Está Seguro de Que Desea Vaciar el Carrito?",
@@ -96,5 +96,17 @@ function vaciar () {
     localStorage.clear();
     actualizarCarrito()
 };
-/*CONTINUAR COMPRA*/
-
+/*FINALIZAR COMPRA*/
+const finalizarCompra = document.querySelector("#finalizarCompra");
+finalizarCompra.addEventListener("click", () => {
+    Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Compra Finalizada!',
+        text: 'Gracias por Elegirnos!',
+        showConfirmButton: false,
+        timer: 1500
+    }).then( () => {
+        vaciar()
+    })
+})
