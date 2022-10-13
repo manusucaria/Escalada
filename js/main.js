@@ -34,15 +34,6 @@ class Pedido{
     }
 }
 /*LATAS*/
-// const productosJson = "../json/productos.json";
-// fetch(productosJson)
-//     .then((response) => response.json())
-//     .then((data) => {
-//         data.forEach(producto => {
-//             const lataNueva = new Producto(producto.id, producto.tipo, producto.variedad, producto.cantidad, producto.precio)
-//             latas.push(lataNueva)
-//         })
-//     })
 const lataHoney = new Producto(1,"Lata", "Honey", 1000, 380);
 const lataBlonde = new Producto(2, "Lata", "Blonde", 1000, 380);
 const lataPaleAle = new Producto(3, "Lata", "Pale Ale", 1000, 380);
@@ -86,12 +77,6 @@ const twentyfourPackFaramir = new Producto(34, "24 Pack", "Faramir", 200, lataFa
 
 
 /*PUSH AL STOCK*/
-latas.push(lataHoney);
-latas.push(lataBlonde);
-latas.push(lataPaleAle);
-latas.push(lataDoblePale);
-latas.push(lataHibiscus);
-latas.push(lataFaramir);
 growlers.push(growlerHoney);
 growlers.push(growlerBlonde);
 growlers.push(growlerPaleAle);
@@ -125,24 +110,35 @@ packs.push(twentyfourPackFaramir);
 /*LATAS*/
 /*AGREGAR AL DOM*/
 const contenedorLatas = document.querySelector("#contenedorLatas");
-latas.forEach(producto => {
-    const divProducto = document.createElement("div");
-    divProducto.classList.add(`feria-${producto.id}`, "grid-botonera");
-    divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
-                            <div class="botonera2 my-auto me-auto d-flex flex-column botonera-sumar">
-                                <button id="sumar${producto.id}" class="boton-sumar1 my-auto mx-auto"><p class="my-auto mx-auto">▲</p></button>
-                                <div class="boton-sumar2"><p id="cantidad${producto.id}" class="my-auto text-center"></p></div>
-                                <button id="restar${producto.id}" class="boton-sumar3 my-auto mx-auto"><p class="my-auto mx-auto">▼</p></button>
-                            </div>
-                            <div class="botonera3 mx-auto my-auto d-flex flex-column">
-                                <p class="titulos-feria text-center my-auto">${producto.tipo} ${producto.variedad}</p>
-                                <p class="precios mx-auto my-auto">$${producto.precio}</p>
-                                <button id="boton${producto.id}" class="boton-carrito mx-auto my-auto mt-1"><p class="texto-boton">Agregar al Carrito</p></button>
-                            </div>`;
-    contenedorLatas.appendChild(divProducto);
-});
-/*SUMA Y RESTA CANTIDADES*/
-latas.forEach(producto => {
+const productosJson = "../json/productos.json";
+fetch(productosJson)
+    .then((response) => response.json())
+    .then((data) => {
+        data.forEach(producto => {
+            const productoNuevo = new Producto(producto.id, producto.tipo, producto.variedad, producto.cantidad, producto.precio);
+            latas.push(productoNuevo)
+            console.log(latas)
+            const divProducto = document.createElement("div");
+            divProducto.classList.add(`feria-${producto.id}`, "grid-botonera");
+            divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
+                                    <div class="botonera2 my-auto me-auto d-flex flex-column botonera-sumar">
+                                        <button id="sumar${producto.id}" class="boton-sumar1 my-auto mx-auto"><p class="my-auto mx-auto">▲</p></button>
+                                        <div class="boton-sumar2"><p id="cantidad${producto.id}" class="my-auto text-center"></p></div>
+                                        <button id="restar${producto.id}" class="boton-sumar3 my-auto mx-auto"><p class="my-auto mx-auto">▼</p></button>
+                                    </div>
+                                    <div class="botonera3 mx-auto my-auto d-flex flex-column">
+                                        <p class="titulos-feria text-center my-auto">${producto.tipo} ${producto.variedad}</p>
+                                        <p class="precios mx-auto my-auto">$${producto.precio}</p>
+                                        <button id="boton${producto.id}" class="boton-carrito mx-auto my-auto mt-1"><p class="texto-boton">Agregar al Carrito</p></button>
+                                    </div>`;
+            contenedorLatas.appendChild(divProducto);
+            cantidades(producto)
+            botonera(producto)
+            agregar(producto)
+        })
+    })
+/*SUMAR Y RESTAR CANTIDADES*/
+function cantidades (producto) {
     let total = document.querySelector(`#cantidad${producto.id}`);
     total.innerText = 1;
     function sumar () {
@@ -156,9 +152,9 @@ latas.forEach(producto => {
     }
     document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
     document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
-});
+}
 /*AGREGAR AL CARRITO*/
-latas.forEach(producto => {
+function botonera (producto) {
     const boton = document.querySelector(`#boton${producto.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
@@ -187,19 +183,19 @@ latas.forEach(producto => {
                 }).showToast();
             }
         })
-    });
-});
-latas.forEach(producto => {
-    let total = document.querySelector(`#cantidad${producto.id}`);
+    })
+}
+function agregar (producto) {
     agregarLata= (id) => {
         const producto = latas.find(producto => producto.id === id);
+        let total = document.querySelector(`#cantidad${producto.id}`);
         const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
         carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
         carrito.push(pedido);
         localStorage.setItem("pedido", JSON.stringify(carrito));
         pintarcarrito()
     }
-});
+}
 
 /*GROWLERS*/
 const contenedorGrowlers = document.querySelector("#contenedorGrowlers");
