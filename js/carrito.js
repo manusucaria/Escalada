@@ -7,7 +7,7 @@ class Pedido{
         this.precio = precio;
     }
 }
-/*CREAR ITEM*/
+/*CREAR ITEM DOM*/
 let contenedorCarrito = document.querySelector("#contenedorCarrito");
 let pedido = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
 pedido.forEach(item => {
@@ -28,7 +28,10 @@ pedido.forEach(item => {
                             <td scope="col"><button class="boton-eliminar" id="eliminarItem${item.id}"><p class="texto-eliminar my-auto mx-auto">Eliminar</p></button></td>
                             `;
     contenedorCarrito.appendChild(pedidoNuevo);
-    /*ELIMINAR ITEM*/
+    eliminarItem(item)
+})
+/*ELIMINAR ITEM*/
+function eliminarItem(item) {
     const boton = document.querySelector(`#eliminarItem${item.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
@@ -46,17 +49,18 @@ pedido.forEach(item => {
                 eliminarProducto(item.id)
             }
         })
-    });
-    const eliminarProducto= (id) => {
-        const producto = pedido.find(item => item.id === id);
-        pedido.splice(pedido.indexOf(producto), 1);
-        localStorage.setItem("pedido", JSON.stringify(pedido));
-        if(pedido.length == 0){
-            localStorage.clear();
-        }
-        actualizarCarrito()
+    })
+}
+function eliminarProducto (id) {
+    const producto = pedido.find(item => item.id === id);
+    pedido.splice(pedido.indexOf(producto), 1);
+    localStorage.setItem("pedido", JSON.stringify(pedido));
+    if(pedido.length == 0){
+        localStorage.clear();
     }
-})
+    actualizarCarrito()
+}
+/*TOTAL COMPRA*/
 let totalCompra = document.querySelector("#totalCompra");
 const suma = pedido.map(item => item.precio).reduce((prev, curr) => prev + curr, 0);
 totalCompra.innerText = ` $${suma}`;
@@ -92,6 +96,5 @@ function vaciar () {
     localStorage.clear();
     actualizarCarrito()
 };
-console.log(...pedido)
 /*CONTINUAR COMPRA*/
 

@@ -110,14 +110,12 @@ packs.push(twentyfourPackFaramir);
 /*LATAS*/
 /*AGREGAR AL DOM*/
 const contenedorLatas = document.querySelector("#contenedorLatas");
-const productosJson = "../json/productos.json";
-fetch(productosJson)
+fetch("../json/productos.json")
     .then((response) => response.json())
     .then((data) => {
         data.forEach(producto => {
             const productoNuevo = new Producto(producto.id, producto.tipo, producto.variedad, producto.cantidad, producto.precio);
             latas.push(productoNuevo)
-            console.log(latas)
             const divProducto = document.createElement("div");
             divProducto.classList.add(`feria-${producto.id}`, "grid-botonera");
             divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
@@ -134,7 +132,7 @@ fetch(productosJson)
             contenedorLatas.appendChild(divProducto);
             cantidades(producto)
             botonera(producto)
-            agregar(producto)
+            agregar()
         })
     })
 /*SUMAR Y RESTAR CANTIDADES*/
@@ -185,7 +183,7 @@ function botonera (producto) {
         })
     })
 }
-function agregar (producto) {
+function agregar () {
     agregarLata= (id) => {
         const producto = latas.find(producto => producto.id === id);
         let total = document.querySelector(`#cantidad${producto.id}`);
@@ -430,6 +428,7 @@ varios.forEach(producto => {
         pintarcarrito()
     }
 });
+/*CARRITO STYLE*/
 function pintarcarrito () {
     /*NUMERO DE ITEMS CARRITO*/
     let numeroSvg = document.querySelectorAll(".numero-svg");
