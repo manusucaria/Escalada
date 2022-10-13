@@ -23,7 +23,7 @@ class Producto{
     twentyfourpack(){
         return ((this.precio * 0.91) * 24).toFixed(0);
     }
-}
+};
 class Pedido{
     constructor(id, tipo, variedad, cantidad, precio){
         this.id = id;
@@ -32,7 +32,7 @@ class Pedido{
         this.cantidad = cantidad;
         this.precio = precio;
     }
-}
+};
 /*LATAS*/
 const lataHoney = new Producto(1,"Lata", "Honey", 1000, 380);
 const lataBlonde = new Producto(2, "Lata", "Blonde", 1000, 380);
@@ -134,7 +134,7 @@ fetch("../json/productos.json")
             botonera(producto)
             agregar()
         })
-    })
+    });
 /*SUMAR Y RESTAR CANTIDADES*/
 function cantidades (producto) {
     let total = document.querySelector(`#cantidad${producto.id}`);
@@ -150,7 +150,7 @@ function cantidades (producto) {
     }
     document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
     document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
-}
+};
 /*AGREGAR AL CARRITO*/
 function botonera (producto) {
     const boton = document.querySelector(`#boton${producto.id}`);
@@ -182,7 +182,7 @@ function botonera (producto) {
             }
         })
     })
-}
+};
 function agregar () {
     agregarLata= (id) => {
         const producto = latas.find(producto => producto.id === id);
@@ -193,7 +193,7 @@ function agregar () {
         localStorage.setItem("pedido", JSON.stringify(carrito));
         pintarcarrito()
     }
-}
+};
 
 /*GROWLERS*/
 const contenedorGrowlers = document.querySelector("#contenedorGrowlers");
@@ -445,6 +445,6 @@ function pintarcarrito () {
             svgs.style.fill = "#FE5D1C";
         }
     }
-}
+};
 
 

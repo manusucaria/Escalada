@@ -6,7 +6,7 @@ class Pedido{
         this.cantidad = cantidad;
         this.precio = precio;
     }
-}
+};
 /*CREAR ITEM DOM*/
 let contenedorCarrito = document.querySelector("#contenedorCarrito");
 let pedido = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
@@ -29,7 +29,7 @@ pedido.forEach(item => {
                             `;
     contenedorCarrito.appendChild(pedidoNuevo);
     eliminarItem(item)
-})
+});
 /*ELIMINAR ITEM*/
 function eliminarItem(item) {
     const boton = document.querySelector(`#eliminarItem${item.id}`);
@@ -50,7 +50,7 @@ function eliminarItem(item) {
             }
         })
     })
-}
+};
 function eliminarProducto (id) {
     const producto = pedido.find(item => item.id === id);
     pedido.splice(pedido.indexOf(producto), 1);
@@ -59,7 +59,7 @@ function eliminarProducto (id) {
         localStorage.clear();
     }
     actualizarCarrito()
-}
+};
 /*TOTAL COMPRA*/
 let totalCompra = document.querySelector("#totalCompra");
 const suma = pedido.map(item => item.precio).reduce((prev, curr) => prev + curr, 0);
@@ -72,7 +72,7 @@ function actualizarCarrito () {
         localStorage.clear();
     }
     location.reload()
-}
+};
 /*VACIAR CARRITO*/
 const vaciarCarrito = document.querySelector("#vaciarCarrito")
 vaciarCarrito.addEventListener("click", ()=>{
