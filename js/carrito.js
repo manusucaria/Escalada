@@ -7,10 +7,11 @@ class Pedido{
         this.precio = precio;
     }
 };
+
 /*CREAR ITEM DOM*/
 let contenedorCarrito = document.querySelector("#contenedorCarrito");
 let pedido = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
-pedido.forEach(item => {
+pedido.forEach((item) => {
     let pedidoNuevo = new Pedido(item.id, item.tipo, item.variedad, item.cantidad, item.precio);
     pedidoNuevo = document.createElement("tr");
     pedidoNuevo.innerHTML =`
@@ -30,8 +31,9 @@ pedido.forEach(item => {
     contenedorCarrito.appendChild(pedidoNuevo);
     eliminarItem(item)
 });
+
 /*ELIMINAR ITEM*/
-function eliminarItem(item) {
+function eliminarItem (item) {
     const boton = document.querySelector(`#eliminarItem${item.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
@@ -60,10 +62,12 @@ function eliminarProducto (id) {
     }
     actualizarCarrito()
 };
+
 /*TOTAL COMPRA*/
 let totalCompra = document.querySelector("#totalCompra");
 const suma = pedido.map(item => item.precio).reduce((prev, curr) => prev + curr, 0);
 totalCompra.innerText = ` $${suma}`;
+
 /*ACTUALIZAR CARRITO*/
 document.getElementById("actualizarCarrito").addEventListener('click', actualizarCarrito);
 function actualizarCarrito () {
@@ -73,6 +77,7 @@ function actualizarCarrito () {
     }
     location.reload()
 };
+
 /*VACIAR CARRITO*/
 const vaciarCarrito = document.querySelector("#vaciarCarrito")
 vaciarCarrito.addEventListener("click", () => {
@@ -96,6 +101,7 @@ function vaciar () {
     localStorage.clear();
     actualizarCarrito()
 };
+
 /*FINALIZAR COMPRA*/
 const finalizarCompra = document.querySelector("#finalizarCompra");
 finalizarCompra.addEventListener("click", () => {

@@ -113,7 +113,7 @@ const contenedorLatas = document.querySelector("#contenedorLatas");
 fetch("../json/productos.json")
     .then((response) => response.json())
     .then((data) => {
-        data.forEach(producto => {
+        data.forEach((producto) => {
             const productoNuevo = new Producto(producto.id, producto.tipo, producto.variedad, producto.cantidad, producto.precio);
             latas.push(productoNuevo)
             const divProducto = document.createElement("div");
@@ -132,25 +132,12 @@ fetch("../json/productos.json")
             contenedorLatas.appendChild(divProducto);
             cantidades(producto)
             botonera(producto)
-            agregar()
+            const boton = document.querySelector(`#boton${producto.id}`);
+            boton.addEventListener("click", () => {
+                botonera(producto)
+            })
         })
     });
-/*SUMAR Y RESTAR CANTIDADES*/
-function cantidades (producto) {
-    let total = document.querySelector(`#cantidad${producto.id}`);
-    total.innerText = 1;
-    function sumar () {
-        let valorTotal = parseInt(total.innerHTML);
-        total.innerHTML = valorTotal + 1;
-    }
-    function restar () {
-        let valorTotal = parseInt(total.innerHTML);
-        if (valorTotal == 1) return;
-        total.innerHTML = valorTotal - 1;
-    }
-    document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
-    document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
-};
 /*AGREGAR AL CARRITO*/
 function botonera (producto) {
     const boton = document.querySelector(`#boton${producto.id}`);
@@ -183,21 +170,35 @@ function botonera (producto) {
         })
     })
 };
-function agregar () {
-    agregarLata= (id) => {
-        const producto = latas.find(producto => producto.id === id);
-        let total = document.querySelector(`#cantidad${producto.id}`);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
-        carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
-        carrito.push(pedido);
+
+agregarLata = (id) => {
+    const producto = latas.find(producto => producto.id === id);
+    let total = document.querySelector(`#cantidad${producto.id}`);
+    const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
+    carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
+    carrito = carrito.find(producto => producto.id === id) ? duplicar (id, producto, pedido) : agregarNuevo(pedido);
+}
+function duplicar(id, producto, pedido){
+    const duplicado = carrito.find(producto => producto.id === id);
+    if(duplicado.id === id){
+        const pedidoDuplicado = new Pedido(producto.id, producto.tipo, producto.variedad, parseInt(pedido.cantidad) + parseInt(duplicado.cantidad), pedido.precio + duplicado.precio);
+        const previo = carrito.find(item => item.id === id);
+        carrito.splice(carrito.indexOf(previo), 1);
+        carrito.push(pedidoDuplicado);
         localStorage.setItem("pedido", JSON.stringify(carrito));
         pintarcarrito()
     }
-};
+}
+function agregarNuevo (pedido) {
+    carrito.push(pedido);
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+    pintarcarrito()
+}
+
 
 /*GROWLERS*/
 const contenedorGrowlers = document.querySelector("#contenedorGrowlers");
-growlers.forEach(producto => {
+growlers.forEach((producto) => {
     const divProducto = document.createElement("div");
     divProducto.classList.add(`feria-${producto.id}-gr`, "grid-botonera");
     divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria-gr mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
@@ -212,25 +213,15 @@ growlers.forEach(producto => {
                                 <button id="boton${producto.id}" class="boton-carrito mx-auto my-auto mt-1"><p class="texto-boton">Agregar al Carrito</p></button>
                             </div>`;
     contenedorGrowlers.appendChild(divProducto);
-});
-/*SUMA Y RESTA CANTIDADES*/
-growlers.forEach(producto => {
-    let total = document.querySelector(`#cantidad${producto.id}`);
-    total.innerText = 1;
-    function sumar () {
-        let valorTotal = parseInt(total.innerHTML);
-        total.innerHTML = valorTotal + 1;
-    }
-    function restar () {
-        let valorTotal = parseInt(total.innerHTML);
-        if (valorTotal == 1) return;
-        total.innerHTML = valorTotal - 1;
-    }
-    document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
-    document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
+    cantidades(producto)
+    botoneraGr(producto)
+    const boton = document.querySelector(`#boton${producto.id}`);
+    boton.addEventListener("click", () => {
+        botoneraGr(producto)
+    })
 });
 /*AGREGAR AL CARRITO*/
-growlers.forEach(producto => {
+function botoneraGr (producto) {
     const boton = document.querySelector(`#boton${producto.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
@@ -260,22 +251,35 @@ growlers.forEach(producto => {
             }
         })
     })
-});
-growlers.forEach(producto => {
+};
+
+agregarGrowler = (id) => {
+    const producto = growlers.find(producto => producto.id === id);
     let total = document.querySelector(`#cantidad${producto.id}`);
-    agregarGrowler= (id) => {
-        const producto = growlers.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
-        carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
-        carrito.push(pedido);
+    const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
+    carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
+    carrito = carrito.find(producto => producto.id === id) ? duplicarGr (id, producto, pedido) : agregarNuevoGr(pedido);
+}
+function duplicarGr(id, producto, pedido){
+    const duplicado = carrito.find(producto => producto.id === id);
+    if(duplicado.id === id){
+        const pedidoDuplicado = new Pedido(producto.id, producto.tipo, producto.variedad, parseInt(pedido.cantidad) + parseInt(duplicado.cantidad), pedido.precio + duplicado.precio);
+        const previo = carrito.find(item => item.id === id);
+        carrito.splice(carrito.indexOf(previo), 1);
+        carrito.push(pedidoDuplicado);
         localStorage.setItem("pedido", JSON.stringify(carrito));
         pintarcarrito()
     }
-});
+}
+function agregarNuevoGr (pedido) {
+    carrito.push(pedido);
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+    pintarcarrito()
+}
 
 /*PACKS*/
 const contenedorPacks = document.querySelector("#contenedorPacks");
-packs.forEach(producto => {
+packs.forEach((producto) => {
     const divProducto = document.createElement("div");
     divProducto.classList.add(`feria-${producto.id}-p`, "grid-botonera");
     divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
@@ -290,25 +294,15 @@ packs.forEach(producto => {
                                 <button id="boton${producto.id}" class="boton-carrito mx-auto my-auto mt-1"><p class="texto-boton">Agregar al Carrito</p></button>
                             </div>`;
     contenedorPacks.appendChild(divProducto);
-});
-/*SUMA Y RESTA CANTIDADES*/
-packs.forEach(producto => {
-    let total = document.querySelector(`#cantidad${producto.id}`);
-    total.innerText = 1;
-    function sumar () {
-        let valorTotal = parseInt(total.innerHTML);
-        total.innerHTML = valorTotal + 1;
-    }
-    function restar () {
-        let valorTotal = parseInt(total.innerHTML);
-        if (valorTotal == 1) return;
-        total.innerHTML = valorTotal - 1;
-    }
-    document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
-    document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
+    cantidades(producto)
+    botoneraPk(producto)
+    const boton = document.querySelector(`#boton${producto.id}`);
+    boton.addEventListener("click", () => {
+        botoneraPk(producto)
+    })
 });
 /*AGREGAR AL CARRITO*/
-packs.forEach(producto => {
+function botoneraPk (producto) {
     const boton = document.querySelector(`#boton${producto.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
@@ -323,7 +317,7 @@ packs.forEach(producto => {
             cancelButtonColor: "#FE5D1C",
         }).then((result) => {
             if(result.isConfirmed){
-                agregarPack(producto.id)
+                agregarPk(producto.id)
                 Toastify({
                     text: "Producto Agregado",
                     duration: 2000,
@@ -337,23 +331,36 @@ packs.forEach(producto => {
                 }).showToast();
             }
         })
-    });
-});
-packs.forEach(producto => {
+    })
+};
+
+agregarPk = (id) => {
+    const producto = packs.find(producto => producto.id === id);
     let total = document.querySelector(`#cantidad${producto.id}`);
-    agregarPack= (id) => {
-        const producto = packs.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
-        carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
-        carrito.push(pedido);
+    const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
+    carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
+    carrito = carrito.find(producto => producto.id === id) ? duplicarPk (id, producto, pedido) : agregarNuevoPk(pedido);
+}
+function duplicarPk(id, producto, pedido){
+    const duplicado = carrito.find(producto => producto.id === id);
+    if(duplicado.id === id){
+        const pedidoDuplicado = new Pedido(producto.id, producto.tipo, producto.variedad, parseInt(pedido.cantidad) + parseInt(duplicado.cantidad), pedido.precio + duplicado.precio);
+        const previo = carrito.find(item => item.id === id);
+        carrito.splice(carrito.indexOf(previo), 1);
+        carrito.push(pedidoDuplicado);
         localStorage.setItem("pedido", JSON.stringify(carrito));
         pintarcarrito()
     }
-});
+}
+function agregarNuevoPk (pedido) {
+    carrito.push(pedido);
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+    pintarcarrito()
+}
 
 /*VARIOS*/
 const contenedorVarios = document.querySelector("#contenedorVarios");
-varios.forEach(producto => {
+varios.forEach((producto) => {
     const divProducto = document.createElement("div");
     divProducto.classList.add(`feria-${producto.id}-v`, "grid-botonera");
     divProducto.innerHTML =`<img class="botonera1 my-auto mx-auto img-feria mb-2 mt-2" src="../assets/img/feria/${producto.id}.jpg" alt="Lata Blonde">
@@ -368,25 +375,15 @@ varios.forEach(producto => {
                                 <button id="boton${producto.id}" class="boton-carrito mx-auto my-auto mt-1"><p class="texto-boton">Agregar al Carrito</p></button>
                             </div>`;
     contenedorVarios.appendChild(divProducto);
-});
-/*SUMA Y RESTA CANTIDADES*/
-varios.forEach(producto => {
-    let total = document.querySelector(`#cantidad${producto.id}`);
-    total.innerText = 1;
-    function sumar () {
-        let valorTotal = parseInt(total.innerHTML);
-        total.innerHTML = valorTotal + 1;
-    }
-    function restar () {
-        let valorTotal = parseInt(total.innerHTML);
-        if (valorTotal == 1) return;
-        total.innerHTML = valorTotal - 1;
-    }
-    document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
-    document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
+    cantidades(producto)
+    botoneraVr(producto)
+    const boton = document.querySelector(`#boton${producto.id}`);
+    boton.addEventListener("click", () => {
+        botoneraVr(producto)
+    })
 });
 /*AGREGAR AL CARRITO*/
-varios.forEach(producto => {
+function botoneraVr (producto) {
     const boton = document.querySelector(`#boton${producto.id}`);
     boton.addEventListener("click", ()=>{
         Swal.fire({
@@ -401,7 +398,7 @@ varios.forEach(producto => {
             cancelButtonColor: "#FE5D1C",
         }).then((result) => {
             if(result.isConfirmed){
-                agregarVarios(producto.id)
+                agregarVr(producto.id)
                 Toastify({
                     text: "Producto Agregado",
                     duration: 2000,
@@ -415,19 +412,50 @@ varios.forEach(producto => {
                 }).showToast();
             }
         })
-    });
-});
-varios.forEach(producto => {
+    })
+};
+
+agregarVr = (id) => {
+    const producto = varios.find(producto => producto.id === id);
     let total = document.querySelector(`#cantidad${producto.id}`);
-    agregarVarios= (id) => {
-        const producto = varios.find(producto => producto.id === id);
-        const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
-        carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
-        carrito.push(pedido);
+    const pedido = new Pedido(producto.id, producto.tipo, producto.variedad, total.innerHTML, producto.precio * total.innerHTML);
+    carrito = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
+    carrito = carrito.find(producto => producto.id === id) ? duplicarVr (id, producto, pedido) : agregarNuevoVr(pedido);
+}
+function duplicarVr(id, producto, pedido){
+    const duplicado = carrito.find(producto => producto.id === id);
+    if(duplicado.id === id){
+        const pedidoDuplicado = new Pedido(producto.id, producto.tipo, producto.variedad, parseInt(pedido.cantidad) + parseInt(duplicado.cantidad), pedido.precio + duplicado.precio);
+        const previo = carrito.find(item => item.id === id);
+        carrito.splice(carrito.indexOf(previo), 1);
+        carrito.push(pedidoDuplicado);
         localStorage.setItem("pedido", JSON.stringify(carrito));
         pintarcarrito()
     }
-});
+}
+function agregarNuevoVr (pedido) {
+    carrito.push(pedido);
+    localStorage.setItem("pedido", JSON.stringify(carrito));
+    pintarcarrito()
+}
+
+/*SUMAR Y RESTAR CANTIDADES*/
+function cantidades (producto) {
+    let total = document.querySelector(`#cantidad${producto.id}`);
+    total.innerText = 1;
+    function sumar () {
+        let valorTotal = parseInt(total.innerHTML);
+        total.innerHTML = valorTotal + 1;
+    }
+    function restar () {
+        let valorTotal = parseInt(total.innerHTML);
+        if (valorTotal == 1) return;
+        total.innerHTML = valorTotal - 1;
+    }
+    document.querySelector(`#sumar${producto.id}`).addEventListener('click', sumar);
+    document.querySelector(`#restar${producto.id}`).addEventListener('click', restar);
+};
+
 /*CARRITO STYLE*/
 function pintarcarrito () {
     /*NUMERO DE ITEMS CARRITO*/

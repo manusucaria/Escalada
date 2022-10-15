@@ -13,6 +13,7 @@ pedidos.forEach(item => {
     let pedidoNuevo = new Pedidos(item.id, item.tipo, item.variedad, item.cantidad, item.precio);
     carritoStyle.push(pedidoNuevo)
 });
+
 /*COLOR CARRITO*/
 let svg = document.querySelectorAll(".svg-carrito");
 for(let svgs of svg){
@@ -20,6 +21,7 @@ for(let svgs of svg){
         svgs.style.fill = "#FE5D1C";
     }
 };
+
 /*NUMERO DE ITEMS CARRITO*/
 let numeroSvg = document.querySelectorAll(".numero-svg");
 let numeroItems = carritoStyle.length;
@@ -28,6 +30,7 @@ for(let numeroSvgs of numeroSvg){
         numeroSvgs.innerHTML = numeroItems;
     }
 };
+
 /*VIDEO INICIO*/
 let videoInicio = document.querySelector("#video-inicio");
 videoInicio.onwheel = () =>{
@@ -40,3 +43,4 @@ videoInicio.onwheel = () =>{
         video.style.display = "none"
     },200)
 };
+
