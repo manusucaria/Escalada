@@ -116,20 +116,20 @@ footer{
     height: 7rem;
     width: 7rem;
     @include cel{
-        height: 3.5rem;
-        width: 3.5rem;
-    }
-    @include smart{
-        height: 4rem;
-        width: 4rem;
-    }
-    @include tablet{
         height: 4.5rem;
         width: 4.5rem;
     }
-    @include tablet-xl{
+    @include smart{
+        height: 4.7rem;
+        width: 4.7rem;
+    }
+    @include tablet{
         height: 5rem;
         width: 5rem;
+    }
+    @include tablet-xl{
+        height: 5.5rem;
+        width: 5.5rem;
     }
     &:hover{
         transform: scale(1.04);

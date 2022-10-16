@@ -8773,20 +8773,20 @@ footer {
   width: 7rem; }
   @media screen and (max-width: 361px) {
     .img-wa {
-      height: 3.5rem;
-      width: 3.5rem; } }
-  @media screen and (max-width: 450px) and (min-width: 361px) {
-    .img-wa {
-      height: 4rem;
-      width: 4rem; } }
-  @media screen and (max-width: 687px) and (min-width: 450px) {
-    .img-wa {
       height: 4.5rem;
       width: 4.5rem; } }
-  @media screen and (min-width: 687px) and (max-width: 900px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
+    .img-wa {
+      height: 4.7rem;
+      width: 4.7rem; } }
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .img-wa {
       height: 5rem;
       width: 5rem; } }
+  @media screen and (min-width: 687px) and (max-width: 900px) {
+    .img-wa {
+      height: 5.5rem;
+      width: 5.5rem; } }
   .img-wa:hover {
     transform: scale(1.04);
     transition: transform .6s ease; }
