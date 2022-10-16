@@ -106,7 +106,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="contacto.html" target="_blank">
+                    <a id="lupaBuscador" href="#">
                         <svg class="svg" id="Layer_1" enable-background="new 0 0 512.392 512.392" viewBox="0 0 512.392 512.392" xmlns="http://www.w3.org/2000/svg"><g><path d="m211.196 422c-116.346 0-211-94.654-211-211s94.654-211 211-211 211 94.654 211 211-94.654 211-211 211zm0-382c-94.29 0-171 76.71-171 171s76.71 171 171 171 171-76.71 171-171-76.71-171-171-171zm295.143 466.534c7.81-7.811 7.81-20.475 0-28.285l-89.5-89.5c-7.811-7.811-20.475-7.811-28.285 0s-7.81 20.475 0 28.285l89.5 89.5c3.905 3.905 9.024 5.857 14.143 5.857s10.236-1.952 14.142-5.857z"/></g></svg>
                     </a>
                 </div>
@@ -114,28 +114,54 @@
         </header>
         <!--MAIN-->
         <main>
-            <div class="mt-5"><h3 class="text-center">TU PEDIDO</h3></div>
-            <table class="table table-hover">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th class="texto-tabla" scope="col">Producto</th>
-                        <th class="texto-tabla" scope="col">Descripción</th>
-                        <th class="texto-tabla" scope="col">Precio</th>
-                        <th class="texto-tabla" scope="col">Cantidad</th>
-                    </tr>
-                </thead>
-                <tbody id="contenedorCarrito">
-                </tbody>
-            </table>
-            <div class="d-flex">
-                <p class="total-compra my-auto">TOTAL COMPRA: </p>
-                <p class="my-auto" id="totalCompra"></p>
+            <div class="flex w-100 h-100 flex-column">
+                <div id="inputBuscador" class="inputBuscador mx-auto">
+                    <input id="contenidoBuscador" class="contenidoBuscador my-auto mx-auto text-center" type="text" placeholder="¿Qué Deseas Buscar?">
+                </div>
+                <div id="opcionesBuscador" class="opcionesBuscador mx-auto">
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Golden</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Blonde</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Pale</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Doble Pale</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Hibiscus</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Faramir</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Cerveza</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorGr">Growler</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Lata</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorPk">Pack</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorVa">Gorra</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorVa">Copa</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="contacto.html">Contacto</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Tienda</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="carrito.html">Carrito</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="variedades.html">Variedades</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="nosotros.html">Nosotros</a></li>
+                </div>
             </div>
-            <div class="d-flex mb-5">
-                <button id="actualizarCarrito" class="boton-actualizar ms-auto"><p class="texto-actualizar my-auto mx-auto">Actualizar</p></button>
-                <button id="finalizarCompra" class="boton-compra d-flex mx-auto my-auto"><p class="texto-compra my-auto mx-auto">FINALIZAR COMPRA</p></button>
-                <button id="vaciarCarrito" class="boton-vaciar me-auto"><p class="texto-vaciar my-auto mx-auto">Vaciar Carrito</p></button>
+            <div id="fondoBuscador">
+                <div class="mt-5"><h3 class="text-center">TU PEDIDO</h3></div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th class="texto-tabla" scope="col">Producto</th>
+                            <th class="texto-tabla" scope="col">Descripción</th>
+                            <th class="texto-tabla" scope="col">Precio</th>
+                            <th class="texto-tabla" scope="col">Cantidad</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenedorCarrito">
+                    </tbody>
+                </table>
+                <div class="d-flex">
+                    <p class="total-compra my-auto">TOTAL COMPRA: </p>
+                    <p class="my-auto" id="totalCompra"></p>
+                </div>
+                <div class="d-flex mb-5">
+                    <button id="actualizarCarrito" class="boton-actualizar ms-auto"><p class="texto-actualizar my-auto mx-auto">Actualizar</p></button>
+                    <button id="finalizarCompra" class="boton-compra d-flex mx-auto my-auto"><p class="texto-compra my-auto mx-auto">FINALIZAR COMPRA</p></button>
+                    <button id="vaciarCarrito" class="boton-vaciar me-auto"><p class="texto-vaciar my-auto mx-auto">Vaciar Carrito</p></button>
+                </div>
             </div>
         </main>
         <!--FOOTER-->
@@ -168,6 +194,7 @@
         </footer>
         <script src="../js/style.js"></script>
         <script src="../js/carrito.js"></script>
+        <script src="../js/buscador.js"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

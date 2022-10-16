@@ -105,7 +105,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="contacto.html" target="_blank">
+                    <a id="lupaBuscador" href="#">
                         <svg class="svg" id="Layer_1" enable-background="new 0 0 512.392 512.392" viewBox="0 0 512.392 512.392" xmlns="http://www.w3.org/2000/svg"><g><path d="m211.196 422c-116.346 0-211-94.654-211-211s94.654-211 211-211 211 94.654 211 211-94.654 211-211 211zm0-382c-94.29 0-171 76.71-171 171s76.71 171 171 171 171-76.71 171-171-76.71-171-171-171zm295.143 466.534c7.81-7.811 7.81-20.475 0-28.285l-89.5-89.5c-7.811-7.811-20.475-7.811-28.285 0s-7.81 20.475 0 28.285l89.5 89.5c3.905 3.905 9.024 5.857 14.143 5.857s10.236-1.952 14.142-5.857z"/></g></svg>
                     </a>
                 </div>
@@ -113,7 +113,31 @@
         </header>
         <!--MAIN-->
         <main class="main-nos">
-            <div class="div-nos">
+            <div class="flex w-100 flex-column">
+                <div id="inputBuscador" class="inputBuscador mx-auto">
+                    <input id="contenidoBuscador" class="contenidoBuscador my-auto mx-auto text-center" type="text" placeholder="¿Qué Deseas Buscar?">
+                </div>
+                <div id="opcionesBuscador" class="opcionesBuscador mx-auto">
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Golden</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Blonde</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Pale</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Doble Pale</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Hibiscus</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Faramir</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Cerveza</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorGr">Growler</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Lata</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorPk">Pack</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorVa">Gorra</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorVa">Copa</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="contacto.html">Contacto</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="tienda.html#contenedorLa">Tienda</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="carrito.html">Carrito</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="variedades.html">Variedades</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="nosotros.html">Nosotros</a></li>
+                </div>
+            </div>
+            <div id="fondoBuscador" class="div-nos">
                 <div class="texto-nos d-flex flex-column">
                     <h2 class="titulo-nos text-center mt-auto">CERVEZA ESCALADA</h2>
                     <p class="contenido-nos text-center">Somos una Fábrica de Cervezas finas de elaboración artesanal de la mas alta calidad y estandar de producción.</p>
@@ -154,6 +178,7 @@
             </div>
         </footer>
         <script src="../js/style.js"></script>
+        <script src="../js/buscador.js"></script>
         <script src="../js/bootstrap.bundle.min.js"></script>
         <script src="../js/wow.min.js"></script>
         <script>

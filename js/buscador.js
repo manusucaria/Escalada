@@ -7,20 +7,24 @@ let buscadorActivo = false;
 
 function mostrarBuscador () {
     if(buscadorActivo == false){
-        inputBuscador.style.display = "flex";
+        inputBuscador.style.top = "10.4rem";
         contenidoBuscador.focus();
-        fondoBuscador.style.opacity = ".4";
         buscadorActivo = true;
     }else{
-        inputBuscador.style.display = "none";
-        fondoBuscador.style.opacity = "1";
+        inputBuscador.style.top = "-10.4rem";
+        opcionesBuscador.style.display = "none";
+        setTimeout(()=>{
+            contenidoBuscador.value = "";
+        },400)
         buscadorActivo = false;
     }
 };
 function ocultarBuscador () {
-    inputBuscador.style.display = "none";
+    inputBuscador.style.top = "-10.4rem";
     opcionesBuscador.style.display = "none";
-    fondoBuscador.style.opacity = "1";
+    setTimeout(()=>{
+        contenidoBuscador.value = "";
+    },400)
     buscadorActivo = false;
 };
 
@@ -30,20 +34,23 @@ fondoBuscador.addEventListener("click", ocultarBuscador);
 /*FILTRO DE BUSQUEDA*/
 document.getElementById("inputBuscador").addEventListener("keyup", buscadorInterno);
 function buscadorInterno () {
-    filtro = contenidoBuscador.value.toUpperCase();
     li = opcionesBuscador.getElementsByTagName("li");
     for (i = 0; i < li.length; i++){
         a = li[i].getElementsByTagName("a")[0];
         textValue = a.textContent || a.innerText;
-        if(textValue.toUpperCase().indexOf(filtro) > -1){
-            li[i].style.display = "flex";
-            opcionesBuscador.style.display = "flex";
-            if(contenidoBuscador.value === ""){
-                opcionesBuscador.style.display = "none";
-            }
-        }else{
-            li[i].style.display = "none";
+        filtros (li, i)
+    }
+};
+function filtros (li, i) {
+    filtro = contenidoBuscador.value.toUpperCase();
+    if(textValue.toUpperCase().indexOf(filtro) > -1){
+        li[i].style.display = "flex";
+        opcionesBuscador.style.display = "flex";
+        if(contenidoBuscador.value === ""){
+            opcionesBuscador.style.display = "none";
         }
+    }else{
+        li[i].style.display = "none";
     }
 };
 

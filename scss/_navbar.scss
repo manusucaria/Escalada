@@ -4,7 +4,7 @@ header{
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 10;
     nav{
         display: flex;
         padding: 2rem;
@@ -264,18 +264,23 @@ header{
 
 /*BUSCADOR*/
 .inputBuscador{
-    display: none;
-    width: 100%;
+    z-index: 9;
+    top: -10rem;
+    transition: all 400ms ease;
+    position: fixed;
+    left: 25%;
+    display:flex;
+    width: 50%;
     border: none;
     background: map-get($map: $paleta, $key: 'black');
-    height: auto;
+    min-height: 3rem;
     @media screen and (max-width: 767px){
         display: none;
     }
 }
 .contenidoBuscador{
     @include texto(2.5rem,100,map-get($map:$paleta, $key: 'black'));
-    width: 60%;
+    width: 100%;
     @media screen and (max-width: 767px){
         display: none;
     }
@@ -313,7 +318,7 @@ header{
 }
 .li-busqueda{
     display: none;
-    width: 60%;
+    width: 100%;
     text-decoration: none;
     background: map-get($map: $paleta, $key: 'white');
     list-style: none;
@@ -322,12 +327,25 @@ header{
     }
 }
 .opcionesBuscador{
+    z-index: 9;
+    position: fixed;
+    left: 25%;
+    top: 14.7rem;
     display: none;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     background: black;
     height: auto;
     @media screen and (max-width: 767px){
         display: none;
+    }
+    @include tablet-xl{
+        top: 13.8rem;
+    }
+    @include desktop{
+        top: 14rem;
+    }
+    @include wide{
+        top: 14.5rem;
     }
 }
