@@ -12,7 +12,7 @@
     }
 }
 .video-inicio{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: block;
@@ -65,7 +65,7 @@
 }
 .titulos-art{
     text-align: center;
-    @include texto(6rem,800,map-get($map:$paleta, $key: 'black'));
+    @include texto(6rem,800,map-get($map:$paleta, $key: 'red'));
     font-family: $cuerpo;
     transition: transform .1s;
     &:hover{
@@ -94,7 +94,7 @@
 }
 .sub-art{
     text-align: center;
-    @include texto(2.7rem,500,map-get($map:$paleta, $key: 'black'));
+    @include texto(2.7rem,500,map-get($map:$paleta, $key: 'red'));
     font-family: $cuerpo;
     transition: transform .1s;
     &:hover{
@@ -139,6 +139,7 @@
     }
 }
 .div-main {
+    background-color: map-get($map: $paleta, $key: 'black');
     width: 50%;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -160,6 +161,8 @@
     }
 }
 .img-op-main{
+    padding-right: .3rem;
+    padding-top: 1rem;
     grid-column: 1/4;
     grid-row: 1/4;
     width: 100%;
@@ -168,26 +171,36 @@
         filter: blur(5px);
         transition: opacity 1s, filter 1s ease;
     }
-    @media screen and (max-width: 687px) {
-        opacity: 0.8;
-        filter: blur(5px);
+    @include cel{
+        padding-right: 0;
+    }
+    @include smart{
+        padding-right: 0;
+    }
+    @include tablet{
+        padding-right: 0;
     }
 }
 .text-op-main{
     grid-column: 1/4;
     grid-row: 1/4;
-    @include texto(2.5rem,500,map-get($map:$paleta, $key: 'black'));
     transition: opacity 1s ease;
     &:hover{
         opacity: 1;
     }
-    @media screen and (max-width: 687px) {
-        opacity: 1;
+    @include cel{
+        z-index: 1;
+    }
+    @include smart{
+        z-index: 1;
+    }
+    @include tablet{
         z-index: 1;
     }
 }
 /**TRADICIONAL**/
 .div-main-1 {
+    background-color: map-get($map: $paleta, $key: 'black');
     width: 50%;
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -209,6 +222,8 @@
     }
 }
 .img-op-main-1{
+    padding-top: 1rem;
+    padding-left: .3rem;
     grid-column: 1/4;
     grid-row: 1/4;
     width: 100%;
@@ -217,21 +232,33 @@
         filter: blur(5px);
         transition: opacity 1s, filter 1s ease;
     }
-    @media screen and (max-width: 687px) {
-        opacity: 0.8;
-        filter: blur(5px);
+    @include cel{
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+    @include smart{
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+    @include tablet{
+        padding-left: 0;
+        padding-top: 1rem;
     }
 }
 .text-op-main-1{
     grid-column: 1/4;
     grid-row: 1/4;
-    @include texto(2.5rem,500,map-get($map:$paleta, $key: 'black'));
     transition: opacity 1s ease;
     &:hover{
         opacity: 1;
     }
-    @media screen and (max-width: 687px) {
-        opacity: 1;
+    @include cel{
+        z-index: 1;
+    }
+    @include smart{
+        z-index: 1;
+    }
+    @include tablet{
         z-index: 1;
     }
 }

@@ -7958,11 +7958,11 @@ header {
       header nav {
         flex-direction: row;
         justify-content: space-evenly; } }
-    @media screen and (max-width: 450px) and (min-width: 362px) {
+    @media screen and (max-width: 450px) and (min-width: 361px) {
       header nav {
         flex-direction: row;
         justify-content: space-evenly; } }
-    @media screen and (max-width: 687px) and (min-width: 451px) {
+    @media screen and (max-width: 687px) and (min-width: 450px) {
       header nav {
         flex-direction: row;
         justify-content: space-evenly; } }
@@ -7978,16 +7978,16 @@ header {
       @media screen and (max-width: 361px) {
         header nav h1, header nav .h1 {
           font-size: 3rem; } }
-      @media screen and (max-width: 450px) and (min-width: 362px) {
+      @media screen and (max-width: 450px) and (min-width: 361px) {
         header nav h1, header nav .h1 {
           font-size: 3.7rem; } }
-      @media screen and (max-width: 687px) and (min-width: 451px) {
+      @media screen and (max-width: 687px) and (min-width: 450px) {
         header nav h1, header nav .h1 {
           font-size: 3.7rem; } }
-      @media screen and (min-width: 688px) and (max-width: 900px) {
+      @media screen and (min-width: 687px) and (max-width: 900px) {
         header nav h1, header nav .h1 {
           font-size: 3.9rem; } }
-      @media screen and (min-width: 901px) and (max-width: 1110px) {
+      @media screen and (min-width: 900px) and (max-width: 1110px) {
         header nav h1, header nav .h1 {
           font-size: 4rem; } }
       @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8008,10 +8008,10 @@ header {
       @media screen and (max-width: 687px) and (min-width: 362px) {
         header nav div ul li a p {
           font-size: 1.3rem; } }
-      @media screen and (min-width: 688px) and (max-width: 900px) {
+      @media screen and (min-width: 687px) and (max-width: 900px) {
         header nav div ul li a p {
           font-size: 1.5rem; } }
-      @media screen and (min-width: 901px) and (max-width: 1110px) {
+      @media screen and (min-width: 900px) and (max-width: 1110px) {
         header nav div ul li a p {
           font-size: 1.6rem; } }
       @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8034,11 +8034,11 @@ header {
     .logo {
       margin: 0;
       width: 130px; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .logo {
       margin-left: 0;
       width: 130px; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .logo {
       margin-left: .5rem;
       width: 135px; } }
@@ -8060,20 +8060,20 @@ header {
     .svg {
       height: 19px;
       width: 19px; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .svg {
       height: 20px;
       width: 20px; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .svg {
       height: 22px;
       width: 22px; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .svg {
       height: 24px;
       width: 24px;
       margin-right: 2rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .svg {
       height: 26px;
       width: 26px;
@@ -8096,20 +8096,20 @@ header {
     .svg-inicio {
       height: 19px;
       width: 19px; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .svg-inicio {
       height: 20px;
       width: 20px; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .svg-inicio {
       height: 22px;
       width: 22px; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .svg-inicio {
       height: 24px;
       width: 24px;
       margin-right: 2rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .svg-inicio {
       height: 26px;
       width: 26px;
@@ -8132,20 +8132,20 @@ header {
     .svg-carrito {
       height: 19px;
       width: 19px; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .svg-carrito {
       height: 20px;
       width: 20px; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .svg-carrito {
       height: 22px;
       width: 22px; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .svg-carrito {
       height: 24px;
       width: 24px;
       margin-right: 2rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .svg-carrito {
       height: 26px;
       width: 26px;
@@ -8180,7 +8180,7 @@ header {
   @media screen and (min-width: 768px) and (max-width: 900px) {
     .listas {
       margin-right: 2rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .listas {
       margin-right: 3.8rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8225,10 +8225,10 @@ header {
   @media screen and (max-width: 767px) {
     .contenidoBuscador {
       display: none; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .contenidoBuscador {
       font-size: 1.9rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .contenidoBuscador {
       font-size: 2rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8248,10 +8248,10 @@ header {
   @media screen and (max-width: 767px) {
     .texto-busqueda {
       display: none; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .texto-busqueda {
       font-size: 1.7rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .texto-busqueda {
       font-size: 1.8rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8281,10 +8281,10 @@ header {
   @media screen and (max-width: 767px) {
     .opcionesBuscador {
       display: none; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .opcionesBuscador {
       top: 13.8rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .opcionesBuscador {
       top: 14rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8305,7 +8305,7 @@ header {
       display: none; } }
 
 .video-inicio {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: block;
@@ -8336,16 +8336,16 @@ header {
   @media screen and (max-width: 361px) {
     .titulo-0 {
       font-size: 2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulo-0 {
       font-size: 2.5rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .titulo-0 {
       font-size: 3rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-0 {
       font-size: 3rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulo-0 {
       font-size: 4rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8362,7 +8362,7 @@ header {
   text-align: center;
   font-size: 6rem;
   font-weight: 800;
-  color: #000000;
+  color: #FE5D1C;
   font-family: "hk-grotesk, sans-serif";
   transition: transform .1s; }
   .titulos-art:hover {
@@ -8372,16 +8372,16 @@ header {
   @media screen and (max-width: 361px) {
     .titulos-art {
       font-size: 2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulos-art {
       font-size: 2.5rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .titulos-art {
       font-size: 3rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulos-art {
       font-size: 3rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulos-art {
       font-size: 4rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8392,7 +8392,7 @@ header {
   text-align: center;
   font-size: 2.7rem;
   font-weight: 500;
-  color: #000000;
+  color: #FE5D1C;
   font-family: "hk-grotesk, sans-serif";
   transition: transform .1s; }
   .sub-art:hover {
@@ -8405,10 +8405,10 @@ header {
   @media screen and (max-width: 687px) and (min-width: 362px) {
     .sub-art {
       font-size: 1.7rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .sub-art {
       font-size: 2rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .sub-art {
       font-size: 2.2rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8423,19 +8423,20 @@ header {
     .articulo-1 {
       flex-direction: column;
       margin: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .articulo-1 {
       flex-direction: column;
       margin: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .articulo-1 {
       flex-direction: column;
       margin: 0; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .articulo-1 {
       margin: 0; } }
 
 .div-main {
+  background-color: #000000;
   width: 50%;
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -8444,19 +8445,21 @@ header {
     .div-main {
       width: 100%;
       margin: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .div-main {
       width: 100%;
       margin: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .div-main {
       width: 100%;
       margin: 0; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .div-main {
       margin: 0; } }
 
 .img-op-main {
+  padding-right: .3rem;
+  padding-top: 1rem;
   grid-column: 1/4;
   grid-row: 1/4;
   width: 100%; }
@@ -8464,27 +8467,35 @@ header {
     opacity: 0.7;
     filter: blur(5px);
     transition: opacity 1s, filter 1s ease; }
-  @media screen and (max-width: 687px) {
+  @media screen and (max-width: 361px) {
     .img-op-main {
-      opacity: 0.8;
-      filter: blur(5px); } }
+      padding-right: 0; } }
+  @media screen and (max-width: 450px) and (min-width: 361px) {
+    .img-op-main {
+      padding-right: 0; } }
+  @media screen and (max-width: 687px) and (min-width: 450px) {
+    .img-op-main {
+      padding-right: 0; } }
 
 .text-op-main {
   grid-column: 1/4;
   grid-row: 1/4;
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: #000000;
   transition: opacity 1s ease; }
   .text-op-main:hover {
     opacity: 1; }
-  @media screen and (max-width: 687px) {
+  @media screen and (max-width: 361px) {
     .text-op-main {
-      opacity: 1;
+      z-index: 1; } }
+  @media screen and (max-width: 450px) and (min-width: 361px) {
+    .text-op-main {
+      z-index: 1; } }
+  @media screen and (max-width: 687px) and (min-width: 450px) {
+    .text-op-main {
       z-index: 1; } }
 
 /**TRADICIONAL**/
 .div-main-1 {
+  background-color: #000000;
   width: 50%;
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -8493,19 +8504,21 @@ header {
     .div-main-1 {
       width: 100%;
       margin: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .div-main-1 {
       width: 100%;
       margin: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .div-main-1 {
       width: 100%;
       margin: 0; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .div-main-1 {
       margin: 0; } }
 
 .img-op-main-1 {
+  padding-top: 1rem;
+  padding-left: .3rem;
   grid-column: 1/4;
   grid-row: 1/4;
   width: 100%; }
@@ -8513,23 +8526,33 @@ header {
     opacity: 0.7;
     filter: blur(5px);
     transition: opacity 1s, filter 1s ease; }
-  @media screen and (max-width: 687px) {
+  @media screen and (max-width: 361px) {
     .img-op-main-1 {
-      opacity: 0.8;
-      filter: blur(5px); } }
+      padding-left: 0;
+      padding-top: 1rem; } }
+  @media screen and (max-width: 450px) and (min-width: 361px) {
+    .img-op-main-1 {
+      padding-left: 0;
+      padding-top: 1rem; } }
+  @media screen and (max-width: 687px) and (min-width: 450px) {
+    .img-op-main-1 {
+      padding-left: 0;
+      padding-top: 1rem; } }
 
 .text-op-main-1 {
   grid-column: 1/4;
   grid-row: 1/4;
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: #000000;
   transition: opacity 1s ease; }
   .text-op-main-1:hover {
     opacity: 1; }
-  @media screen and (max-width: 687px) {
+  @media screen and (max-width: 361px) {
     .text-op-main-1 {
-      opacity: 1;
+      z-index: 1; } }
+  @media screen and (max-width: 450px) and (min-width: 361px) {
+    .text-op-main-1 {
+      z-index: 1; } }
+  @media screen and (max-width: 687px) and (min-width: 450px) {
+    .text-op-main-1 {
       z-index: 1; } }
 
 /**SECCION 2**/
@@ -8543,10 +8566,10 @@ header {
   @media screen and (max-width: 687px) and (min-width: 362px) {
     .articulo-2 {
       margin-bottom: 0; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .articulo-2 {
       margin-bottom: 7rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .articulo-2 {
       margin-bottom: 8rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8613,7 +8636,7 @@ header {
     .img1-art-3 {
       width: 50%;
       height: 75vh; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .img1-art-3 {
       width: 40%; } }
 
@@ -8628,7 +8651,7 @@ header {
     .img2-art-3 {
       width: 50%;
       height: 75vh; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .img2-art-3 {
       width: 40%; } }
 
@@ -8653,25 +8676,25 @@ footer {
         margin-top: 2.5rem;
         font-size: .9rem;
         margin-right: 0; } }
-    @media screen and (max-width: 450px) and (min-width: 362px) {
+    @media screen and (max-width: 450px) and (min-width: 361px) {
       footer p {
         margin-top: 2.5rem;
         font-size: 1rem;
         margin-right: 0; } }
-    @media screen and (max-width: 687px) and (min-width: 451px) {
+    @media screen and (max-width: 687px) and (min-width: 450px) {
       footer p {
         margin-top: 2.5rem;
         font-size: 1.2rem;
         margin-right: 1.2rem; } }
-    @media screen and (min-width: 688px) and (max-width: 900px) {
+    @media screen and (min-width: 687px) and (max-width: 900px) {
       footer p {
         font-size: 1.3rem;
         margin-right: 1.7rem; } }
-    @media screen and (min-width: 901px) and (max-width: 1110px) {
+    @media screen and (min-width: 900px) and (max-width: 1110px) {
       footer p {
         font-size: 1.4rem;
         margin-right: 2rem; } }
-    @media screen and (min-width: 901px) and (max-width: 1110px) {
+    @media screen and (min-width: 900px) and (max-width: 1110px) {
       footer p {
         font-size: 1.6rem;
         margin-right: 2rem; } }
@@ -8686,10 +8709,10 @@ footer {
     @media screen and (max-width: 687px) and (min-width: 362px) {
       footer h4, footer .h4 {
         font-size: 0.9rem; } }
-    @media screen and (min-width: 688px) and (max-width: 900px) {
+    @media screen and (min-width: 687px) and (max-width: 900px) {
       footer h4, footer .h4 {
         font-size: 1rem; } }
-    @media screen and (min-width: 901px) and (max-width: 1110px) {
+    @media screen and (min-width: 900px) and (max-width: 1110px) {
       footer h4, footer .h4 {
         font-size: 1.1rem; } }
     @media screen and (min-width: 1111px) and (max-width: 1199px) {
@@ -8722,11 +8745,11 @@ footer {
     .copyright {
       height: 1.2rem;
       width: 1.2rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .copyright {
       height: 1.3rem;
       width: 1.3rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .copyright {
       height: 1.4rem;
       width: 1.4rem; } }
@@ -8752,15 +8775,15 @@ footer {
     .img-wa {
       height: 3.5rem;
       width: 3.5rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .img-wa {
       height: 4rem;
       width: 4rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .img-wa {
       height: 4.5rem;
       width: 4.5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .img-wa {
       height: 5rem;
       width: 5rem; } }
@@ -8811,10 +8834,10 @@ main section form fieldset {
     @media screen and (max-width: 687px) and (min-width: 362px) {
       main section form fieldset input {
         font-size: 1.8rem; } }
-    @media screen and (min-width: 688px) and (max-width: 900px) {
+    @media screen and (min-width: 687px) and (max-width: 900px) {
       main section form fieldset input {
         font-size: 2.1rem; } }
-    @media screen and (min-width: 901px) and (max-width: 1110px) {
+    @media screen and (min-width: 900px) and (max-width: 1110px) {
       main section form fieldset input {
         font-size: 2.2rem; } }
     @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8831,10 +8854,10 @@ main section form fieldset {
     @media screen and (max-width: 687px) and (min-width: 362px) {
       main section form fieldset label {
         font-size: 2rem; } }
-    @media screen and (min-width: 688px) and (max-width: 900px) {
+    @media screen and (min-width: 687px) and (max-width: 900px) {
       main section form fieldset label {
         font-size: 2.3rem; } }
-    @media screen and (min-width: 901px) and (max-width: 1110px) {
+    @media screen and (min-width: 900px) and (max-width: 1110px) {
       main section form fieldset label {
         font-size: 2.4rem; } }
     @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8857,11 +8880,11 @@ main section form fieldset {
       main section form fieldset select {
         font-size: 1.8rem;
         height: 4rem; } }
-    @media screen and (min-width: 688px) and (max-width: 900px) {
+    @media screen and (min-width: 687px) and (max-width: 900px) {
       main section form fieldset select {
         font-size: 2.1rem;
         height: 4.3rem; } }
-    @media screen and (min-width: 901px) and (max-width: 1110px) {
+    @media screen and (min-width: 900px) and (max-width: 1110px) {
       main section form fieldset select {
         font-size: 2.2rem;
         height: 4.7rem; } }
@@ -8879,10 +8902,10 @@ main section form fieldset {
       @media screen and (max-width: 687px) and (min-width: 362px) {
         main section form fieldset select option {
           font-size: 1.7rem; } }
-      @media screen and (min-width: 688px) and (max-width: 900px) {
+      @media screen and (min-width: 687px) and (max-width: 900px) {
         main section form fieldset select option {
           font-size: 2rem; } }
-      @media screen and (min-width: 901px) and (max-width: 1110px) {
+      @media screen and (min-width: 900px) and (max-width: 1110px) {
         main section form fieldset select option {
           font-size: 2.1rem; } }
       @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8901,10 +8924,10 @@ main section form fieldset {
     @media screen and (max-width: 687px) and (min-width: 362px) {
       main section form fieldset section input {
         font-size: 1.8rem; } }
-    @media screen and (min-width: 688px) and (max-width: 900px) {
+    @media screen and (min-width: 687px) and (max-width: 900px) {
       main section form fieldset section input {
         font-size: 2.1rem; } }
-    @media screen and (min-width: 901px) and (max-width: 1110px) {
+    @media screen and (min-width: 900px) and (max-width: 1110px) {
       main section form fieldset section input {
         font-size: 2.2rem; } }
     @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8931,10 +8954,10 @@ main section form fieldset {
     @media screen and (max-width: 687px) and (min-width: 362px) {
       main section form fieldset textarea {
         font-size: 1.8rem; } }
-    @media screen and (min-width: 688px) and (max-width: 900px) {
+    @media screen and (min-width: 687px) and (max-width: 900px) {
       main section form fieldset textarea {
         font-size: 2.1rem; } }
-    @media screen and (min-width: 901px) and (max-width: 1110px) {
+    @media screen and (min-width: 900px) and (max-width: 1110px) {
       main section form fieldset textarea {
         font-size: 2.2rem; } }
     @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8959,10 +8982,10 @@ main section form fieldset {
     @media screen and (max-width: 687px) and (min-width: 362px) {
       main section form fieldset div label {
         font-size: 1.9rem; } }
-    @media screen and (min-width: 688px) and (max-width: 900px) {
+    @media screen and (min-width: 687px) and (max-width: 900px) {
       main section form fieldset div label {
         font-size: 2.2rem; } }
-    @media screen and (min-width: 901px) and (max-width: 1110px) {
+    @media screen and (min-width: 900px) and (max-width: 1110px) {
       main section form fieldset div label {
         font-size: 2.3rem; } }
     @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8980,10 +9003,10 @@ main section form fieldset {
   @media screen and (max-width: 687px) and (min-width: 362px) {
     .titulo-mapa {
       font-size: 2rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-mapa {
       font-size: 2.3rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulo-mapa {
       font-size: 2.4rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -8995,16 +9018,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .form-fondo {
       width: 85%; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .form-fondo {
       width: 85%; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .form-fondo {
       width: 90%; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .form-fondo {
       width: 85%; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .form-fondo {
       width: 80%; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9016,10 +9039,10 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .ubicacion {
       margin-top: 1rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .ubicacion {
       margin-top: 2rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .ubicacion {
       margin-top: 3rem; } }
 
@@ -9070,15 +9093,15 @@ main section form fieldset {
     .img-carrito {
       width: 3.5rem;
       height: 3.5rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .img-carrito {
       width: 3.8rem;
       height: 3.8rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .img-carrito {
       width: 4rem;
       height: 4rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .img-carrito {
       width: 4.5rem;
       height: 4.5rem; } }
@@ -9092,16 +9115,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .texto-eliminar {
       font-size: 1.2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .texto-eliminar {
       font-size: 1.2rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .texto-eliminar {
       font-size: 1.1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .texto-eliminar {
       font-size: 1.3rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .texto-eliminar {
       font-size: 1.3rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9120,16 +9143,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .texto-vaciar {
       font-size: 1.2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .texto-vaciar {
       font-size: 1.2rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .texto-vaciar {
       font-size: 1.4rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .texto-vaciar {
       font-size: 1.4rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .texto-vaciar {
       font-size: 1.4rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9148,16 +9171,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .total-compra {
       font-size: 1.5rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .total-compra {
       font-size: 1.5rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .total-compra {
       font-size: 1.4rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .total-compra {
       font-size: 1.4rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .total-compra {
       font-size: 1.4rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9176,16 +9199,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .texto-actualizar {
       font-size: 1.2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .texto-actualizar {
       font-size: 1.2rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .texto-actualizar {
       font-size: 1.4rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .texto-actualizar {
       font-size: 1.4rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .texto-actualizar {
       font-size: 1.4rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9204,16 +9227,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .texto-compra {
       font-size: 1.4rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .texto-compra {
       font-size: 1.4rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .texto-compra {
       font-size: 1.6rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .texto-compra {
       font-size: 1.6rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .texto-compra {
       font-size: 1.6rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9232,16 +9255,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .texto-items {
       font-size: 1.3rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .texto-items {
       font-size: 1.3rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .texto-items {
       font-size: 1.3rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .texto-items {
       font-size: 1.4rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .texto-items {
       font-size: 1.4rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9260,16 +9283,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .texto-tabla {
       font-size: 1.3rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .texto-tabla {
       font-size: 1.3rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .texto-tabla {
       font-size: 1.4rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .texto-tabla {
       font-size: 1.4rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .texto-tabla {
       font-size: 1.4rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9342,18 +9365,18 @@ main section form fieldset {
     .titulo-nos {
       font-size: 3rem;
       padding-top: 4rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulo-nos {
       font-size: 3rem;
       padding-top: 4rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .titulo-nos {
       font-size: 3.5rem;
       padding-top: 4rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-nos {
       font-size: 4rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulo-nos {
       font-size: 4.5rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9370,16 +9393,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .contenido-nos {
       font-size: 2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .contenido-nos {
       font-size: 2rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .contenido-nos {
       font-size: 2.5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .contenido-nos {
       font-size: 3rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .contenido-nos {
       font-size: 3.5rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9399,19 +9422,19 @@ main section form fieldset {
     .hero-tienda {
       width: 100%;
       margin-bottom: 3rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .hero-tienda {
       width: 100%;
       margin-bottom: 3rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .hero-tienda {
       width: 85%;
       margin-bottom: 8rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .hero-tienda {
       width: 85%;
       margin-bottom: 8rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .hero-tienda {
       width: 80%;
       margin-bottom: 10rem; } }
@@ -9425,16 +9448,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .titulo-tienda {
       font-size: 2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulo-tienda {
       font-size: 2.5rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .titulo-tienda {
       font-size: 3rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-tienda {
       font-size: 3.5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulo-tienda {
       font-size: 4rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9451,16 +9474,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .titulo-cervezas {
       font-size: 2.4rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulo-cervezas {
       font-size: 2.6rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .titulo-cervezas {
       font-size: 2.7rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-cervezas {
       font-size: 2.9rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulo-cervezas {
       font-size: 2.9rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9478,10 +9501,10 @@ main section form fieldset {
   @media screen and (max-width: 687px) and (min-width: 362px) {
     .titulos-feria {
       font-size: 1.7rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulos-feria {
       font-size: 1.7rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulos-feria {
       font-size: 1.8rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9509,15 +9532,15 @@ main section form fieldset {
     .svg-tienda-1 {
       height: 30px;
       width: 30px; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .svg-tienda-1 {
       height: 30px;
       width: 30px; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .svg-tienda-1 {
       height: 35px;
       width: 35px; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .svg-tienda-1 {
       height: 35px;
       width: 35px; } }
@@ -9530,15 +9553,15 @@ main section form fieldset {
     .svg-tienda-2 {
       height: 30px;
       width: 30px; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .svg-tienda-2 {
       height: 30px;
       width: 30px; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .svg-tienda-2 {
       height: 35px;
       width: 35px; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .svg-tienda-2 {
       height: 35px;
       width: 35px; } }
@@ -9552,16 +9575,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .precios {
       font-size: 1.6rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .precios {
       font-size: 1.7rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .precios {
       font-size: 1.7rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .precios {
       font-size: 1.8rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .precios {
       font-size: 1.8rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9598,10 +9621,10 @@ main section form fieldset {
   @media screen and (max-width: 687px) and (min-width: 362px) {
     .boton-sumar2 {
       font-size: 1.35rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .boton-sumar2 {
       font-size: 1.5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .boton-sumar2 {
       font-size: 1.6rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9626,16 +9649,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .texto-boton {
       font-size: 1.4rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .texto-boton {
       font-size: 1.4rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .texto-boton {
       font-size: 1.1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .texto-boton {
       font-size: 1.5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .texto-boton {
       font-size: 1.6rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -9654,19 +9677,19 @@ main section form fieldset {
     .grid-feria {
       grid-template-columns: auto;
       width: 100%; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .grid-feria {
       grid-template-columns: auto;
       width: 100%; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .grid-feria {
       grid-template-columns: repeat(2, auto);
       width: 85%; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .grid-feria {
       grid-template-columns: repeat(2, auto);
       width: 85%; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .grid-feria {
       grid-template-columns: repeat(3, auto);
       width: 80%; } }
@@ -9686,20 +9709,20 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 1/2;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-1 {
       grid-column: 1/2;
       grid-row: 1/2;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-1 {
       grid-column: 1/2;
       grid-row: 1/2; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-1 {
       grid-column: 1/2;
       grid-row: 1/2; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-1 {
       grid-column: 1/2;
       grid-row: 1/2; } }
@@ -9719,24 +9742,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 2/3;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-2 {
       grid-column: 1/2;
       grid-row: 2/3;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-2 {
       grid-column: 2/3;
       grid-row: 1/2;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-2 {
       grid-column: 2/3;
       grid-row: 1/2;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-2 {
       grid-column: 2/3;
       grid-row: 1/2; } }
@@ -9756,24 +9779,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 3/4;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-3 {
       grid-column: 1/2;
       grid-row: 3/4;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-3 {
       grid-column: 1/2;
       grid-row: 2/3;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-3 {
       grid-column: 1/2;
       grid-row: 2/3;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-3 {
       grid-column: 3/4;
       grid-row: 1/2;
@@ -9795,24 +9818,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 4/5;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-4 {
       grid-column: 1/2;
       grid-row: 4/5;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-4 {
       grid-column: 2/3;
       grid-row: 2/3;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-4 {
       grid-column: 2/3;
       grid-row: 2/3;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-4 {
       grid-column: 1/2;
       grid-row: 2/3;
@@ -9836,24 +9859,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 5/6;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-5 {
       grid-column: 1/2;
       grid-row: 5/6;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-5 {
       grid-column: 1/2;
       grid-row: 3/4;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-5 {
       grid-column: 1/2;
       grid-row: 3/4;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-5 {
       grid-column: 2/3;
       grid-row: 2/3; } }
@@ -9875,24 +9898,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 6/7;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-6 {
       grid-column: 1/2;
       grid-row: 6/7;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-6 {
       grid-column: 2/3;
       grid-row: 3/4;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-6 {
       grid-column: 2/3;
       grid-row: 3/4;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-6 {
       grid-column: 3/4;
       grid-row: 2/3;
@@ -9914,19 +9937,19 @@ main section form fieldset {
     .grid-feria-gr {
       grid-template-columns: 1fr;
       width: 100%; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .grid-feria-gr {
       grid-template-columns: 1fr;
       width: 100%; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .grid-feria-gr {
       grid-template-columns: repeat(2, 1fr);
       width: 85%; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .grid-feria-gr {
       grid-template-columns: repeat(2, 1fr);
       width: 85%; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .grid-feria-gr {
       grid-template-columns: repeat(3, 1fr);
       width: 80%; } }
@@ -9946,20 +9969,20 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 1/2;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-7-gr {
       grid-column: 1/2;
       grid-row: 1/2;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-7-gr {
       grid-column: 1/2;
       grid-row: 1/2; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-7-gr {
       grid-column: 1/2;
       grid-row: 1/2; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-7-gr {
       grid-column: 1/2;
       grid-row: 1/2; } }
@@ -9979,24 +10002,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 2/3;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-8-gr {
       grid-column: 1/2;
       grid-row: 2/3;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-8-gr {
       grid-column: 2/3;
       grid-row: 1/2;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-8-gr {
       grid-column: 2/3;
       grid-row: 1/2;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-8-gr {
       grid-column: 2/3;
       grid-row: 1/2; } }
@@ -10016,24 +10039,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 3/4;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-9-gr {
       grid-column: 1/2;
       grid-row: 3/4;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-9-gr {
       grid-column: 1/2;
       grid-row: 2/3;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-9-gr {
       grid-column: 1/2;
       grid-row: 2/3;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-9-gr {
       grid-column: 3/4;
       grid-row: 1/2;
@@ -10055,24 +10078,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 4/5;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-10-gr {
       grid-column: 1/2;
       grid-row: 4/5;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-10-gr {
       grid-column: 2/3;
       grid-row: 2/3;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-10-gr {
       grid-column: 2/3;
       grid-row: 2/3;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-10-gr {
       grid-column: 1/2;
       grid-row: 2/3;
@@ -10096,24 +10119,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 5/6;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-11-gr {
       grid-column: 1/2;
       grid-row: 5/6;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-11-gr {
       grid-column: 1/2;
       grid-row: 3/4;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-11-gr {
       grid-column: 1/2;
       grid-row: 3/4;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-11-gr {
       grid-column: 2/3;
       grid-row: 2/3; } }
@@ -10135,24 +10158,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 6/7;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-12-gr {
       grid-column: 1/2;
       grid-row: 6/7;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-12-gr {
       grid-column: 2/3;
       grid-row: 3/4;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-12-gr {
       grid-column: 2/3;
       grid-row: 3/4;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-12-gr {
       grid-column: 3/4;
       grid-row: 2/3;
@@ -10176,24 +10199,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 7/8;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-13-gr {
       grid-column: 1/2;
       grid-row: 7/8;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-13-gr {
       grid-column: 1/2;
       grid-row: 4/5;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-13-gr {
       grid-column: 1/2;
       grid-row: 4/5;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-13-gr {
       grid-column: 1/2;
       grid-row: 3/4;
@@ -10215,19 +10238,19 @@ main section form fieldset {
     .grid-feria-p {
       grid-template-columns: auto;
       width: 100%; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .grid-feria-p {
       grid-template-columns: auto;
       width: 100%; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .grid-feria-p {
       grid-template-columns: repeat(2, auto);
       width: 85%; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .grid-feria-p {
       grid-template-columns: repeat(2, auto);
       width: 85%; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .grid-feria-p {
       grid-template-columns: repeat(3, auto);
       width: 80%; } }
@@ -10246,20 +10269,20 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 1/2;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-17-p {
       grid-column: 1/2;
       grid-row: 1/2;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-17-p {
       grid-column: 1/2;
       grid-row: 1/2; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-17-p {
       grid-column: 1/2;
       grid-row: 1/2; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-17-p {
       grid-column: 1/2;
       grid-row: 1/2; } }
@@ -10279,24 +10302,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 2/3;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-18-p {
       grid-column: 1/2;
       grid-row: 2/3;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-18-p {
       grid-column: 2/3;
       grid-row: 1/2;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-18-p {
       grid-column: 2/3;
       grid-row: 1/2;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-18-p {
       grid-column: 2/3;
       grid-row: 1/2; } }
@@ -10316,24 +10339,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 3/4;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-19-p {
       grid-column: 1/2;
       grid-row: 3/4;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-19-p {
       grid-column: 1/2;
       grid-row: 2/3;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-19-p {
       grid-column: 1/2;
       grid-row: 2/3;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-19-p {
       grid-column: 3/4;
       grid-row: 1/2;
@@ -10355,24 +10378,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 4/5;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-20-p {
       grid-column: 1/2;
       grid-row: 4/5;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-20-p {
       grid-column: 2/3;
       grid-row: 2/3;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-20-p {
       grid-column: 2/3;
       grid-row: 2/3;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-20-p {
       grid-column: 1/2;
       grid-row: 2/3;
@@ -10396,24 +10419,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 5/6;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-21-p {
       grid-column: 1/2;
       grid-row: 5/6;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-21-p {
       grid-column: 1/2;
       grid-row: 3/4;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-21-p {
       grid-column: 1/2;
       grid-row: 3/4;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-21-p {
       grid-column: 2/3;
       grid-row: 2/3; } }
@@ -10435,24 +10458,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 6/7;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-22-p {
       grid-column: 1/2;
       grid-row: 6/7;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-22-p {
       grid-column: 2/3;
       grid-row: 3/4;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-22-p {
       grid-column: 2/3;
       grid-row: 3/4;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-22-p {
       grid-column: 3/4;
       grid-row: 2/3;
@@ -10476,20 +10499,20 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 7/8;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-23-p {
       grid-column: 1/2;
       grid-row: 7/8;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-23-p {
       grid-column: 1/2;
       grid-row: 4/5; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-23-p {
       grid-column: 1/2;
       grid-row: 4/5; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-23-p {
       grid-column: 1/2;
       grid-row: 3/4;
@@ -10513,24 +10536,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 8/9;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-24-p {
       grid-column: 1/2;
       grid-row: 8/9;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-24-p {
       grid-column: 2/3;
       grid-row: 4/5;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-24-p {
       grid-column: 2/3;
       grid-row: 4/5;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-24-p {
       grid-column: 2/3;
       grid-row: 3/4;
@@ -10554,24 +10577,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 9/10;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-25-p {
       grid-column: 1/2;
       grid-row: 9/10;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-25-p {
       grid-column: 1/2;
       grid-row: 5/6;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-25-p {
       grid-column: 1/2;
       grid-row: 5/6;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-25-p {
       grid-column: 3/4;
       grid-row: 3/4;
@@ -10595,24 +10618,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 10/11;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-26-p {
       grid-column: 1/2;
       grid-row: 10/11;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-26-p {
       grid-column: 2/3;
       grid-row: 5/6;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-26-p {
       grid-column: 2/3;
       grid-row: 5/6;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-26-p {
       grid-column: 1/2;
       grid-row: 4/5;
@@ -10636,24 +10659,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 11/12;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-27-p {
       grid-column: 1/2;
       grid-row: 11/12;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-27-p {
       grid-column: 1/2;
       grid-row: 6/7;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-27-p {
       grid-column: 1/2;
       grid-row: 6/7;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-27-p {
       grid-column: 2/3;
       grid-row: 4/5;
@@ -10677,24 +10700,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 12/13;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-28-p {
       grid-column: 1/2;
       grid-row: 12/13;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-28-p {
       grid-column: 2/3;
       grid-row: 6/7;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-28-p {
       grid-column: 2/3;
       grid-row: 6/7;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-28-p {
       grid-column: 3/4;
       grid-row: 4/5;
@@ -10718,20 +10741,20 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 13/14;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-29-p {
       grid-column: 1/2;
       grid-row: 13/14;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-29-p {
       grid-column: 1/2;
       grid-row: 7/8; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-29-p {
       grid-column: 1/2;
       grid-row: 7/8; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-29-p {
       grid-column: 1/2;
       grid-row: 5/6;
@@ -10755,24 +10778,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 14/15;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-30-p {
       grid-column: 1/2;
       grid-row: 14/15;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-30-p {
       grid-column: 2/3;
       grid-row: 7/8;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-30-p {
       grid-column: 2/3;
       grid-row: 7/8;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-30-p {
       grid-column: 2/3;
       grid-row: 5/6;
@@ -10796,24 +10819,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 15/16;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-31-p {
       grid-column: 1/2;
       grid-row: 15/16;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-31-p {
       grid-column: 1/2;
       grid-row: 8/9;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-31-p {
       grid-column: 1/2;
       grid-row: 8/9;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-31-p {
       grid-column: 3/4;
       grid-row: 5/6;
@@ -10837,24 +10860,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 16/17;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-32-p {
       grid-column: 1/2;
       grid-row: 16/17;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-32-p {
       grid-column: 2/3;
       grid-row: 8/9;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-32-p {
       grid-column: 2/3;
       grid-row: 8/9;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-32-p {
       grid-column: 1/2;
       grid-row: 6/7;
@@ -10878,24 +10901,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 17/18;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-33-p {
       grid-column: 1/2;
       grid-row: 17/18;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-33-p {
       grid-column: 1/2;
       grid-row: 9/10;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-33-p {
       grid-column: 1/2;
       grid-row: 9/10;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-33-p {
       grid-column: 2/3;
       grid-row: 6/7;
@@ -10919,24 +10942,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 18/19;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-34-p {
       grid-column: 1/2;
       grid-row: 18/19;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-34-p {
       grid-column: 2/3;
       grid-row: 9/10;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-34-p {
       grid-column: 2/3;
       grid-row: 9/10;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-34-p {
       grid-column: 3/4;
       grid-row: 6/7;
@@ -10958,19 +10981,19 @@ main section form fieldset {
     .grid-feria-v {
       grid-template-columns: 1fr;
       width: 100%; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .grid-feria-v {
       grid-template-columns: 1fr;
       width: 100%; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .grid-feria-v {
       grid-template-columns: repeat(2, 1fr);
       width: 85%; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .grid-feria-v {
       grid-template-columns: repeat(2, 1fr);
       width: 85%; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .grid-feria-v {
       grid-template-columns: repeat(3, 1fr);
       width: 80%; } }
@@ -10989,20 +11012,20 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 1/2;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-14-v {
       grid-column: 1/2;
       grid-row: 1/2;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-14-v {
       grid-column: 1/2;
       grid-row: 1/2; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-14-v {
       grid-column: 1/2;
       grid-row: 1/2; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-14-v {
       grid-column: 1/2;
       grid-row: 1/2; } }
@@ -11022,24 +11045,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 2/3;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-15-v {
       grid-column: 1/2;
       grid-row: 2/3;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-15-v {
       grid-column: 2/3;
       grid-row: 1/2;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-15-v {
       grid-column: 2/3;
       grid-row: 1/2;
       padding-left: .5rem;
       padding-right: 1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-15-v {
       grid-column: 2/3;
       grid-row: 1/2; } }
@@ -11059,24 +11082,24 @@ main section form fieldset {
       grid-column: 1/2;
       grid-row: 3/4;
       padding: 0; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .feria-16-v {
       grid-column: 1/2;
       grid-row: 3/4;
       padding: 0; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .feria-16-v {
       grid-column: 1/2;
       grid-row: 2/3;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .feria-16-v {
       grid-column: 1/2;
       grid-row: 2/3;
       padding-left: 1rem;
       padding-right: .5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .feria-16-v {
       grid-column: 3/4;
       grid-row: 1/2;
@@ -11144,16 +11167,16 @@ main section form fieldset {
   @media screen and (max-width: 361px) {
     .carouseles {
       grid-row: repeat(2, auto); } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .carouseles {
       grid-row: repeat(2, auto); } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .carouseles {
       grid-row: repeat(2, auto); } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .carouseles {
       grid-row: repeat(2, auto); } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .carouseles {
       grid-row: repeat(2, auto); } }
   @media screen and (min-width: 1111px) and (max-width: 1730px) {
@@ -11168,19 +11191,19 @@ main section form fieldset {
     .texto-variedades {
       grid-row: 2/3;
       grid-column: 1/4; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .texto-variedades {
       grid-row: 2/3;
       grid-column: 1/4; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .texto-variedades {
       grid-row: 2/3;
       grid-column: 1/4; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .texto-variedades {
       grid-row: 2/3;
       grid-column: 1/4; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .texto-variedades {
       grid-row: 2/3;
       grid-column: 1/4; } }
@@ -11209,28 +11232,28 @@ main section form fieldset {
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .imagenes-variedades-1 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .imagenes-variedades-1 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .imagenes-variedades-1 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .imagenes-variedades-1 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
@@ -11265,28 +11288,28 @@ main section form fieldset {
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .imagenes-variedades-2 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .imagenes-variedades-2 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .imagenes-variedades-2 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
       grid-column: 1/4;
       height: auto;
       object-fit: contain; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .imagenes-variedades-2 {
       border-bottom: 1px #ffffff solid;
       grid-row: 1/2;
@@ -11312,19 +11335,19 @@ main section form fieldset {
     .titulo-variedades {
       font-size: 2rem;
       padding-top: 3rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulo-variedades {
       font-size: 2.3rem;
       padding-top: 3rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .titulo-variedades {
       font-size: 2.5rem;
       padding-top: 3.5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-variedades {
       font-size: 2.7rem;
       padding-top: 3.5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulo-variedades {
       font-size: 2.8rem;
       padding-top: 3.5rem; } }
@@ -11351,25 +11374,25 @@ main section form fieldset {
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .contenido-variedades {
       font-size: 1.7rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .contenido-variedades {
       font-size: 1.9rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .contenido-variedades {
       font-size: 2rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .contenido-variedades {
       font-size: 2.3rem;
       padding-bottom: 3.5rem;
@@ -11399,19 +11422,19 @@ main section form fieldset {
     .titulo-variedades-dedalus {
       font-size: 2rem;
       padding-top: 3rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulo-variedades-dedalus {
       font-size: 2.3rem;
       padding-top: 3rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .titulo-variedades-dedalus {
       font-size: 2.5rem;
       padding-top: 3.5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-variedades-dedalus {
       font-size: 2.7rem;
       padding-top: 3.5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulo-variedades-dedalus {
       font-size: 2.8rem;
       padding-top: 3.5rem; } }
@@ -11438,25 +11461,25 @@ main section form fieldset {
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .contenido-variedades-dedalus {
       font-size: 1.7rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .contenido-variedades-dedalus {
       font-size: 1.9rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .contenido-variedades-dedalus {
       font-size: 2rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .contenido-variedades-dedalus {
       font-size: 2.3rem;
       padding-bottom: 3.5rem;
@@ -11486,19 +11509,19 @@ main section form fieldset {
     .titulo-variedades-honey {
       font-size: 2rem;
       padding-top: 3rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulo-variedades-honey {
       font-size: 2.3rem;
       padding-top: 3rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .titulo-variedades-honey {
       font-size: 2.5rem;
       padding-top: 3.5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-variedades-honey {
       font-size: 2.7rem;
       padding-top: 3.5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulo-variedades-honey {
       font-size: 2.8rem;
       padding-top: 3.5rem; } }
@@ -11525,25 +11548,25 @@ main section form fieldset {
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .contenido-variedades-honey {
       font-size: 1.7rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .contenido-variedades-honey {
       font-size: 1.9rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .contenido-variedades-honey {
       font-size: 2rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .contenido-variedades-honey {
       font-size: 2.3rem;
       padding-bottom: 3.5rem;
@@ -11573,19 +11596,19 @@ main section form fieldset {
     .titulo-variedades-doblepale {
       font-size: 2rem;
       padding-top: 3rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .titulo-variedades-doblepale {
       font-size: 2.3rem;
       padding-top: 3rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .titulo-variedades-doblepale {
       font-size: 2.5rem;
       padding-top: 3.5rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .titulo-variedades-doblepale {
       font-size: 2.7rem;
       padding-top: 3.5rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .titulo-variedades-doblepale {
       font-size: 2.8rem;
       padding-top: 3.5rem; } }
@@ -11612,25 +11635,25 @@ main section form fieldset {
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (max-width: 450px) and (min-width: 362px) {
+  @media screen and (max-width: 450px) and (min-width: 361px) {
     .contenido-variedades-doblepale {
       font-size: 1.7rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (max-width: 687px) and (min-width: 451px) {
+  @media screen and (max-width: 687px) and (min-width: 450px) {
     .contenido-variedades-doblepale {
       font-size: 1.9rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .contenido-variedades-doblepale {
       font-size: 2rem;
       padding-bottom: 3.5rem;
       padding-left: 2rem;
       padding-right: 2rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .contenido-variedades-doblepale {
       font-size: 2.3rem;
       padding-bottom: 3.5rem;
@@ -11660,10 +11683,10 @@ main section form fieldset {
   @media screen and (max-width: 687px) and (min-width: 362px) {
     .texto-404 {
       font-size: 1.9rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .texto-404 {
       font-size: 2.1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .texto-404 {
       font-size: 2.3rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -11684,10 +11707,10 @@ main section form fieldset {
   @media screen and (max-width: 687px) and (min-width: 362px) {
     .lista-404 {
       font-size: 1.9rem; } }
-  @media screen and (min-width: 688px) and (max-width: 900px) {
+  @media screen and (min-width: 687px) and (max-width: 900px) {
     .lista-404 {
       font-size: 2.1rem; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .lista-404 {
       font-size: 2.3rem; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {
@@ -11700,7 +11723,7 @@ main section form fieldset {
   @media screen and (max-width: 768px) {
     .img-404 {
       width: 75%; } }
-  @media screen and (min-width: 901px) and (max-width: 1110px) {
+  @media screen and (min-width: 900px) and (max-width: 1110px) {
     .img-404 {
       width: 55%; } }
   @media screen and (min-width: 1110px) and (max-width: 1350px) {

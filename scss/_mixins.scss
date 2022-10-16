@@ -12,22 +12,22 @@
     }
 }
 @mixin smart{
-    @media screen and (max-width: 450px) and (min-width: 362px){
+    @media screen and (max-width: 450px) and (min-width: 361px){
         @content;
     }
 }
 @mixin tablet{
-    @media screen and (max-width: 687px) and (min-width: 451px){
+    @media screen and (max-width: 687px) and (min-width: 450px){
         @content;
     }
 }
 @mixin tablet-xl{
-    @media screen and (min-width: 688px) and (max-width: 900px){
+    @media screen and (min-width: 687px) and (max-width: 900px){
         @content;
     }
 }
 @mixin desktop{
-    @media screen and (min-width: 901px) and (max-width: 1110px){
+    @media screen and (min-width: 900px) and (max-width: 1110px){
         @content;
     }
 }

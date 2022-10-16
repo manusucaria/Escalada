@@ -1,3 +1,4 @@
+
 let pedidos = localStorage.getItem("pedido") ? JSON.parse(localStorage.getItem("pedido")) : [];
 let carritoStyle = [];
 class Pedidos{
@@ -39,7 +40,17 @@ videoInicio.onwheel = () =>{
     setInterval(()=>{
         video.style.transform = "traslate(1000px)"
     },100)
+    setTimeout(()=>{
+        video.style.display = "none"
+    },200)
+};
+videoInicio.onclick = () =>{
+    let video = videoInicio;
+    video.classList.add("video-mouse")
     setInterval(()=>{
+        video.style.transform = "traslate(1000px)"
+    },100)
+    setTimeout(()=>{
         video.style.display = "none"
     },200)
 };
