@@ -110,7 +110,7 @@
                             </g>
                         </svg>
                     </a>
-                    <a href="pages/contacto.html" target="_blank">
+                    <a id="lupaBuscador" href="#">
                         <svg class="svg" id="Layer_1" enable-background="new 0 0 512.392 512.392" viewBox="0 0 512.392 512.392" xmlns="http://www.w3.org/2000/svg"><g><path d="m211.196 422c-116.346 0-211-94.654-211-211s94.654-211 211-211 211 94.654 211 211-94.654 211-211 211zm0-382c-94.29 0-171 76.71-171 171s76.71 171 171 171 171-76.71 171-171-76.71-171-171-171zm295.143 466.534c7.81-7.811 7.81-20.475 0-28.285l-89.5-89.5c-7.811-7.811-20.475-7.811-28.285 0s-7.81 20.475 0 28.285l89.5 89.5c3.905 3.905 9.024 5.857 14.143 5.857s10.236-1.952 14.142-5.857z"/></g></svg>
                     </a>
                 </div>
@@ -119,7 +119,23 @@
         <!--MAIN-->
         <main>
             <section class="w-100 d-flex flex-column">
-                <article class="articulo-0">
+                <div id="inputBuscador" class="inputBuscador mx-auto">
+                    <input id="contenidoBuscador" class="contenidoBuscador mx-auto text-center" type="text" placeholder="¿Qué Deseas Buscar?">
+                </div>
+                <div id="opcionesBuscador" class="opcionesBuscador mx-auto">
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/tienda.html">Golden</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/tienda.html">Blonde</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/tienda.html">Pale</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/tienda.html">Doble Pale</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/tienda.html">Hibiscus</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/tienda.html">Faramir</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/contacto.html">Contacto</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/tienda.html">Tienda</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/carrito.html">Carrito</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/variedades.html">Variedades</a></li>
+                    <li class="li-busqueda mx-auto"><a class="texto-busqueda mx-auto text-center" href="./pages/nosotros.html">Nosotros</a></li>
+                </div>
+                <article id="fondoBuscador" class="articulo-0">
                     <h2 class="titulo-0 mx-auto my-auto">CERVEZA DE AUTOR</h2>
                 </article>
                 <article class="articulo-1">
@@ -173,6 +189,7 @@
             </div>
         </footer>
         <script src="js/style.js"></script>
+        <script src="js/buscador.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="js/wow.min.js"></script>

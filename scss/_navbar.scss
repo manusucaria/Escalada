@@ -261,3 +261,73 @@ header{
 .numero-svg{
     @include texto(1.5rem,100,map-get($map:$paleta, $key: 'red'));
 }
+
+/*BUSCADOR*/
+.inputBuscador{
+    display: none;
+    width: 100%;
+    border: none;
+    background: map-get($map: $paleta, $key: 'black');
+    height: auto;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
+.contenidoBuscador{
+    @include texto(2.5rem,100,map-get($map:$paleta, $key: 'black'));
+    width: 60%;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+    @include tablet-xl{
+        font-size: 1.9rem;
+    }
+    @include desktop{
+        font-size: 2rem;
+    }
+    @include wide{
+        font-size: 2.3rem;
+    }
+}
+.texto-busqueda{
+    @include texto(2rem,100,map-get($map:$paleta, $key: 'black'));
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    &:hover{
+        background: #777777;
+        color: map-get($map: $paleta, $key: 'black');
+    }
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+    @include tablet-xl{
+        font-size: 1.7rem;
+    }
+    @include desktop{
+        font-size: 1.8rem;
+    }
+    @include wide{
+        font-size: 1.9rem;
+    }
+}
+.li-busqueda{
+    display: none;
+    width: 60%;
+    text-decoration: none;
+    background: map-get($map: $paleta, $key: 'white');
+    list-style: none;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
+.opcionesBuscador{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: black;
+    height: auto;
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+}
