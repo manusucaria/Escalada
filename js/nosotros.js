@@ -1,7 +1,8 @@
 /*TEXTO NOSOTROS*/
 let textoNos = document.querySelector("#textoNos");
 let contenidoNos = document.querySelector("#contenidoNos");
-let texto = str => {
+const texto1 = "Somos una Fábrica de Cervezas finas de elaboración artesanal de la más alta calidad y estandar de producción."
+let texto = (str) => {
     let arrTexto = str.split("");
     let i = 0;
     let imprimirStr = setInterval(function() {
@@ -17,9 +18,9 @@ let texto = str => {
         }
     },100);
 };
-texto(`Somos una Fábrica de Cervezas finas de elaboración artesanal de la más alta calidad y estandar de producción.`);
-console.log(textoNos.innerHTML)
-let texto2 = str => {
+texto(texto1);
+
+let texto2 = (str) => {
     let arrTexto = str.split("");
     let i = 0;
     let imprimirStr = setInterval(function() {
